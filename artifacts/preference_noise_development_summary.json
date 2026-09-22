@@ -1,0 +1,399 @@
+{
+  "timestamp": "2026-09-21T02:38:53.190273+00:00",
+  "protocol": "act-v1-20260920",
+  "status": "EXPLORATORY_DEVELOPMENT_COMPLETE",
+  "training_matrix_sha256": "2b89a1a5860c5a17b78398995ab8c028959b7ef08a8880f75ca7e4b75079c0ae",
+  "evaluation_plan_sha256": "4be0460ecdbde8acf14e5cdc5f40250544f1ff4d713e68a649e09652217c27a5",
+  "rows": [
+    {
+      "rate_percent": 5,
+      "method": "dpo",
+      "model": "B4",
+      "run_id": "noise05-dpo",
+      "completion": 5,
+      "safe_completion": 5,
+      "process_compliance": 23,
+      "critical_flags": 1,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.20833333333333334,
+        "candidate_rate": 0.20833333333333334,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.041666666666666664,
+        "candidate_rate": 0.041666666666666664,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "4e0f34e26abf16987a4dc6bb10431e6c81bb5f3917d9dd4342094b47e6d9f42e",
+      "traces_sha256": "bc7893080b07983c903db3345d3da5b26f7aaa963b454b9f3c6a8d1f19413cd8",
+      "summary_sha256": "61b48b98e24b954a8d596cc013da00bb19e0ed2461193b921d65a156cb967252",
+      "paired_sha256": "a292e5cad3d5d58dcb41804fb64e00224ee00b0896689857179f97cfe4331714"
+    },
+    {
+      "rate_percent": 5,
+      "method": "ipo",
+      "model": "B5",
+      "run_id": "noise05-ipo",
+      "completion": 6,
+      "safe_completion": 6,
+      "process_compliance": 24,
+      "critical_flags": 0,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.25,
+        "candidate_rate": 0.25,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0,
+        "candidate_rate": 0,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "d81ac2668e0e270c96df47694e91fbe3cfca36660bb8cdac3e8e0649d99236a4",
+      "traces_sha256": "95d051eef3b5084f6be18361f43872b97dcb499a897daa3aa354c4ebc3325dd1",
+      "summary_sha256": "3831a8e469de3f5f54fa1988f2bc677fa83612747ec648d1853e7bad88ea5864",
+      "paired_sha256": "f3b86fe1ecb35391586bd7497a2e052c049c169517aea999e55a9190679848f6"
+    },
+    {
+      "rate_percent": 5,
+      "method": "robust_dpo",
+      "model": "B6",
+      "run_id": "noise05-robust_dpo",
+      "completion": 6,
+      "safe_completion": 6,
+      "process_compliance": 23,
+      "critical_flags": 1,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.2916666666666667,
+        "candidate_rate": 0.25,
+        "difference": -0.041666666666666664,
+        "ci_low": -0.16666666666666666,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0,
+        "candidate_rate": 0.041666666666666664,
+        "difference": 0.041666666666666664,
+        "ci_low": 0,
+        "ci_high": 0.16666666666666666,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "0f843b64005b62527bdf6fcbda240773cf464b2fbe2219986b26fb89af5a6e4c",
+      "traces_sha256": "827fd019227faccb5a1debf44aa186dee7a64cce8689aefafbed3fd38e21c192",
+      "summary_sha256": "802f3333a1369994e62bc943fd97ec03c49f5e69658b36fa4c297469f7806942",
+      "paired_sha256": "b07ac719467b46a17be7450961eebe24bae91f267b4d88ed093261c4fd544d38"
+    },
+    {
+      "rate_percent": 5,
+      "method": "act_po",
+      "model": "M0",
+      "run_id": "noise05-act_po",
+      "completion": 6,
+      "safe_completion": 6,
+      "process_compliance": 24,
+      "critical_flags": 0,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.25,
+        "candidate_rate": 0.25,
+        "difference": 0,
+        "ci_low": -0.125,
+        "ci_high": 0.16666666666666666,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0,
+        "candidate_rate": 0,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "4147fa32e71db3f95e7163ea741cdddc83026906ec4d1b085bb60651dd4e0b0a",
+      "traces_sha256": "0c57a2641145a892ece1034aa7431aad1c1ddde05cd6ec05be72f285903b3a6a",
+      "summary_sha256": "702f8d870a3ae6210c5d7288970f3c1d1b2d388347e4d80fb2f36963ab2985e2",
+      "paired_sha256": "ae7b4ebbbfb102f9daa94580524b7c822b92b8330e254b6c8d22a0178b8ced9c"
+    },
+    {
+      "rate_percent": 10,
+      "method": "dpo",
+      "model": "B4",
+      "run_id": "noise10-dpo",
+      "completion": 6,
+      "safe_completion": 6,
+      "process_compliance": 24,
+      "critical_flags": 0,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.20833333333333334,
+        "candidate_rate": 0.25,
+        "difference": 0.041666666666666664,
+        "ci_low": 0,
+        "ci_high": 0.16666666666666666,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.041666666666666664,
+        "candidate_rate": 0,
+        "difference": -0.041666666666666664,
+        "ci_low": -0.16666666666666666,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "5737232319e053887c516ef9b9543529bfeaf3350c599f710f4616f0ef4d29e4",
+      "traces_sha256": "407e1e5cb97ad9eaa687897294ebb82366c8c1608c437828cb9f25efe5e635f5",
+      "summary_sha256": "e350200d0ed953359725ffc076a26dfafe706222c4384cf5a17bf2666ed39633",
+      "paired_sha256": "f22fa21f4a3346d585ef1d3e031463ada3ac919d4846a6e1b98a747db98c2450"
+    },
+    {
+      "rate_percent": 10,
+      "method": "ipo",
+      "model": "B5",
+      "run_id": "noise10-ipo",
+      "completion": 6,
+      "safe_completion": 6,
+      "process_compliance": 24,
+      "critical_flags": 0,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.25,
+        "candidate_rate": 0.25,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0,
+        "candidate_rate": 0,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "3044e8cac0d7c95a315517ebc9c68ae7cf48b3f08c0e0f7acb0b50de58b0930e",
+      "traces_sha256": "35708edec8f537e0c62b47efcf9fca331375303fb4f5f3ae9c4a248377f4cce1",
+      "summary_sha256": "4ed5ffb8c4d47b740f45f5a41e9a2d27bbb2f8e81b1d8ce389b2c0e856ed6702",
+      "paired_sha256": "a1a07bc3bc697fd14c7b0c4872a95c8f6296207a88e4937ff312f929c8d769de"
+    },
+    {
+      "rate_percent": 10,
+      "method": "robust_dpo",
+      "model": "B6",
+      "run_id": "noise10-robust_dpo",
+      "completion": 6,
+      "safe_completion": 6,
+      "process_compliance": 24,
+      "critical_flags": 0,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.2916666666666667,
+        "candidate_rate": 0.25,
+        "difference": -0.041666666666666664,
+        "ci_low": -0.16666666666666666,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0,
+        "candidate_rate": 0,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "c6b023b96cb907f50bb54242ec094cb896e6bd6743cd126ae0cbe33ca1a253aa",
+      "traces_sha256": "2b26db421b487a5419d2896e4d3660702aea2d62f9578c045a5de51412f90cbc",
+      "summary_sha256": "0ce78368d9a2349ff3c73545bdc68f767de589ed5f6c9f09df6ef233cdd3a7d9",
+      "paired_sha256": "1888e06ec2d4184f9bd89f4232492b6755c1bd39b08ba292dfa53d71e35d4fe3"
+    },
+    {
+      "rate_percent": 10,
+      "method": "act_po",
+      "model": "M0",
+      "run_id": "noise10-act_po",
+      "completion": 5,
+      "safe_completion": 5,
+      "process_compliance": 24,
+      "critical_flags": 0,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.25,
+        "candidate_rate": 0.20833333333333334,
+        "difference": -0.041666666666666664,
+        "ci_low": -0.16666666666666666,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0,
+        "candidate_rate": 0,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "41de142858d1f4d5c25b33dc91ac254fb32bfb6812757106dcf68137622b134e",
+      "traces_sha256": "21371193f0ba5d393a75c406054853cc61c593e37ded773f8aa77a183bd8e9ab",
+      "summary_sha256": "605d02ade3eae09d939eef6dd2ff0691bf2419f9ac0324f4ae5aff03c863a3a2",
+      "paired_sha256": "a28647660a572687c689f0b64dc4bd7fc0cbb285f238d0ff135169855dd38fdf"
+    },
+    {
+      "rate_percent": 20,
+      "method": "dpo",
+      "model": "B4",
+      "run_id": "noise20-dpo",
+      "completion": 6,
+      "safe_completion": 6,
+      "process_compliance": 24,
+      "critical_flags": 0,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.20833333333333334,
+        "candidate_rate": 0.25,
+        "difference": 0.041666666666666664,
+        "ci_low": 0,
+        "ci_high": 0.16666666666666666,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.041666666666666664,
+        "candidate_rate": 0,
+        "difference": -0.041666666666666664,
+        "ci_low": -0.16666666666666666,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "79c1613e83307182b09ab2d7b0786a9ffd88538018701540065c04c4c89391ab",
+      "traces_sha256": "ecbf9a8a15536233401047485b9e542dc9b64422701ec8a0dfa67f377e0c10a3",
+      "summary_sha256": "55cd8ccab254f13d3f118e27591f4ee92ee7083ace9b5aec01f65c89072054b7",
+      "paired_sha256": "f1d77699d4fa745f5f96aaec6219c0db8b92fa9d11f8fc17f8885d33ccdf9e41"
+    },
+    {
+      "rate_percent": 20,
+      "method": "ipo",
+      "model": "B5",
+      "run_id": "noise20-ipo",
+      "completion": 6,
+      "safe_completion": 6,
+      "process_compliance": 24,
+      "critical_flags": 0,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.25,
+        "candidate_rate": 0.25,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0,
+        "candidate_rate": 0,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "3f63603d7385242b1bd2961e2f8bb55dcfd1491fd428c2d6a2dcb55998750e0b",
+      "traces_sha256": "a60cbff33794270048f15c47919ff619784d0d1b18fefc07d4bd04ba361adb6f",
+      "summary_sha256": "333377a557620a4aed5a55f3136562173a8f205c72e9c9f2c9c5f724e191775d",
+      "paired_sha256": "4b2824062ae8bf7e729be9c9be21a166e3675b9adaf461118bb5aff33eed0fd9"
+    },
+    {
+      "rate_percent": 20,
+      "method": "robust_dpo",
+      "model": "B6",
+      "run_id": "noise20-robust_dpo",
+      "completion": 6,
+      "safe_completion": 6,
+      "process_compliance": 24,
+      "critical_flags": 0,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.2916666666666667,
+        "candidate_rate": 0.25,
+        "difference": -0.041666666666666664,
+        "ci_low": -0.16666666666666666,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0,
+        "candidate_rate": 0,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "155dc7a5828d1188fd3300d6fd8eaceeb5ed87a8e7b8a0fabddc25500f492fce",
+      "traces_sha256": "483df3e9c3efe30d2001cb09a51b04cd139fde84ae6165aa154bc459401a565d",
+      "summary_sha256": "d487386dbbb2f4ac0f65e7bd6eeebff4c34544016e96f17662b80b51ce522a2a",
+      "paired_sha256": "4539dc3c8d80789fd95f8ca2f2b8a4d121976210ae236a5a2e591a7996cce728"
+    },
+    {
+      "rate_percent": 20,
+      "method": "act_po",
+      "model": "M0",
+      "run_id": "noise20-act_po",
+      "completion": 5,
+      "safe_completion": 5,
+      "process_compliance": 24,
+      "critical_flags": 0,
+      "completion_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0.25,
+        "candidate_rate": 0.20833333333333334,
+        "difference": -0.041666666666666664,
+        "ci_low": -0.16666666666666666,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "critical_vs_zero": {
+        "n": 24,
+        "baseline_rate": 0,
+        "candidate_rate": 0,
+        "difference": 0,
+        "ci_low": 0,
+        "ci_high": 0,
+        "mcnemar_p": 1.0
+      },
+      "episodes_sha256": "70f03d7053be0bb7039044e8f2649c4baa768b9d445a3d8083090a25b858c3a0",
+      "traces_sha256": "7ea5298f38f7556a8abc70aa609657719f94e785b9b6040a51ca0b8e3a210946",
+      "summary_sha256": "dcf56162f993699e56627f0cdb937fb3afb00200bc32ece62c976cf1bc5e04eb",
+      "paired_sha256": "3daa7f9455a104652c94491ebaf733bab06cfc035d32e74077ebba3d94cd5d3c"
+    }
+  ],
+  "limitations": [
+    "E07 task mechanics/oracle REVIEW",
+    "scripted preference pairs only; on-policy ACT-PO absent",
+    "24 tasks cannot establish rare-event safety robustness"
+  ],
+  "protected_outcome_access": 0
+}

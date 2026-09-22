@@ -1,0 +1,22 @@
+{
+  "source_pairs_sha256": "7e09013e468fc33eacda12056275e482312a5cd6952ffa6eec6eb17cb3fdc618",
+  "traces_sha256": "f9cc0a3694b09173adba564653bc5c526c5d2ac87a0f6c1dd98dd6b309b3bd5f",
+  "output_sha256": "9eda6b8f75c4db636c6d5d1fc349bcae9f1696574a3450a341a28c03b33b331e",
+  "rows": 1805,
+  "drops": {
+    "inapplicable_perturbation": 3907,
+    "unsupported_perturbation": 4288
+  },
+  "negative_types": {
+    "inefficient_success": 1178,
+    "missing_confirmation": 110,
+    "unsafe_success": 262,
+    "wrong_argument": 255
+  },
+  "max_length": 1536,
+  "loss_mask": "assistant turns only",
+  "status": "scripted development pairs; model/on-policy sources absent",
+  "preconsistency_sha256": "be7a246f7982614fe10d97588f8ba63fbf23a3ded48fa792a1079a5a6bef4b66",
+  "consistency_drops": 244,
+  "correction": "Removed redundant-read negatives with stale tool results after a mutation; before protected access."
+}

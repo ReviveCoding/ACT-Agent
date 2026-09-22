@@ -1,0 +1,272 @@
+{
+  "timestamp": "2026-09-21T00:06:09.921830+00:00",
+  "protocol": "act-v1-20260920",
+  "status": "TRAINING_MATRIX_COMPLETE",
+  "rows": [
+    {
+      "rate_percent": 0,
+      "method": "dpo",
+      "run_id": "dpo-seed11-steps3-pairs64-noise00",
+      "receipt_sha256": "509665b64682647ae06559fe283f56b1d1b17c9faf612f0eba88d7e7999c768d",
+      "adapter_sha256": "e54e9162b2012d8efed554b1e62211aa65ee98afb02ca9e5da6e52647b709aa6",
+      "reference_sha256": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+      "flipped_pair_ids": [],
+      "final_loss": 0.23218955099582672
+    },
+    {
+      "rate_percent": 0,
+      "method": "ipo",
+      "run_id": "ipo-seed11-steps3-pairs64-noise00",
+      "receipt_sha256": "7f3506da569c21d2fe60e75dfce72f89576847460c8915f52284aee0c76f81db",
+      "adapter_sha256": "5cbc204097fd1962bbce22f8ed0f0511cea3a84538981221b76116150bcb3e6f",
+      "reference_sha256": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+      "flipped_pair_ids": [],
+      "final_loss": 23.874366760253906
+    },
+    {
+      "rate_percent": 0,
+      "method": "robust_dpo",
+      "run_id": "robust_dpo-seed11-steps3-pairs64-noise00",
+      "receipt_sha256": "1a19d2d4d29e61557a1b97c7b6ad524c05c46a721a99f25b153b19d91aea387e",
+      "adapter_sha256": "b8222908209718c8fd53178faad99282d59e66e91828377a76388f1bbd6bb413",
+      "reference_sha256": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+      "flipped_pair_ids": [],
+      "final_loss": 0.06293395161628723
+    },
+    {
+      "rate_percent": 0,
+      "method": "act_po",
+      "run_id": "act_po-seed11-steps3-pairs64-noise00",
+      "receipt_sha256": "182ac8e65535a670426c7e64cc65df08fc9817265d783509cf2061c20b5fb172",
+      "adapter_sha256": "a1fc915a8c923f99c2f7a485aae59937da2a7abea6cae6d6e8726674565e35bd",
+      "reference_sha256": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+      "flipped_pair_ids": [],
+      "final_loss": 0.19521714746952057
+    },
+    {
+      "rate_percent": 5,
+      "method": "dpo",
+      "run_id": "dpo-seed11-steps3-pairs64-noise05",
+      "receipt_sha256": "74a6e87b6c306518d80469ab74c500cbb7231fe09db46693ba5db97749fdfa9e",
+      "adapter_sha256": "fbef23ac01b42dc65b5159c684d44cf9dacb1a0372a00277e8dcd72a8f81c019",
+      "reference_sha256": "8152661bcba7f520ef65d0e4dc1273006bd77145d3f2c11d85513f397f1d55e6",
+      "flipped_pair_ids": [
+        "train-000610-inefficient_success",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success"
+      ],
+      "final_loss": 0.2369472086429596
+    },
+    {
+      "rate_percent": 5,
+      "method": "ipo",
+      "run_id": "ipo-seed11-steps3-pairs64-noise05",
+      "receipt_sha256": "133a5d2ca901dd966aca9d5c2d2abd058b9eca0a59d383112c214223fec4714b",
+      "adapter_sha256": "a22efe9cc574c0d43a32749af5db463934cb124e4c9a0319b9b225f717baa9b4",
+      "reference_sha256": "8152661bcba7f520ef65d0e4dc1273006bd77145d3f2c11d85513f397f1d55e6",
+      "flipped_pair_ids": [
+        "train-000610-inefficient_success",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success"
+      ],
+      "final_loss": 23.898637771606445
+    },
+    {
+      "rate_percent": 5,
+      "method": "robust_dpo",
+      "run_id": "robust_dpo-seed11-steps3-pairs64-noise05",
+      "receipt_sha256": "b391213786e53b213d2e4ee702da37bc55e9ee7eed5d288cd83fb23c5777ca38",
+      "adapter_sha256": "31dc41ba670be28552fa28b014ec16ad41e5bccc271c26fceadd246370ae246b",
+      "reference_sha256": "8152661bcba7f520ef65d0e4dc1273006bd77145d3f2c11d85513f397f1d55e6",
+      "flipped_pair_ids": [
+        "train-000610-inefficient_success",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success"
+      ],
+      "final_loss": 0.06657589226961136
+    },
+    {
+      "rate_percent": 5,
+      "method": "act_po",
+      "run_id": "act_po-seed11-steps3-pairs64-noise05",
+      "receipt_sha256": "60c1c9a4786800568ae988643fa64541d0edd82db35d715f2c562b02acabe17b",
+      "adapter_sha256": "64c127d36826e47a870a25106fcf7fb2a6a14e3b7b43e750411b4b6349bf0669",
+      "reference_sha256": "8152661bcba7f520ef65d0e4dc1273006bd77145d3f2c11d85513f397f1d55e6",
+      "flipped_pair_ids": [
+        "train-000610-inefficient_success",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success"
+      ],
+      "final_loss": 0.19964271783828735
+    },
+    {
+      "rate_percent": 10,
+      "method": "dpo",
+      "run_id": "dpo-seed11-steps3-pairs64-noise10",
+      "receipt_sha256": "e50b4a749c57dda329d5562e1b622bbe1bf91e611d7edd552d813ce176f3bbf0",
+      "adapter_sha256": "be9bbe05b3cc01dd9460360c1241c259e3de57e2f5c94ec0bd746ad255e00014",
+      "reference_sha256": "01fb9a0d5142d1ac60669d1ece5196764f77b3af519e0222ba9a118bfb3fae29",
+      "flipped_pair_ids": [
+        "train-000299-inefficient_success",
+        "train-000610-inefficient_success",
+        "train-001354-inefficient_success",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success",
+        "train-002097-unsafe_success"
+      ],
+      "final_loss": 0.23841169476509094
+    },
+    {
+      "rate_percent": 10,
+      "method": "ipo",
+      "run_id": "ipo-seed11-steps3-pairs64-noise10",
+      "receipt_sha256": "be6bbba75ee51f57d6f5e725822c73d930ea47d08e5d7adade5c735bb09bcce1",
+      "adapter_sha256": "ff40986d83de385d358869ac55f09ad5d11e98ac57b25f5603941fd604fbc9e8",
+      "reference_sha256": "01fb9a0d5142d1ac60669d1ece5196764f77b3af519e0222ba9a118bfb3fae29",
+      "flipped_pair_ids": [
+        "train-000299-inefficient_success",
+        "train-000610-inefficient_success",
+        "train-001354-inefficient_success",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success",
+        "train-002097-unsafe_success"
+      ],
+      "final_loss": 23.842430114746094
+    },
+    {
+      "rate_percent": 10,
+      "method": "robust_dpo",
+      "run_id": "robust_dpo-seed11-steps3-pairs64-noise10",
+      "receipt_sha256": "62dc1e727ff5ae3efd6e312e92d047b1a949d13db61307f5c0289e7809818dcd",
+      "adapter_sha256": "768f188b668683f95ad7c9f050e5e551a7283efeceaeac6bdef8a98a3e176284",
+      "reference_sha256": "01fb9a0d5142d1ac60669d1ece5196764f77b3af519e0222ba9a118bfb3fae29",
+      "flipped_pair_ids": [
+        "train-000299-inefficient_success",
+        "train-000610-inefficient_success",
+        "train-001354-inefficient_success",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success",
+        "train-002097-unsafe_success"
+      ],
+      "final_loss": 0.04862157627940178
+    },
+    {
+      "rate_percent": 10,
+      "method": "act_po",
+      "run_id": "act_po-seed11-steps3-pairs64-noise10",
+      "receipt_sha256": "7695cc88ee09265e9ef8921fb5bf27a1ff6354ecc2c0dcc434e256bc2c65025d",
+      "adapter_sha256": "c6453c3a096f29ece54570c9b841334e1c002928ced7dcc8cdbac327ef772ea7",
+      "reference_sha256": "01fb9a0d5142d1ac60669d1ece5196764f77b3af519e0222ba9a118bfb3fae29",
+      "flipped_pair_ids": [
+        "train-000299-inefficient_success",
+        "train-000610-inefficient_success",
+        "train-001354-inefficient_success",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success",
+        "train-002097-unsafe_success"
+      ],
+      "final_loss": 0.2025112509727478
+    },
+    {
+      "rate_percent": 20,
+      "method": "dpo",
+      "run_id": "dpo-seed11-steps3-pairs64-noise20",
+      "receipt_sha256": "318feb7cdfed4a54d45a957fca1acb0e27a61cf98794b77cb81ab8e901e3f111",
+      "adapter_sha256": "db42e7f544907d6d3bdea3f0c528db608ee84f73fa81338e12895aef5368a6cb",
+      "reference_sha256": "a362aeda7f48dc303834e2274f8e1a3b29319d0fb58f38d3af9a9ba30346d444",
+      "flipped_pair_ids": [
+        "train-000299-inefficient_success",
+        "train-000324-inefficient_success",
+        "train-000518-unsafe_success",
+        "train-000610-inefficient_success",
+        "train-001036-inefficient_success",
+        "train-001354-inefficient_success",
+        "train-001412-missing_confirmation",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success",
+        "train-002025-wrong_argument",
+        "train-002097-unsafe_success",
+        "train-002550-inefficient_success",
+        "train-002569-inefficient_success"
+      ],
+      "final_loss": 0.22490841150283813
+    },
+    {
+      "rate_percent": 20,
+      "method": "ipo",
+      "run_id": "ipo-seed11-steps3-pairs64-noise20",
+      "receipt_sha256": "e77db08d9d89da4ec4ca1c541255ba0c5f46d090821c38ee8cb459b5bf323939",
+      "adapter_sha256": "87d4bf629f96ec699b474ab3ab98fc136a96f05bdb0f0b6e979ae21b54e50a1f",
+      "reference_sha256": "a362aeda7f48dc303834e2274f8e1a3b29319d0fb58f38d3af9a9ba30346d444",
+      "flipped_pair_ids": [
+        "train-000299-inefficient_success",
+        "train-000324-inefficient_success",
+        "train-000518-unsafe_success",
+        "train-000610-inefficient_success",
+        "train-001036-inefficient_success",
+        "train-001354-inefficient_success",
+        "train-001412-missing_confirmation",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success",
+        "train-002025-wrong_argument",
+        "train-002097-unsafe_success",
+        "train-002550-inefficient_success",
+        "train-002569-inefficient_success"
+      ],
+      "final_loss": 23.87560272216797
+    },
+    {
+      "rate_percent": 20,
+      "method": "robust_dpo",
+      "run_id": "robust_dpo-seed11-steps3-pairs64-noise20",
+      "receipt_sha256": "e9ff8f6251668b5a8254e9bd757923f0af32d5527a4797cef858cdf465af90fd",
+      "adapter_sha256": "ae6b25ee2a43a960348c3de9433a11121be412f66c9923e7a3fa7fa04722fd3c",
+      "reference_sha256": "a362aeda7f48dc303834e2274f8e1a3b29319d0fb58f38d3af9a9ba30346d444",
+      "flipped_pair_ids": [
+        "train-000299-inefficient_success",
+        "train-000324-inefficient_success",
+        "train-000518-unsafe_success",
+        "train-000610-inefficient_success",
+        "train-001036-inefficient_success",
+        "train-001354-inefficient_success",
+        "train-001412-missing_confirmation",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success",
+        "train-002025-wrong_argument",
+        "train-002097-unsafe_success",
+        "train-002550-inefficient_success",
+        "train-002569-inefficient_success"
+      ],
+      "final_loss": 0.07306919991970062
+    },
+    {
+      "rate_percent": 20,
+      "method": "act_po",
+      "run_id": "act_po-seed11-steps3-pairs64-noise20",
+      "receipt_sha256": "1844b826feaff7a4957e5eaf0c43ef6fb4e9bdcad7d33f9327a0d238934627a6",
+      "adapter_sha256": "dabbe1d5c0dd23201dcb566457ce38b694dcc52b3f92d50e311982d6e0525e20",
+      "reference_sha256": "a362aeda7f48dc303834e2274f8e1a3b29319d0fb58f38d3af9a9ba30346d444",
+      "flipped_pair_ids": [
+        "train-000299-inefficient_success",
+        "train-000324-inefficient_success",
+        "train-000518-unsafe_success",
+        "train-000610-inefficient_success",
+        "train-001036-inefficient_success",
+        "train-001354-inefficient_success",
+        "train-001412-missing_confirmation",
+        "train-001542-inefficient_success",
+        "train-001889-inefficient_success",
+        "train-002025-wrong_argument",
+        "train-002097-unsafe_success",
+        "train-002550-inefficient_success",
+        "train-002569-inefficient_success"
+      ],
+      "final_loss": 0.19957335293293
+    }
+  ],
+  "pair_limit": 64,
+  "steps": 3,
+  "seed": 11,
+  "interpretation": "scripted-pair CUDA training diagnostics; task-outcome comparison pending",
+  "protected_outcome_access": 0
+}

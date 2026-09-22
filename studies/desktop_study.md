@@ -1,0 +1,9 @@
+# Desktop study and current-source verification
+
+Checked 2026-09-20. Exact accessed Git commits are in `artifacts/source_registry.json`.
+
+- Criteo's [attribution source page](https://ailab.criteo.com/criteo-attribution-modeling-bidding-dataset/) defines impression-level fields, transformed cost, and CC BY-NC-SA 4.0 terms. The page's historic direct download returned HTTP 404; its [Criteo-owned Hugging Face mirror](https://huggingface.co/datasets/criteo/criteo-attribution-dataset) supplied the checksum-verified file.
+- [Criteo Uplift](https://ailab.criteo.com/criteo-uplift-prediction-dataset/) is a separate randomized causal reference; its page warns that the first version leaked advertiser information and points to the corrected version. It cannot identify effects of this simulator's campaign mutations.
+- [IAB AAMP](https://github.com/IABTechLab/AAMP), [OpenRTB](https://github.com/InteractiveAdvertisingBureau/openrtb2.x), [AdCOM](https://github.com/InteractiveAdvertisingBureau/AdCOM), and the [MCP specification](https://modelcontextprotocol.io/specification/2026-07-28) inform vocabulary and tool design. The current local tools do not claim protocol conformance.
+- [Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507) is Apache-2.0. Revision `cdbee75f17c01a7cc42f958dc650907174af0554` is pinned and its copied weights verified in `artifacts/model_source_manifest.json`. Its chat template, tool call, and NF4/BF16 CUDA memory fit passed in `artifacts/model_qualification.json` before protected access.
+- [BFCL V4](https://gorilla.cs.berkeley.edu/leaderboard), [tau3](https://github.com/sierra-research/tau2-bench), and [AgentDojo](https://github.com/ethz-spylab/agentdojo) are reserved for final transfer evaluation. No benchmark examples or outcomes have been used.

@@ -1,0 +1,26 @@
+{
+  "ended": "2026-09-20T23:25:33.375090+00:00",
+  "name": "Multi-seed replication",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/e16_sft_seed_summary.json": "ba37a1611927dff5704c3906b658ee8d1e4c02b90c4f53fd9a8021aa5155b456",
+    "artifacts/e16_training_seed_audit.json": "4bbf9aa711da59c9eb7fd9eb4e5c76e201ea8c06c52dd7e61e7259178603dc58",
+    "artifacts/training/act_po-seed11-sft30-steps3-pairs64-noise00.json": "a2abd3eaeb78a80c1b8a3635fe8e3e83d9898acbd55067599cef0a172673c730",
+    "artifacts/training/act_po-seed23-sft30-steps3-pairs64-noise00.json": "e203d4b3411b513a1d154752acf709c2d5cd371e49aaae39ecd4fbdfe198ee6d",
+    "artifacts/training/act_po-seed37-sft30-steps3-pairs64-noise00.json": "b16f7b5055be5427092d13a7de20edc967b905b28c7e131cccb5a6b3e9255c3e",
+    "artifacts/training/dpo-seed11-sft30-steps3-pairs64-noise00.json": "71e60e5fff9f22b1d84b9cc74d74776288192eb6904bcfc75d4f0da78d14a880",
+    "artifacts/training/dpo-seed23-sft30-steps3-pairs64-noise00.json": "4872b438e71ee6741648405772d70a4282bb7441e37d455bc23493d8e5e0b22e",
+    "artifacts/training/dpo-seed37-sft30-steps3-pairs64-noise00.json": "53e279df9f752bf024fb74661315ab7b4605b1b5de2b4ef272c27530f7c4ca16",
+    "artifacts/training/reference_seed11_sft30_pairs64_noise00.jsonl": "430da0c08383b51af3befd0731d677c5750c277e520c8f997397ea7221ed10d6",
+    "artifacts/training/reference_seed23_sft30_pairs64_noise00.jsonl": "802ddfcc390943d38ba55404f32370f34bcd2ec800dd2cb3428edfffd179b5c1",
+    "artifacts/training/reference_seed37_sft30_pairs64_noise00.jsonl": "30084859d0022e60a9f9ce56135e66575586866d76c1f5dc6c1fad2c06bfce36",
+    "artifacts/training/sft-seed23-steps30.json": "c934e22645f765cde24464a8b6231e89b8263d59ec0d1c648119ff180e552f3c",
+    "artifacts/training/sft-seed37-steps30.json": "c9953eb88efc02ebda751eefe4995307a3fe14ede73fcc04e85fba5c2ef37952",
+    "reports/multi_seed_development.md": "65278dbc3a0bd38e8668849a6491572be59e351c2b3da8f16253340c8651bbd0"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Three matched 30-step SFT seeds and three-seed 3-step DPO/weighted scripted-pair CUDA training receipts verified; seeds 23/37 lack paired task outcomes, and full ACT-PO mechanism/qualified finalist absent.",
+  "stage": "E16",
+  "started": "2026-09-20T23:25:33.375075+00:00",
+  "state": "REVIEW"
+}

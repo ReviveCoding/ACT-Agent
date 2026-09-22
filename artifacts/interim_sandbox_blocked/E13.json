@@ -1,0 +1,11 @@
+{
+  "ended": "2026-09-20T05:57:48.026487+00:00",
+  "name": "DPO/IPO/Robust-DPO",
+  "next_action": "resume after prerequisite repair",
+  "outputs": {},
+  "protocol": "act-v1-20260920",
+  "reason": "required CUDA model training/inference unavailable",
+  "stage": "E13",
+  "started": "2026-09-20T05:57:48.026461+00:00",
+  "state": "BLOCKED_EXTERNAL"
+}

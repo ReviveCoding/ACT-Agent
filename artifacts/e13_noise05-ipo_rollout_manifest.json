@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-21T00:31:01.298341+00:00",
+  "protocol": "act-v1-20260920",
+  "split": "development",
+  "count": 24,
+  "models": [
+    "B5"
+  ],
+  "max_new_tokens": 192,
+  "model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/ipo-seed11-steps3-pairs64-noise05",
+  "adapter_files_sha256": {
+    "adapter_model.safetensors": "a22efe9cc574c0d43a32749af5db463934cb124e4c9a0319b9b225f717baa9b4"
+  },
+  "run_id": "noise05-ipo",
+  "run_identity_sha256": "ecb48911704b6f6967eaa811d28f37ce60953583a02e54695a79722594305998",
+  "preflight": {
+    "nvidia_smi": "NVIDIA GeForce RTX 4090 Laptop GPU, 16376 MiB, 16048 MiB, 616.92",
+    "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "vram_bytes": 17170956288,
+    "bf16": true,
+    "matmul_checksum": 2458.388671875
+  },
+  "episodes_path": "/home/bjw-0/.cache/act-agent-v1/rollouts/noise05-ipo/episodes.jsonl",
+  "traces_path": "/home/bjw-0/.cache/act-agent-v1/rollouts/noise05-ipo/traces.jsonl",
+  "wall_seconds": 642.4840565410013,
+  "peak_allocated_vram_bytes": 3382104576,
+  "peak_reserved_vram_bytes": 4351590400,
+  "nvidia_smi_after": "4444 MiB, 18 %, 82",
+  "protected_outcome_access": 0
+}

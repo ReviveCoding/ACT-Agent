@@ -1,0 +1,32 @@
+{
+  "alpha": 0.05,
+  "comparisons": {
+    "B1": {
+      "discordance_fraction": 0.25,
+      "discordant_pairs": 6,
+      "illustrative_n_for_5pp_two_sided_80pct_power": 778,
+      "observed_difference": -0.25,
+      "paired_tasks": 24
+    },
+    "B2": {
+      "discordance_fraction": 0.2916666666666667,
+      "discordant_pairs": 7,
+      "illustrative_n_for_5pp_two_sided_80pct_power": 908,
+      "observed_difference": -0.2916666666666667,
+      "paired_tasks": 24
+    }
+  },
+  "formula": "normal approximation n=(z_(1-alpha/2)+z_power)^2*(discordance_fraction-delta^2)/delta^2",
+  "freeze_manifest_created": false,
+  "limitations": [
+    "24 synthetic tasks only; task mechanics/oracle E07 REVIEW",
+    "baseline comparison is not ACT-PO versus SFT",
+    "family clustering and training-seed uncertainty not included in approximate n",
+    "rare critical event rate does not identify a defensible 1pp noninferiority margin"
+  ],
+  "planning_effect": 0.05,
+  "power": 0.8,
+  "protected_outcome_access": 0,
+  "status": "EXPLORATORY_NOT_FREEZE",
+  "timestamp": "2026-09-20T18:19:03.098063+00:00"
+}

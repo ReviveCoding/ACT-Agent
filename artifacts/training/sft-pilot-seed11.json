@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-09-20T06:52:05.696908+00:00",
+  "status": "PASS",
+  "protocol": "act-v1-20260920",
+  "seed": 11,
+  "max_steps": 3,
+  "gradient_accumulation": 2,
+  "microbatch": 1,
+  "lora_rank": 16,
+  "quantization": "NF4 4-bit BF16 double quantization",
+  "model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "tokens_sha256": "5a47e17e093218d671d8c04d0141f55036be2df969b83e359c809d10064f407e",
+  "adapter_files_sha256": {
+    "adapter_model.safetensors": "065076f2847dcf1c6c5977b4cfa4d89e2e22f029252005ff250fcd5c4d14f3ce"
+  },
+  "adapter_hash": "431aba1acb9f9a45f1ff996db5b60175fdeefa2b82a2e0cd292016f61add8fc7",
+  "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-pilot-seed11",
+  "trainable_parameters": 33030144,
+  "losses": [
+    3.0772541761398315,
+    2.0001980662345886,
+    1.3609294891357422
+  ],
+  "wall_seconds": 29.12217821000013,
+  "tokens_seen": 4087,
+  "tokens_per_second": 154.37573823699424,
+  "peak_allocated_vram_bytes": 6632910848,
+  "peak_reserved_vram_bytes": 7310671872,
+  "nvidia_smi_after": "9649 MiB, 6 %, 79",
+  "preflight": {
+    "nvidia_smi": "NVIDIA GeForce RTX 4090 Laptop GPU, 16376 MiB, 13677 MiB, 616.92, 78",
+    "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "vram_bytes": 17170956288,
+    "bf16_supported": true,
+    "matmul_checksum": 9989.5390625
+  },
+  "torch_compile": false,
+  "dataset_role": "training"
+}

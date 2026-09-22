@@ -1,0 +1,20 @@
+{
+  "ended": "2026-09-20T22:52:40.613436+00:00",
+  "name": "ACT-pair unweighted DPO",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/e14_b7-act-pair-seed11-scripted_episodes.jsonl": "5f4eabf5b2ad1f97ad1dff0ebe231e6dbecd5e819bcb8d00320e86db96ef0828",
+    "artifacts/e14_b7-act-pair-seed11-scripted_rollout_manifest.json": "a17435915911aa98aa0b82d569bc8884d74836229dd4eda51df54dab197e44c8",
+    "artifacts/e14_b7-act-pair-seed11-scripted_traces.jsonl": "299dfd7a724a0b70a44708fcd61bc1ba84c7836f72a80a85766436a9e186c341",
+    "artifacts/e14_b7_seed11_scripted_summary.json": "9e29723aabdeafde4307214ff5449e2b514feedf0ae7f1a7f13c3742e845faa9",
+    "artifacts/e14_b7_vs_b3_seed11_paired_comparison.json": "7ddd3893a6d785c449fa82c611fef648cd9879a2f90ebf17b9b3fb0e985cde51",
+    "artifacts/e14_b7_vs_b4_seed11_paired_comparison.json": "52a27477404568b3dc4051043e70dfee40ea8ec2aef42de3f3ee88fbcfb8f584",
+    "artifacts/training/act_pair-seed11-steps3-pairs64-noise00.json": "828939c9ac2bbffc699fa9906d3c6f98bf1570dff262d25e2c74828108e04ec3",
+    "reports/model_cards/act_pair-seed11-steps3-pairs64-noise00.md": "40d3e95a75344caca2f8c95c33aa2a795f628827a49edc9ab41dd8158a5bd50f"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Unweighted ACT-pair CUDA control completed 5/24 paired development tasks with 0 critical flags; it used the same scripted pair IDs and DPO objective as B4 (also 5/24), so ACT pair construction is not isolated.",
+  "stage": "E14",
+  "started": "2026-09-20T22:52:40.613368+00:00",
+  "state": "REVIEW"
+}

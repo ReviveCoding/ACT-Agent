@@ -1,0 +1,18 @@
+{
+  "protocol": "act-v1-20260920",
+  "status": "development_candidate_unfrozen",
+  "model_manifest": "artifacts/model_source_manifest.json",
+  "quantization": "nf4_4bit",
+  "compute_dtype": "bfloat16",
+  "lora_rank_candidates": [16, 32],
+  "lora_alpha": 32,
+  "gradient_checkpointing": true,
+  "microbatch": 1,
+  "gradient_accumulation_candidates": [8, 16],
+  "sequence_length_candidates": [1536, 2048],
+  "torch_compile": false,
+  "reference_log_probs": "precompute_if_compatible",
+  "pilot_steps": 10,
+  "full_training_seeds": [11, 23, 37],
+  "notes": "Settings require CUDA memory and throughput qualification on development data before freeze."
+}

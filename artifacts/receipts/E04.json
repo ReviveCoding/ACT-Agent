@@ -1,0 +1,13 @@
+{
+  "ended": "2026-09-20T16:35:55.957355+00:00",
+  "name": "Standards mapping",
+  "next_action": "none",
+  "outputs": {
+    "studies/standards_mapping.md": "cd4f4df683bd12d6a78a53dd505ce309fe2c9a5ad68fd829b3ee9d889b3914b6"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Standards mapped to actual design scope with explicit nonconformance boundary",
+  "stage": "E04",
+  "started": "2026-09-20T16:35:55.957336+00:00",
+  "state": "PASS"
+}

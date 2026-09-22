@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-09-20T16:45:47.946603+00:00",
+  "protocol": "act-v1-20260920",
+  "split": "development",
+  "count": 1,
+  "models": [
+    "B0",
+    "B1",
+    "B2"
+  ],
+  "model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "preflight": {
+    "nvidia_smi": "NVIDIA GeForce RTX 4090 Laptop GPU, 16376 MiB, 6881 MiB, 616.92",
+    "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "vram_bytes": 17170956288,
+    "bf16": true,
+    "matmul_checksum": -2949.414794921875
+  },
+  "episodes_path": "/home/bjw-0/.cache/act-agent-v1/e09_baselines/episodes.jsonl",
+  "traces_path": "/home/bjw-0/.cache/act-agent-v1/e09_baselines/traces.jsonl",
+  "wall_seconds": 325.13574447099995,
+  "protected_outcome_access": 0
+}

@@ -1,0 +1,23 @@
+{
+  "raw_candidates": 24000,
+  "ties_or_drops": 3000,
+  "accepted_before_sampling": 21000,
+  "retained_pairs": 10000,
+  "label_dimensions": {
+    "token_tool_cost": 4000,
+    "critical_safety": 6000,
+    "process": 6000,
+    "redundant_actions": 3000,
+    "TIE": 3000,
+    "completion": 2000
+  },
+  "sha256": "7e09013e468fc33eacda12056275e482312a5cd6952ffa6eec6eb17cb3fdc618",
+  "path": "/home/bjw-0/.cache/act-agent-v1/data/scripted_preference_pairs.parquet",
+  "provenance": "scripted perturbations only",
+  "missing_sources": [
+    "ReAct",
+    "SFT rollout",
+    "on-policy rollout"
+  ],
+  "alternate_tape_stability_qualified": false
+}

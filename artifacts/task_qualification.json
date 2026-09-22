@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-09-20T17:29:59.289503+00:00",
+  "status": "REVIEW",
+  "checks": {
+    "all_families_present": true,
+    "all_levels_present": true,
+    "split_seed_separation": true,
+    "oracle_hidden_from_observation": true,
+    "user_scenarios_deterministic": true,
+    "user_scenarios_expected": true
+  },
+  "families": {
+    "READ": 34,
+    "DIAGNOSE": 34,
+    "REPAIR": 34,
+    "OPTIMIZE": 34,
+    "CREATE": 33,
+    "EXPAND": 33,
+    "PORTFOLIO": 33,
+    "AMBIGUOUS": 33,
+    "APPROVAL": 33,
+    "COMPOUND": 33,
+    "RECOVERY": 33,
+    "ADVERSARIAL": 33
+  },
+  "difficulty_labels": {
+    "0": 40,
+    "1": 40,
+    "2": 40,
+    "3": 40,
+    "4": 40,
+    "5": 40,
+    "6": 40,
+    "7": 40,
+    "8": 40,
+    "9": 40
+  },
+  "user_responses": {
+    "fully_specified": {
+      "first": "Proceed with the specified local task.",
+      "deterministic": true,
+      "expected": true
+    },
+    "underspecified": {
+      "first": "Please ask which campaign and objective I mean.",
+      "deterministic": true,
+      "expected": true
+    },
+    "contradictory": {
+      "first": "The two requested goals conflict; ask me which takes priority.",
+      "deterministic": true,
+      "expected": true
+    },
+    "goal_revision": {
+      "first": "Please pause the campaign instead.",
+      "deterministic": true,
+      "expected": true
+    },
+    "confirmation_required": {
+      "first": "I have not confirmed the proposed local change.",
+      "deterministic": true,
+      "expected": true
+    },
+    "refusal_required": {
+      "first": "I cannot authorize that action.",
+      "deterministic": true,
+      "expected": true
+    },
+    "clarification_response": {
+      "first": "Use the current campaign only.",
+      "expected": true
+    },
+    "confirmation_response": {
+      "first": "Yes, I confirm the proposed local change.",
+      "expected": true
+    }
+  },
+  "limitation": "Difficulty labels cycle independently of generated task mechanics; L3-L9 semantic coverage and independent completion oracle remain unqualified.",
+  "claim_effect": "Development evaluation only; no high-difficulty primary claim until repaired."
+}

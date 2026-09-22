@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-09-20T21:45:20.381063+00:00",
+  "protocol": "act-v1-20260920",
+  "status": "TRAINING_PILOTS_COMPLETE",
+  "pair_count": 64,
+  "seed": 11,
+  "steps": 3,
+  "shared_reference_sha256": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+  "methods": [
+    {
+      "mode": "dpo",
+      "receipt": "artifacts/training/dpo-seed11-steps3-pairs64-noise00.json",
+      "receipt_sha256": "509665b64682647ae06559fe283f56b1d1b17c9faf612f0eba88d7e7999c768d",
+      "adapter_sha256": "e54e9162b2012d8efed554b1e62211aa65ee98afb02ca9e5da6e52647b709aa6",
+      "reference_sha256": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+      "initial_loss": 0.6901502013206482,
+      "final_loss": 0.23218955099582672,
+      "peak_reserved_vram_bytes": 8757706752,
+      "train_seconds": 63.36907611699644,
+      "candidate_source": "scripted development pairs only"
+    },
+    {
+      "mode": "ipo",
+      "receipt": "artifacts/training/ipo-seed11-steps3-pairs64-noise00.json",
+      "receipt_sha256": "7f3506da569c21d2fe60e75dfce72f89576847460c8915f52284aee0c76f81db",
+      "adapter_sha256": "5cbc204097fd1962bbce22f8ed0f0511cea3a84538981221b76116150bcb3e6f",
+      "reference_sha256": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+      "initial_loss": 24.99495506286621,
+      "final_loss": 23.874366760253906,
+      "peak_reserved_vram_bytes": 8967421952,
+      "train_seconds": 41.56966155199916,
+      "candidate_source": "scripted development pairs only"
+    },
+    {
+      "mode": "robust_dpo",
+      "receipt": "artifacts/training/robust_dpo-seed11-steps3-pairs64-noise00.json",
+      "receipt_sha256": "1a19d2d4d29e61557a1b97c7b6ad524c05c46a721a99f25b153b19d91aea387e",
+      "adapter_sha256": "b8222908209718c8fd53178faad99282d59e66e91828377a76388f1bbd6bb413",
+      "reference_sha256": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+      "initial_loss": 0.6893998384475708,
+      "final_loss": 0.06293395161628723,
+      "peak_reserved_vram_bytes": 8967421952,
+      "train_seconds": 39.62999577700248,
+      "candidate_source": "scripted development pairs only"
+    },
+    {
+      "mode": "act_pair",
+      "receipt": "artifacts/training/act_pair-seed11-steps3-pairs64-noise00.json",
+      "receipt_sha256": "828939c9ac2bbffc699fa9906d3c6f98bf1570dff262d25e2c74828108e04ec3",
+      "adapter_sha256": "97dc203ace25e6dd72cca7437135f2dfb38f09bf5e6a8deee06d5268d638f099",
+      "reference_sha256": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+      "initial_loss": 0.6901502013206482,
+      "final_loss": 0.2374633103609085,
+      "peak_reserved_vram_bytes": 8967421952,
+      "train_seconds": 43.48768147500232,
+      "candidate_source": "scripted development pairs only"
+    },
+    {
+      "mode": "act_po",
+      "receipt": "artifacts/training/act_po-seed11-steps3-pairs64-noise00.json",
+      "receipt_sha256": "182ac8e65535a670426c7e64cc65df08fc9817265d783509cf2061c20b5fb172",
+      "adapter_sha256": "a1fc915a8c923f99c2f7a485aae59937da2a7abea6cae6d6e8726674565e35bd",
+      "reference_sha256": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+      "initial_loss": 0.5967485308647156,
+      "final_loss": 0.19521714746952057,
+      "peak_reserved_vram_bytes": 8967421952,
+      "train_seconds": 37.00736554099785,
+      "candidate_source": "scripted development pairs only"
+    }
+  ],
+  "interpretation": "CUDA scripted-pair training diagnostic; ACT-pair uses same pair selection as DPO, and ACT-PO lacks on-policy hard negatives; no protected effect estimate",
+  "protected_outcome_access": 0
+}

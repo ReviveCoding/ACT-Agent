@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-09-20T21:26:42.211636+00:00",
+  "status": "PASS",
+  "backend": "HF Transformers NF4 BF16",
+  "model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "benchmark_source_sha256": "3329d446fb69bdc1b15cba1b3e8d12487101347b645345603450998819cbcdc5",
+  "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed11",
+  "adapter_files_sha256": {
+    "adapter_model.safetensors": "8d8fb9d7b95d3b4281834f9f349d6e54c13bf773e4d10cc5841ce660261183c7"
+  },
+  "prompt_sha256": "0b27be3c921eefe321832f6a338a3d1c5f816fdce8bb75ac18a1300955e479de",
+  "prompt_tokens": 94,
+  "startup_seconds": 22.94947017999948,
+  "cold_first_token_seconds": 1.6958632559981197,
+  "steady_first_token_seconds": [
+    0.4639730390008481,
+    0.6066795400001865,
+    0.46939529099836363
+  ],
+  "steady_first_token_median_seconds": 0.46939529099836363,
+  "full_generation_seconds": [
+    5.425917372998811,
+    5.101068069998291,
+    4.6667529240003205
+  ],
+  "full_generation_tokens": [
+    16,
+    16,
+    16
+  ],
+  "full_generation_token_hashes": [
+    "c128542cd13d6002eef323db8b8ebf410d0585ef745a5db183b6976a7c1f7f07",
+    "c128542cd13d6002eef323db8b8ebf410d0585ef745a5db183b6976a7c1f7f07",
+    "c128542cd13d6002eef323db8b8ebf410d0585ef745a5db183b6976a7c1f7f07"
+  ],
+  "generated_tokens_per_second": 3.1591961662484342,
+  "single_prompt_tasks_per_second": 0.19744976039052714,
+  "peak_allocated_vram_bytes": 2864902656,
+  "peak_reserved_vram_bytes": 4351590400,
+  "nvidia_smi_active": "4444 MiB, 30 %, 79",
+  "shutdown_seconds": 0.5234143980014778,
+  "nvidia_smi_after_shutdown": "316 MiB, 1 %, 79",
+  "preflight": {
+    "nvidia_smi": "NVIDIA GeForce RTX 4090 Laptop GPU, 16376 MiB, 16048 MiB, 616.92, 81",
+    "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "vram_bytes": 17170956288,
+    "bf16_supported": true,
+    "matmul_checksum": 3730.80126953125
+  },
+  "torch_compile": false,
+  "protected_outcome_access": 0,
+  "scope": "single synthetic prompt, no concurrency or production serving claim"
+}

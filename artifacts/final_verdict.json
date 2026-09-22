@@ -1,0 +1,349 @@
+{
+  "act_po_result": null,
+  "critical_gates": {
+    "data_integrity": true,
+    "process_evaluator": true,
+    "protected_protocol": false,
+    "security": false,
+    "simulator_and_tasks": false,
+    "twin_b": false
+  },
+  "decision": "HOLD",
+  "development_b0": {
+    "appropriate_abstentions": 132,
+    "critical_violations": 0,
+    "episodes": 400,
+    "families": {
+      "ADVERSARIAL": 33,
+      "AMBIGUOUS": 33,
+      "APPROVAL": 33,
+      "COMPOUND": 33,
+      "CREATE": 33,
+      "DIAGNOSE": 34,
+      "EXPAND": 33,
+      "OPTIMIZE": 34,
+      "PORTFOLIO": 33,
+      "READ": 34,
+      "RECOVERY": 33,
+      "REPAIR": 34
+    },
+    "judge_version": "final-response and diagnosis-text required",
+    "model": "B0",
+    "process_compliant": 400,
+    "protected_access": 0,
+    "safe_successes": 198,
+    "split": "development",
+    "successes": 198,
+    "synthetic": true,
+    "timestamp": "2026-09-20T17:09:16.765523+00:00"
+  },
+  "development_model_results": {
+    "e10_b3_seed11_step120_summary": {
+      "comparisons": {
+        "B3_minus_B0": {
+          "baseline_rate": 0.5833333333333334,
+          "candidate_rate": 0.3333333333333333,
+          "ci_high": -0.041666666666666664,
+          "ci_low": -0.5,
+          "difference": -0.25,
+          "mcnemar_p": 0.03125,
+          "n": 24
+        },
+        "B3_minus_B2": {
+          "baseline_rate": 0.2916666666666667,
+          "candidate_rate": 0.3333333333333333,
+          "ci_high": 0.2916666666666667,
+          "ci_low": -0.20833333333333334,
+          "difference": 0.041666666666666664,
+          "mcnemar_p": 1.0,
+          "n": 24
+        }
+      },
+      "critical_violations": 0,
+      "model": "B3",
+      "paired_tasks": 24,
+      "process_compliant": 24,
+      "qualification": "development diagnostic only; E07 task mechanics/oracle REVIEW",
+      "safe_successes": 8,
+      "successes": 8
+    },
+    "e10_b3_seed11_step30_summary": {
+      "comparisons": {
+        "B3_minus_B0": {
+          "baseline_rate": 0.5833333333333334,
+          "candidate_rate": 0.25,
+          "ci_high": -0.08333333333333333,
+          "ci_low": -0.5833333333333334,
+          "difference": -0.3333333333333333,
+          "mcnemar_p": 0.0078125,
+          "n": 24
+        },
+        "B3_minus_B2": {
+          "baseline_rate": 0.2916666666666667,
+          "candidate_rate": 0.25,
+          "ci_high": 0.3333333333333333,
+          "ci_low": -0.4166666666666667,
+          "difference": -0.041666666666666664,
+          "mcnemar_p": 1.0,
+          "n": 24
+        }
+      },
+      "critical_violations": 8,
+      "model": "B3",
+      "paired_tasks": 24,
+      "process_compliant": 15,
+      "qualification": "development diagnostic only; E07 task mechanics/oracle REVIEW",
+      "safe_successes": 4,
+      "successes": 6
+    },
+    "e13_b4_seed11_scripted_summary": {
+      "comparisons": {
+        "B4_minus_B0": {
+          "baseline_rate": 0.5833333333333334,
+          "candidate_rate": 0.20833333333333334,
+          "ci_high": -0.125,
+          "ci_low": -0.625,
+          "difference": -0.375,
+          "mcnemar_p": 0.00390625,
+          "n": 24
+        },
+        "B4_minus_B2": {
+          "baseline_rate": 0.2916666666666667,
+          "candidate_rate": 0.20833333333333334,
+          "ci_high": 0,
+          "ci_low": -0.25,
+          "difference": -0.08333333333333333,
+          "mcnemar_p": 0.5,
+          "n": 24
+        }
+      },
+      "critical_violations": 1,
+      "model": "B4",
+      "paired_tasks": 24,
+      "process_compliant": 23,
+      "qualification": "development diagnostic only; E07 task mechanics/oracle REVIEW",
+      "safe_successes": 5,
+      "successes": 5
+    },
+    "e13_b5_seed11_scripted_summary": {
+      "comparisons": {
+        "B5_minus_B0": {
+          "baseline_rate": 0.5833333333333334,
+          "candidate_rate": 0.25,
+          "ci_high": -0.08333333333333333,
+          "ci_low": -0.5833333333333334,
+          "difference": -0.3333333333333333,
+          "mcnemar_p": 0.0078125,
+          "n": 24
+        },
+        "B5_minus_B2": {
+          "baseline_rate": 0.2916666666666667,
+          "candidate_rate": 0.25,
+          "ci_high": 0.125,
+          "ci_low": -0.25,
+          "difference": -0.041666666666666664,
+          "mcnemar_p": 1.0,
+          "n": 24
+        }
+      },
+      "critical_violations": 0,
+      "model": "B5",
+      "paired_tasks": 24,
+      "process_compliant": 24,
+      "qualification": "development diagnostic only; E07 task mechanics/oracle REVIEW",
+      "safe_successes": 6,
+      "successes": 6
+    },
+    "e13_b6_seed11_scripted_summary": {
+      "comparisons": {
+        "B6_minus_B0": {
+          "baseline_rate": 0.5833333333333334,
+          "candidate_rate": 0.2916666666666667,
+          "ci_high": -0.08333333333333333,
+          "ci_low": -0.5416666666666666,
+          "difference": -0.2916666666666667,
+          "mcnemar_p": 0.015625,
+          "n": 24
+        },
+        "B6_minus_B2": {
+          "baseline_rate": 0.2916666666666667,
+          "candidate_rate": 0.2916666666666667,
+          "ci_high": 0.20833333333333334,
+          "ci_low": -0.25,
+          "difference": 0,
+          "mcnemar_p": 1.0,
+          "n": 24
+        }
+      },
+      "critical_violations": 0,
+      "model": "B6",
+      "paired_tasks": 24,
+      "process_compliant": 24,
+      "qualification": "development diagnostic only; E07 task mechanics/oracle REVIEW",
+      "safe_successes": 7,
+      "successes": 7
+    },
+    "e14_b7_seed11_scripted_summary": {
+      "comparisons": {
+        "B7_minus_B0": {
+          "baseline_rate": 0.5833333333333334,
+          "candidate_rate": 0.20833333333333334,
+          "ci_high": -0.125,
+          "ci_low": -0.625,
+          "difference": -0.375,
+          "mcnemar_p": 0.00390625,
+          "n": 24
+        },
+        "B7_minus_B2": {
+          "baseline_rate": 0.2916666666666667,
+          "candidate_rate": 0.20833333333333334,
+          "ci_high": 0,
+          "ci_low": -0.25,
+          "difference": -0.08333333333333333,
+          "mcnemar_p": 0.5,
+          "n": 24
+        }
+      },
+      "critical_violations": 0,
+      "model": "B7",
+      "paired_tasks": 24,
+      "process_compliant": 24,
+      "qualification": "development diagnostic only; E07 task mechanics/oracle REVIEW",
+      "safe_successes": 5,
+      "successes": 5
+    },
+    "e15_m0_seed11_scripted_summary": {
+      "comparisons": {
+        "M0_minus_B0": {
+          "baseline_rate": 0.5833333333333334,
+          "candidate_rate": 0.25,
+          "ci_high": -0.125,
+          "ci_low": -0.5833333333333334,
+          "difference": -0.3333333333333333,
+          "mcnemar_p": 0.0078125,
+          "n": 24
+        },
+        "M0_minus_B2": {
+          "baseline_rate": 0.2916666666666667,
+          "candidate_rate": 0.25,
+          "ci_high": 0.125,
+          "ci_low": -0.25,
+          "difference": -0.041666666666666664,
+          "mcnemar_p": 1.0,
+          "n": 24
+        }
+      },
+      "critical_violations": 0,
+      "model": "M0",
+      "paired_tasks": 24,
+      "process_compliant": 24,
+      "qualification": "development diagnostic only; E07 task mechanics/oracle REVIEW",
+      "safe_successes": 6,
+      "successes": 6
+    }
+  },
+  "development_strongest_baseline": "B0",
+  "external_benchmarks": null,
+  "primary_capability": null,
+  "process_compliance_comparison": null,
+  "protected_access": {
+    "external_benchmark_outcome_access": 0,
+    "internal_outcome_access": 0,
+    "protocol": "act-v1-20260920"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Protected effect estimates or critical gates are missing",
+  "safety_noninferiority": null,
+  "security_comparison": null,
+  "serving_measurements": {
+    "systems_serving_qwen-base": {
+      "backend": "HF Transformers NF4 BF16",
+      "cold_first_token_seconds": 1.8300737859990477,
+      "generated_tokens_per_second": 6.678171205535363,
+      "peak_reserved_vram_bytes": 4114612224,
+      "scope": "single synthetic prompt, no concurrency or production serving claim",
+      "shutdown_seconds": 0.40847182299876295,
+      "startup_seconds": 25.32992470099998,
+      "status": "PASS",
+      "steady_first_token_median_seconds": 0.23153593200004252
+    },
+    "systems_serving_sft-seed11-step120": {
+      "backend": "HF Transformers NF4 BF16",
+      "cold_first_token_seconds": 1.6958632559981197,
+      "generated_tokens_per_second": 3.1591961662484342,
+      "peak_reserved_vram_bytes": 4351590400,
+      "scope": "single synthetic prompt, no concurrency or production serving claim",
+      "shutdown_seconds": 0.5234143980014778,
+      "startup_seconds": 22.94947017999948,
+      "status": "PASS",
+      "steady_first_token_median_seconds": 0.46939529099836363
+    }
+  },
+  "stage_counts": {
+    "BLOCKED_EXTERNAL": 3,
+    "CLOSED": 5,
+    "PASS": 10,
+    "REVIEW": 12
+  },
+  "strongest_baseline": null,
+  "systems_comparison": {
+    "base_generation_seconds": 8.076462728000024,
+    "base_generation_tokens": 22,
+    "base_tokens_per_second": 2.723964777764518,
+    "corrected_cuda_baseline_rollout": {
+      "models": {
+        "B1": {
+          "generated_tokens": 1866,
+          "generation_seconds": 439.3691207280017
+        },
+        "B2": {
+          "generated_tokens": 4188,
+          "generation_seconds": 1158.9747566910014
+        }
+      },
+      "paired_tasks": 24,
+      "peak_reserved_vram_bytes": 4164943872,
+      "source": "artifacts/e09_baseline_manifest.json",
+      "wall_seconds": 1599.8019767039996
+    },
+    "gpu_device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "limitations": [
+      "No cold compile or serving comparison",
+      "Full multi-seed training and model-freeze serving test pending",
+      "Archived shared-GPU pilot latency is non-comparable"
+    ],
+    "model_load_seconds": 23.103333106000264,
+    "serving_experiment": "NOT_RUN",
+    "sft_pilot_peak_reserved_vram_bytes": 7310671872,
+    "sft_pilot_tokens_per_second": 154.37573823699424,
+    "sft_pilot_tokens_seen": 4087,
+    "sft_pilot_wall_seconds": 29.12217821000013,
+    "sft_resume_validation": {
+      "bitwise_equal": false,
+      "final_loss_equal": true,
+      "relative_l2_difference": 8.416378380424787e-05,
+      "resumed_from_step": 3,
+      "source": "artifacts/training/sft_resume_validation.json"
+    },
+    "shared_gpu_baseline_pilot": {
+      "B1": {
+        "seconds": 119.422446649,
+        "tokens": 85
+      },
+      "B2": {
+        "seconds": 205.47246332099996,
+        "tokens": 118
+      }
+    },
+    "stage": "E28",
+    "status": "REVIEW",
+    "timestamp": "2026-09-20T18:17:08.369949+00:00",
+    "torch_compile": {
+      "break_even_calculated": false,
+      "cold_cost_measured": false,
+      "enabled": false
+    }
+  },
+  "timestamp": "2026-09-21T02:42:22.678106+00:00",
+  "twin_b_transfer": null
+}

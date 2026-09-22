@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-09-20T16:53:35.340605+00:00",
+  "status": "REVIEW",
+  "checks": {
+    "pair_ids_unique": true,
+    "materialized_subset": true,
+    "positive_assistant_targets": true,
+    "finite_bounded_weights": true,
+    "matched_tape_metadata": true
+  },
+  "source_pairs": 10000,
+  "materialized_pairs": 1805,
+  "source_sha256": "7e09013e468fc33eacda12056275e482312a5cd6952ffa6eec6eb17cb3fdc618",
+  "materialized_sha256": "9eda6b8f75c4db636c6d5d1fc349bcae9f1696574a3450a341a28c03b33b331e",
+  "duplicate_pair_id_count": 0,
+  "task_family_balance": {
+    "COMPOUND": 161,
+    "APPROVAL": 349,
+    "ADVERSARIAL": 118,
+    "OPTIMIZE": 178,
+    "DIAGNOSE": 115,
+    "REPAIR": 167,
+    "RECOVERY": 124,
+    "EXPAND": 115,
+    "PORTFOLIO": 121,
+    "CREATE": 123,
+    "READ": 112,
+    "AMBIGUOUS": 122
+  },
+  "negative_type_balance": {
+    "unsafe_success": 262,
+    "inefficient_success": 1178,
+    "missing_confirmation": 110,
+    "wrong_argument": 255
+  },
+  "market_balance": {
+    "M-2": 348,
+    "M-4": 355,
+    "M-0": 361,
+    "M-1": 383,
+    "M-3": 358
+  },
+  "policy_pack_balance": {
+    "research-v1": 10000
+  },
+  "decisive_dimension_balance": {
+    "critical_safety": 2882,
+    "token_tool_cost": 1874,
+    "completion": 972,
+    "process": 2850,
+    "redundant_actions": 1422
+  },
+  "mean_weight": 0.9141625898155121,
+  "median_weight": 0.8646647167633873,
+  "mean_chosen_assistant_tokens": 113.00664819944598,
+  "mean_rejected_assistant_tokens": 132.3584487534626,
+  "alternate_exogenous_tape_replay": "NOT_RUN",
+  "model_rollout_sources": "NOT_PRESENT",
+  "conclusion": "Scripted development pairs may be used for bounded method pilots; they do not qualify full ACT-PO hard-negative claims."
+}

@@ -1,0 +1,18 @@
+{
+  "adapter_files_sha256": {
+    "adapter_config.json": "b2df95ec209a76448d717f4f1b915fa1f4b80bd90d8ee055ef77651ea587c961",
+    "adapter_model.safetensors": "58282f58f17c3b59b88fd2ed7e83744bef92e3f549d40d11eebaa7921ca95812"
+  },
+  "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed11-step30",
+  "gradient_accumulation": 8,
+  "lora_rank": 16,
+  "model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "protected_outcome_access": 0,
+  "role": "matched-budget development replication candidate; 120-step seed11 run continues",
+  "seed": 11,
+  "sft_tokens_sha256": "5a47e17e093218d671d8c04d0141f55036be2df969b83e359c809d10064f407e",
+  "source_checkpoint_complete_sha256": "91ab7186cd018f61c6a3a29d9df4fd233e6b4383ffc13b8450d7984ef58d41f4",
+  "status": "QUALIFIED_INTERMEDIATE_SNAPSHOT",
+  "step": 30,
+  "timestamp": "2026-09-20T18:33:38.567245+00:00"
+}

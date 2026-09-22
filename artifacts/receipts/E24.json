@@ -1,0 +1,15 @@
+{
+  "ended": "2026-09-20T22:58:25.885277+00:00",
+  "name": "Ablations",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/ablation_plan.json": "71efef0685d5b102c05a70270c92c4b4293397f147efbafb60dba5bf910ef1ea",
+    "artifacts/e24_ablation_diagnostics.json": "bc15c83aee7bcd58dfd2d73e1d250d97e1c20d155df4ebfe4b29426db5c76129",
+    "reports/ablation_report.md": "28d2a04cb210e81e1b4858c45fd96d5ba2805e748fd9ab61525c955ea4ec0e39"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "A7 weighting and A8 objective diagnostics executed on 24 synthetic development tasks; primary A3/A5 and other mechanism ablations unrun because ACT pairs/on-policy sources and task oracle are unqualified.",
+  "stage": "E24",
+  "started": "2026-09-20T22:58:25.885112+00:00",
+  "state": "REVIEW"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "INVALIDATED_DEVELOPMENT_PILOT",
+  "reason": "B1 read-only campaign summary hit the 96-token cap without an end-of-turn marker; the run was stopped before a paired comparison was complete.",
+  "protected_outcome_access": 0,
+  "correction": "Raised generation cap to 192 and requested concise final answers before protected access.",
+  "accepted_as_e09_comparison": false
+}

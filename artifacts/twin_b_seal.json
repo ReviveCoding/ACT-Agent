@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-20T16:34:14.674501+00:00",
+  "protocol": "act-v1-20260920",
+  "source_sha256": "386229c993af951cc21bccec8dd826148d8bc8fabf21723a2e755120c881442f",
+  "calibration_sha256": "a1ecc891c3f5e1f2ba7b91211ecaf41b6019719c61baf30b320e444cfdda3726",
+  "parameter_sha256": "25b31fd6688e2692f8f7cc1fbae7090b396c84ef22ed2149203793ce82e94a90",
+  "seed_namespace": "B",
+  "access_count": 0,
+  "status": "SEALED_PRE_PROTECTED",
+  "boundary": "No Twin-B model selection or protected transfer outcomes accessed."
+}

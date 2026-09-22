@@ -1,0 +1,16 @@
+{
+  "ended": "2026-09-20T22:55:55.220360+00:00",
+  "name": "Power and protected freeze",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/e17_power_exploratory.json": "0843e533e1a08c22300efd7f8ca719e42a14a36f7c874f8c668287df9b7c03c2",
+    "artifacts/freeze_readiness.json": "ef4754017d10f3d2c3927ec986662f614f24807162abe70deb73da569576d030",
+    "artifacts/protected_freeze_decision.json": "c845b0c7e8aab33610e7d4f1090e0af9b2991b24e0d752cb67f05bd18f74f69d",
+    "reports/power_readiness.md": "6517f4a9df373c09aaa2cabf80c272760f9fe545bd50bbefdc7b1cc228c6447a"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Power analysis exploratory; final freeze withheld because task oracle, preference sources, and finalists are unqualified; protected outcome access remains zero.",
+  "stage": "E17",
+  "started": "2026-09-20T22:55:55.219984+00:00",
+  "state": "REVIEW"
+}

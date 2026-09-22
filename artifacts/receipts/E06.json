@@ -1,0 +1,14 @@
+{
+  "ended": "2026-09-20T16:35:56.107466+00:00",
+  "name": "Twin-B seal",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/twin_b_seal.json": "f03cdbd04f95e5800db2a681768870db634d64e6f5885a0d06e43efc2803d63a",
+    "reports/twin_b_card.md": "5a058f49b1b517a7bcbc0fa257ae89adc12f3aeedc57bea21327ce5cf8dc55f4"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Twin-B source, calibration, parameters, and seed namespace resealed before protected access; no transfer outcomes accessed",
+  "stage": "E06",
+  "started": "2026-09-20T16:35:56.107451+00:00",
+  "state": "PASS"
+}

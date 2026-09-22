@@ -1,0 +1,14 @@
+{
+  "ended": "2026-09-20T16:35:56.299490+00:00",
+  "name": "Process contracts",
+  "next_action": "none",
+  "outputs": {
+    "src/act_agent/contracts/core.py": "e42c25661d80985d3df910f766ce819a77be19ed3a7cbdb699b283e14adcaad9",
+    "tests/test_contract_matrix.py": "1a63676ba4a29d4612ede9c4b68663d1fc0890d5b1a1a20a08e0ec5ea05d2b5d"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Known-answer contract matrix covers prewrite evidence, confirmation, permissions, scope, forbidden actions, mutation cap, and rollback",
+  "stage": "E08",
+  "started": "2026-09-20T16:35:56.299475+00:00",
+  "state": "PASS"
+}

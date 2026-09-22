@@ -1,0 +1,14 @@
+{
+  "ended": "2026-09-20T16:35:56.046709+00:00",
+  "name": "Twin-A qualification",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/twin_a_qualification.json": "be30366deaf352f777f949788abb1695496423a936592a534e841f123b1bcf1d",
+    "reports/twin_a_card.md": "40ba8fe64ba7b1346e9a0bcd92f5fda0185066aae2a6fa109be0ac223e469d6f"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Twin-A passed 11 pre-protected distribution, temporal, heterogeneity, fault, intervention, transaction, and determinism checks",
+  "stage": "E05",
+  "started": "2026-09-20T16:35:56.046693+00:00",
+  "state": "PASS"
+}

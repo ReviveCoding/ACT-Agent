@@ -1,0 +1,13 @@
+{
+  "ended": "2026-09-20T16:59:41.025283+00:00",
+  "name": "tau3",
+  "next_action": "resume after prerequisite repair",
+  "outputs": {
+    "artifacts/external_source_access.json": "a5081dc6ab93518a5e069e611aa74e676b75cbc64699e37d03b34337a65656dd"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "tau3 upstream acquisition blocked by workspace-write DNS/network restriction; no benchmark examples or outcomes accessed",
+  "stage": "E26",
+  "started": "2026-09-20T16:59:41.025238+00:00",
+  "state": "BLOCKED_EXTERNAL"
+}

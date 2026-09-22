@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-20T06:31:56.351378+00:00",
+  "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "nvidia_smi": "NVIDIA GeForce RTX 4090 Laptop GPU, 16376 MiB, 16048 MiB, 616.92, 71, 0 %",
+  "torch_version": "2.14.0+cu130",
+  "cuda_version": "13.0",
+  "cuda_available": true,
+  "bf16_supported": true,
+  "vram_bytes": 17170956288,
+  "matmul_checksum": 22221.91796875,
+  "compute_dtype": "float32"
+}

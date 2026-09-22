@@ -1,0 +1,16 @@
+{
+  "ended": "2026-09-20T16:55:31.207380+00:00",
+  "name": "Trajectory and preference generation",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/preference_token_manifest.json": "dfa6319e8d505f2cfa1be1dd36959bd9951446892a5f47cdb7a51521c59b4400",
+    "artifacts/scripted_preference_manifest.json": "5a60267001919874f250c8ff34a54fdeb04097c331bfd79ff5630bc714148a51",
+    "artifacts/sft_data_manifest.json": "82059c4c684ad6db693a4e83bf6258bc9fb3a93e66c945f48d70753373868e5a",
+    "artifacts/sft_token_manifest.json": "9517c3e724a6ade9aa8de9a89ec7f39f6657200daa8d5941c64bc18e10c5cf87"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "6,000 split-safe SFT traces and 10,000 scripted labels exist; 1,805 consistency-filtered trainable pairs, but ReAct/SFT/on-policy sources absent",
+  "stage": "E11",
+  "started": "2026-09-20T16:55:31.207160+00:00",
+  "state": "REVIEW"
+}

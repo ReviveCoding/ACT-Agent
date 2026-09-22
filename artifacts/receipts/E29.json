@@ -1,0 +1,20 @@
+{
+  "ended": "2026-09-21T02:43:37.620452+00:00",
+  "name": "Evidence and claim audit",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/claim_ledger.json": "445c86cb2c4978f34203ee17a783a01ba3d30d3a8118bf01a2b9b1b0784075de",
+    "artifacts/final_verdict.json": "15552d4e261600121d8d6bad4c809a92ef310ee951450c95b2bc935e8123b88c",
+    "reports/claim_ledger.md": "1193b0a2c50f3b728f88f4a8f7e0793cc4294c39d3021dc3443872b9cf3ea692",
+    "reports/executive_summary.md": "112cbe094a442b0ce143bf68b40033477d8dc1465784ff5b5272de80e1ebccdd",
+    "reports/external_validation.md": "d7f62b999dbad209dc415e75d9956633af37d611da52c8ff36991de4dcc6f338",
+    "reports/final_technical_report.md": "8c72fba1eef23ffffd69dd3c03654809d5e2be85d070f44cfb1b8b9b56a687cf",
+    "reports/main_experiment.md": "1c425f5e9bd77c8c79d2278e9c7ee50062ab859427749bc4843a4264f01601f5",
+    "reports/resume_bullets.md": "d377a752086c6e005dd4e57d92c513cd503632725898d989efa417dc1a0a125d"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Final audited release and claim verification passed",
+  "stage": "E29",
+  "started": "2026-09-21T02:43:37.620415+00:00",
+  "state": "PASS"
+}

@@ -1,0 +1,93 @@
+{
+  "access_timestamp": "2026-09-20T05:57:41.822631+00:00",
+  "sources": {
+    "aamp": {
+      "access_timestamp": "2026-09-20T05:57:41.822661+00:00",
+      "head_commit": "3b20e67b568235d86c4025bec7c1301edd7466a0",
+      "url": "https://github.com/IABTechLab/AAMP"
+    },
+    "adcom": {
+      "access_timestamp": "2026-09-20T05:57:42.696382+00:00",
+      "head_commit": "26c59ba1b235cd8d938c9877409e506f1b8d3f0c",
+      "url": "https://github.com/InteractiveAdvertisingBureau/AdCOM"
+    },
+    "agentdojo": {
+      "access_timestamp": "2026-09-20T05:57:43.891283+00:00",
+      "head_commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+      "url": "https://github.com/ethz-spylab/agentdojo"
+    },
+    "bfcl_v4": {
+      "access_timestamp": "2026-09-20T05:57:43.187273+00:00",
+      "head_commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "url": "https://github.com/ShishirPatil/gorilla"
+    },
+    "bitsandbytes": {
+      "access_timestamp": "2026-09-20T05:57:45.311063+00:00",
+      "head_commit": "833649043474794b8fe7a4136e0c40faf077b2e0",
+      "url": "https://github.com/bitsandbytes-foundation/bitsandbytes"
+    },
+    "criteo_attribution": {
+      "access_timestamp": "2026-09-20T05:57:41.822653+00:00",
+      "license": "CC BY-NC-SA 4.0",
+      "revision": "607b465",
+      "role": "observed distribution calibration",
+      "sha256": "94ac7a465564349bc7ba008602211d5990a3c53cc133abc0aadef61ea2391a98",
+      "url": "https://huggingface.co/datasets/criteo/criteo-attribution-dataset"
+    },
+    "criteo_uplift": {
+      "access_timestamp": "2026-09-20T05:57:41.822657+00:00",
+      "file_bytes": 311422618,
+      "license": "CC BY-NC-SA 4.0",
+      "revision": "2424920019e49d52d72c13ac1143ec5d53af276b",
+      "role": "public observed randomized-treatment labels; not mutable action effects",
+      "rows": 13979592,
+      "sha256": "2716e1bf0fd157a93b5bf86924d9088419dfbac2022c6cd90030220634f616dc",
+      "url": "https://huggingface.co/datasets/criteo/criteo-uplift"
+    },
+    "mcp": {
+      "access_timestamp": "2026-09-20T05:57:43.187243+00:00",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28"
+    },
+    "openrtb": {
+      "access_timestamp": "2026-09-20T05:57:42.329070+00:00",
+      "head_commit": "1debba8001f40eb14597102dec3205afddf811d4",
+      "url": "https://github.com/InteractiveAdvertisingBureau/openrtb2.x"
+    },
+    "peft": {
+      "access_timestamp": "2026-09-20T05:57:44.536306+00:00",
+      "head_commit": "50a277e7c87db460ef7444055788f9da29f2da71",
+      "url": "https://github.com/huggingface/peft"
+    },
+    "pytorch": {
+      "access_timestamp": "2026-09-20T05:57:44.224433+00:00",
+      "url": "https://pytorch.org/get-started/locally/"
+    },
+    "qwen3_4b": {
+      "access_timestamp": "2026-09-20T05:57:43.187269+00:00",
+      "license": "Apache-2.0",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B"
+    },
+    "qwen3_4b_instruct_2507": {
+      "license": "Apache-2.0",
+      "model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "role": "frozen local model base; pre-protected selection",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+    },
+    "tau3": {
+      "access_timestamp": "2026-09-20T05:57:43.485573+00:00",
+      "head_commit": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+      "url": "https://github.com/sierra-research/tau2-bench"
+    },
+    "transformers": {
+      "access_timestamp": "2026-09-20T05:57:44.224457+00:00",
+      "head_commit": "c587bc884db2c2e31fc2b8102314656b17aa07b1",
+      "url": "https://github.com/huggingface/transformers"
+    },
+    "trl": {
+      "access_timestamp": "2026-09-20T05:57:44.844730+00:00",
+      "head_commit": "a98fa6a4428f9aae58dfb26d729d7437f662f27a",
+      "url": "https://github.com/huggingface/trl"
+    }
+  }
+}

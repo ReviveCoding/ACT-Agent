@@ -1,0 +1,32 @@
+{
+  "a7_design": {
+    "methods": [
+      "act_pair",
+      "act_po"
+    ],
+    "same_beta": 0.1,
+    "same_optimizer_steps": 3,
+    "same_pair_limit": 64,
+    "same_sft_seed": 11
+  },
+  "blocked_mechanism_tests": {
+    "A1_state_matching": "no independently generated mismatched rollout candidates",
+    "A2_common_randomness": "no alternate exogenous tape replay",
+    "A3_scalar_reward": "no complete calibrated trajectory utility and safety tradeoff data",
+    "A5_on_policy_hard_negatives": "on-policy candidate source absent"
+  },
+  "claim_rule": "training loss alone is not task-capability evidence; no primary mechanism claim without paired evaluation",
+  "feasible_with_current_scripted_pairs": [
+    "A7_pair_weighting",
+    "A8_DPO_IPO_RobustDPO"
+  ],
+  "primary": [
+    "A3_scalar_reward",
+    "A5_on_policy_hard_negatives",
+    "A7_pair_weighting"
+  ],
+  "protected_outcome_access": 0,
+  "protocol": "act-v1-20260920",
+  "status": "PREDECLARED_DEVELOPMENT_DIAGNOSTICS",
+  "timestamp": "2026-09-20T18:50:35.409245+00:00"
+}

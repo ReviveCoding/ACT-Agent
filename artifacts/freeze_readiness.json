@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "data_integrity": true,
+    "multi_seed_finalists_ready": false,
+    "no_protected_outcome_access": true,
+    "paired_baselines_qualified": false,
+    "preference_audit_qualified": false,
+    "preference_candidates_qualified": false,
+    "process_contract_qualified": true,
+    "sft_finalists_ready": false,
+    "task_and_oracle_qualified": false,
+    "twin_a_valid": true,
+    "twin_b_sealed": true
+  },
+  "decision_rule": "No protected internal outcome access until task oracle, finalists, pilot power, and all frozen identities qualify",
+  "development_ladder_complete": true,
+  "freeze_manifest_created": false,
+  "protected_access": {
+    "external_benchmark_outcome_access": 0,
+    "internal_outcome_access": 0,
+    "protocol": "act-v1-20260920"
+  },
+  "protocol": "act-v1-20260920",
+  "sft_training_seeds_30step_complete": true,
+  "status": "NOT_READY",
+  "timestamp": "2026-09-20T22:55:55.127520+00:00",
+  "unmet": [
+    "task_and_oracle_qualified",
+    "paired_baselines_qualified",
+    "sft_finalists_ready",
+    "preference_candidates_qualified",
+    "preference_audit_qualified",
+    "multi_seed_finalists_ready"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-09-20T23:36:11.845392+00:00",
+  "status": "PASS",
+  "protocol": "act-v1-20260920",
+  "mode": "ipo",
+  "seed": 11,
+  "steps": 3,
+  "accumulation": 1,
+  "pair_limit": 64,
+  "beta": 0.1,
+  "noise_rate": 0.05,
+  "flipped_pair_ids": [
+    "train-000610-inefficient_success",
+    "train-001542-inefficient_success",
+    "train-001889-inefficient_success"
+  ],
+  "base_model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "sft_adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed11",
+  "sft_adapter_sha256": {
+    "adapter_model.safetensors": "8d8fb9d7b95d3b4281834f9f349d6e54c13bf773e4d10cc5841ce660261183c7"
+  },
+  "preference_tokens_sha256": "9eda6b8f75c4db636c6d5d1fc349bcae9f1696574a3450a341a28c03b33b331e",
+  "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/ipo-seed11-steps3-pairs64-noise05",
+  "adapter_files_sha256": {
+    "adapter_model.safetensors": "a22efe9cc574c0d43a32749af5db463934cb124e4c9a0319b9b225f717baa9b4"
+  },
+  "adapter_config_sha256": "5ed31c23f6f931138a8b5cefedd34a2436fa5679dd8bfd3eb1a93647516a236a",
+  "trainable_parameters": 33030144,
+  "reference_precomputed": true,
+  "reference_sha256": "8152661bcba7f520ef65d0e4dc1273006bd77145d3f2c11d85513f397f1d55e6",
+  "reference_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/reference_cache/81d2d48a45bfcb3dc55e942eeca6aac422cbb4d6ebc2237ffb1848aa0c90bd27/reference_logprobs.jsonl",
+  "reference_cache_key": "81d2d48a45bfcb3dc55e942eeca6aac422cbb4d6ebc2237ffb1848aa0c90bd27",
+  "reference_seconds": 0.16459858400048688,
+  "train_seconds": 23.049863751002704,
+  "peak_allocated_vram_bytes": 8212158976,
+  "peak_reserved_vram_bytes": 8967421952,
+  "losses": [
+    24.99495506286621,
+    24.65364646911621,
+    23.898637771606445
+  ],
+  "preflight": {
+    "nvidia_smi": "NVIDIA GeForce RTX 4090 Laptop GPU, 16376 MiB, 16048 MiB, 616.92, 80",
+    "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "vram_bytes": 17170956288,
+    "bf16_supported": true,
+    "matmul_checksum": 325.34130859375
+  },
+  "candidate_source": "scripted development pairs only",
+  "method_mapping": "DPO/IPO/robust formulas aligned to installed TRL DPOTrainer; IPO uses assistant-token average log probabilities; robust epsilon=0.1",
+  "protected_outcome_access": 0
+}

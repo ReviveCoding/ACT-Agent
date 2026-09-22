@@ -1,0 +1,58 @@
+{
+  "base_generation_seconds": 8.076462728000024,
+  "base_generation_tokens": 22,
+  "base_tokens_per_second": 2.723964777764518,
+  "corrected_cuda_baseline_rollout": {
+    "models": {
+      "B1": {
+        "generated_tokens": 1866,
+        "generation_seconds": 439.3691207280017
+      },
+      "B2": {
+        "generated_tokens": 4188,
+        "generation_seconds": 1158.9747566910014
+      }
+    },
+    "paired_tasks": 24,
+    "peak_reserved_vram_bytes": 4164943872,
+    "source": "artifacts/e09_baseline_manifest.json",
+    "wall_seconds": 1599.8019767039996
+  },
+  "gpu_device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "limitations": [
+    "No cold compile or serving comparison",
+    "Full multi-seed training and model-freeze serving test pending",
+    "Archived shared-GPU pilot latency is non-comparable"
+  ],
+  "model_load_seconds": 23.103333106000264,
+  "serving_experiment": "NOT_RUN",
+  "sft_pilot_peak_reserved_vram_bytes": 7310671872,
+  "sft_pilot_tokens_per_second": 154.37573823699424,
+  "sft_pilot_tokens_seen": 4087,
+  "sft_pilot_wall_seconds": 29.12217821000013,
+  "sft_resume_validation": {
+    "bitwise_equal": false,
+    "final_loss_equal": true,
+    "relative_l2_difference": 8.416378380424787e-05,
+    "resumed_from_step": 3,
+    "source": "artifacts/training/sft_resume_validation.json"
+  },
+  "shared_gpu_baseline_pilot": {
+    "B1": {
+      "seconds": 119.422446649,
+      "tokens": 85
+    },
+    "B2": {
+      "seconds": 205.47246332099996,
+      "tokens": 118
+    }
+  },
+  "stage": "E28",
+  "status": "REVIEW",
+  "timestamp": "2026-09-20T18:17:08.369949+00:00",
+  "torch_compile": {
+    "break_even_calculated": false,
+    "cold_cost_measured": false,
+    "enabled": false
+  }
+}

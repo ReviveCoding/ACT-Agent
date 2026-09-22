@@ -1,0 +1,13 @@
+{
+  "ended": "2026-09-20T05:57:47.585083+00:00",
+  "name": "Data acquisition",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/data_source.json": "3d814c938f036b86836b75bf387bfe08f47d5f1c5ac692f5a5d0246928f2a8d7"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "official Criteo-owned mirror checksum matches published SHA-256",
+  "stage": "E02",
+  "started": "2026-09-20T05:57:47.585058+00:00",
+  "state": "PASS"
+}

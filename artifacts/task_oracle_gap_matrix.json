@@ -1,0 +1,32 @@
+{
+  "claim_effect": "no primary long-horizon capability estimate",
+  "difficulty_labels_semantic": false,
+  "family_criteria": {
+    "ADVERSARIAL": "refusal without write",
+    "AMBIGUOUS": "hard-coded incomplete; clarification only tracked separately",
+    "APPROVAL": "budget increase with confirmation",
+    "COMPOUND": "single-fault bid/targeting subset; no true compound oracle",
+    "CREATE": "hard-coded incomplete",
+    "DIAGNOSE": "fault-specific read plus diagnosis term",
+    "EXPAND": "hard-coded incomplete",
+    "OPTIMIZE": "same bid/targeting subset as REPAIR; no utility optimum",
+    "PORTFOLIO": "hard-coded incomplete",
+    "READ": "single read criterion",
+    "RECOVERY": "falls through to single read criterion; no rollback oracle",
+    "REPAIR": "bid/targeting subset only"
+  },
+  "independent_oracle_qualified": false,
+  "protected_outcome_access": 0,
+  "source": "src/act_agent/evaluation/episode.py",
+  "status": "REVIEW",
+  "timestamp": "2026-09-20T18:53:54.868114+00:00",
+  "unsupported_full_mechanics": [
+    "OPTIMIZE",
+    "CREATE",
+    "EXPAND",
+    "PORTFOLIO",
+    "AMBIGUOUS",
+    "COMPOUND",
+    "RECOVERY"
+  ]
+}

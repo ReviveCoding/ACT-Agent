@@ -1,0 +1,348 @@
+{
+  "created": "2026-09-20T05:57:41.715341+00:00",
+  "protocol": "act-v1-20260920",
+  "stages": {
+    "E00": {
+      "ended": "2026-09-20T05:57:41.785948+00:00",
+      "name": "Environment qualification",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {
+        "artifacts/e00_environment/qualification.json": "5086362397135976f412f08fcbfb1d9c88f83c51616fdebc672ea77f3702c9d1"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "WSL GPU device /dev/dxg unavailable; nvidia-smi OS-blocked",
+      "stage": "E00",
+      "started": "2026-09-20T05:57:41.785931+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E01": {
+      "ended": "2026-09-20T05:57:45.673730+00:00",
+      "name": "Desktop study and source verification",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/source_registry.json": "a507421ef2bfbd1fcdbde43cfef09c9a1054f5619a1204a38db951ea94f547dc"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "authoritative sources recorded; exact licenses/versions require source-by-source audit",
+      "stage": "E01",
+      "started": "2026-09-20T05:57:45.673709+00:00",
+      "state": "REVIEW"
+    },
+    "E02": {
+      "ended": "2026-09-20T05:57:47.585083+00:00",
+      "name": "Data acquisition",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/data_source.json": "3d814c938f036b86836b75bf387bfe08f47d5f1c5ac692f5a5d0246928f2a8d7"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "official Criteo-owned mirror checksum matches published SHA-256",
+      "stage": "E02",
+      "started": "2026-09-20T05:57:47.585058+00:00",
+      "state": "PASS"
+    },
+    "E03": {
+      "ended": "2026-09-20T05:57:47.636090+00:00",
+      "name": "Public data EDA",
+      "next_action": "none",
+      "outputs": {
+        "data/processed/profile.json": "0abfd67e82780c50459a03a30e11e40530dc47fffe6390e21d792eb2822ccdb6"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "aggregate marts produced; deeper quality and leakage EDA incomplete",
+      "stage": "E03",
+      "started": "2026-09-20T05:57:47.636071+00:00",
+      "state": "REVIEW"
+    },
+    "E04": {
+      "ended": "2026-09-20T05:57:47.674747+00:00",
+      "name": "Standards mapping",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "source mapping documented; formal standards conformance untested",
+      "stage": "E04",
+      "started": "2026-09-20T05:57:47.674721+00:00",
+      "state": "REVIEW"
+    },
+    "E05": {
+      "ended": "2026-09-20T05:57:47.704580+00:00",
+      "name": "Twin-A qualification",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "state invariant and deterministic tests pass; full distribution and fault qualification incomplete",
+      "stage": "E05",
+      "started": "2026-09-20T05:57:47.704543+00:00",
+      "state": "REVIEW"
+    },
+    "E06": {
+      "ended": "2026-09-20T05:57:47.745613+00:00",
+      "name": "Twin-B seal",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/twin_b_seal.json": "542f3f483fd51c51dc32149860d9486944c3a3c43c06c22a8302e8daa7a7f003"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "alternate response family source sealed; hidden parameter isolation incomplete",
+      "stage": "E06",
+      "started": "2026-09-20T05:57:47.745591+00:00",
+      "state": "REVIEW"
+    },
+    "E07": {
+      "ended": "2026-09-20T05:57:47.782717+00:00",
+      "name": "Task and user simulator",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "deterministic user responses exist; L3-L9 task coverage incomplete",
+      "stage": "E07",
+      "started": "2026-09-20T05:57:47.782692+00:00",
+      "state": "REVIEW"
+    },
+    "E08": {
+      "ended": "2026-09-20T05:57:47.816813+00:00",
+      "name": "Process contracts",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "known-answer tests cover core process rules, not full DSL matrix",
+      "stage": "E08",
+      "started": "2026-09-20T05:57:47.816787+00:00",
+      "state": "REVIEW"
+    },
+    "E09": {
+      "ended": "2026-09-20T05:57:47.916675+00:00",
+      "name": "B0-B2 baselines",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {
+        "artifacts/warehouse/episodes.parquet": "7fd4115a738b000fe2c82e5abda144cb1b2a4c8a4b323d6826937627bd9b43aa"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "B0 development executed; B1-B2 require unavailable CUDA",
+      "stage": "E09",
+      "started": "2026-09-20T05:57:47.916651+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E10": {
+      "ended": "2026-09-20T05:57:47.951926+00:00",
+      "name": "SFT development",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E10",
+      "started": "2026-09-20T05:57:47.951904+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E11": {
+      "ended": "2026-09-20T05:57:47.975881+00:00",
+      "name": "Trajectory and preference generation",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E11",
+      "started": "2026-09-20T05:57:47.975856+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E12": {
+      "ended": "2026-09-20T05:57:48.000342+00:00",
+      "name": "Preference audit",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E12",
+      "started": "2026-09-20T05:57:48.000318+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E13": {
+      "ended": "2026-09-20T05:57:48.026487+00:00",
+      "name": "DPO/IPO/Robust-DPO",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E13",
+      "started": "2026-09-20T05:57:48.026461+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E14": {
+      "ended": "2026-09-20T05:57:48.052471+00:00",
+      "name": "ACT-pair unweighted DPO",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E14",
+      "started": "2026-09-20T05:57:48.052448+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E15": {
+      "ended": "2026-09-20T05:57:48.076229+00:00",
+      "name": "ACT-PO development",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E15",
+      "started": "2026-09-20T05:57:48.076205+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E16": {
+      "ended": "2026-09-20T05:57:48.101511+00:00",
+      "name": "Multi-seed replication",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E16",
+      "started": "2026-09-20T05:57:48.101485+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E17": {
+      "ended": "2026-09-20T05:57:48.125428+00:00",
+      "name": "Power and protected freeze",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "protected evaluation unopened because no qualified frozen model",
+      "stage": "E17",
+      "started": "2026-09-20T05:57:48.125404+00:00",
+      "state": "CLOSED"
+    },
+    "E18": {
+      "ended": "2026-09-20T05:57:48.148873+00:00",
+      "name": "Protected internal ID",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "protected evaluation unopened because no qualified frozen model",
+      "stage": "E18",
+      "started": "2026-09-20T05:57:48.148849+00:00",
+      "state": "CLOSED"
+    },
+    "E19": {
+      "ended": "2026-09-20T05:57:48.173808+00:00",
+      "name": "Protected OOD",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "protected evaluation unopened because no qualified frozen model",
+      "stage": "E19",
+      "started": "2026-09-20T05:57:48.173781+00:00",
+      "state": "CLOSED"
+    },
+    "E20": {
+      "ended": "2026-09-20T05:57:48.197507+00:00",
+      "name": "Protected Twin-B",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "protected evaluation unopened because no qualified frozen model",
+      "stage": "E20",
+      "started": "2026-09-20T05:57:48.197485+00:00",
+      "state": "CLOSED"
+    },
+    "E21": {
+      "ended": "2026-09-20T05:57:48.221290+00:00",
+      "name": "R-TRACE factorial",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E21",
+      "started": "2026-09-20T05:57:48.221267+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E22": {
+      "ended": "2026-09-20T05:57:48.246385+00:00",
+      "name": "Internal security",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E22",
+      "started": "2026-09-20T05:57:48.246346+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E23": {
+      "ended": "2026-09-20T05:57:48.270824+00:00",
+      "name": "Preference noise",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E23",
+      "started": "2026-09-20T05:57:48.270798+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E24": {
+      "ended": "2026-09-20T05:57:48.295554+00:00",
+      "name": "Ablations",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E24",
+      "started": "2026-09-20T05:57:48.295530+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E25": {
+      "ended": "2026-09-20T05:57:48.325301+00:00",
+      "name": "BFCL V4",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "protected evaluation unopened because no qualified frozen model",
+      "stage": "E25",
+      "started": "2026-09-20T05:57:48.325278+00:00",
+      "state": "CLOSED"
+    },
+    "E26": {
+      "ended": "2026-09-20T05:57:48.351129+00:00",
+      "name": "tau3",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "protected evaluation unopened because no qualified frozen model",
+      "stage": "E26",
+      "started": "2026-09-20T05:57:48.351103+00:00",
+      "state": "CLOSED"
+    },
+    "E27": {
+      "ended": "2026-09-20T05:57:48.374540+00:00",
+      "name": "AgentDojo",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "protected evaluation unopened because no qualified frozen model",
+      "stage": "E27",
+      "started": "2026-09-20T05:57:48.374519+00:00",
+      "state": "CLOSED"
+    },
+    "E28": {
+      "ended": "2026-09-20T05:57:48.396395+00:00",
+      "name": "Systems and serving",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "required CUDA model training/inference unavailable",
+      "stage": "E28",
+      "started": "2026-09-20T05:57:48.396374+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E29": {
+      "ended": "2026-09-20T05:57:48.421942+00:00",
+      "name": "Evidence and claim audit",
+      "next_action": "none",
+      "outputs": {},
+      "protocol": "act-v1-20260920",
+      "reason": "audited HOLD release generated; unexecuted comparisons explicitly null",
+      "stage": "E29",
+      "started": "2026-09-20T05:57:48.421918+00:00",
+      "state": "PASS"
+    }
+  }
+}

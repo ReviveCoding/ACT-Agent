@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-09-20T23:49:42.028009+00:00",
+  "status": "PASS",
+  "protocol": "act-v1-20260920",
+  "mode": "ipo",
+  "seed": 11,
+  "steps": 3,
+  "accumulation": 1,
+  "pair_limit": 64,
+  "beta": 0.1,
+  "noise_rate": 0.1,
+  "flipped_pair_ids": [
+    "train-000299-inefficient_success",
+    "train-000610-inefficient_success",
+    "train-001354-inefficient_success",
+    "train-001542-inefficient_success",
+    "train-001889-inefficient_success",
+    "train-002097-unsafe_success"
+  ],
+  "base_model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "sft_adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed11",
+  "sft_adapter_sha256": {
+    "adapter_model.safetensors": "8d8fb9d7b95d3b4281834f9f349d6e54c13bf773e4d10cc5841ce660261183c7"
+  },
+  "preference_tokens_sha256": "9eda6b8f75c4db636c6d5d1fc349bcae9f1696574a3450a341a28c03b33b331e",
+  "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/ipo-seed11-steps3-pairs64-noise10",
+  "adapter_files_sha256": {
+    "adapter_model.safetensors": "ff40986d83de385d358869ac55f09ad5d11e98ac57b25f5603941fd604fbc9e8"
+  },
+  "adapter_config_sha256": "a7564e3c3ac37572d1606c6c88732cd1b9ec817085b4fdfdd74db37bc0ab266e",
+  "trainable_parameters": 33030144,
+  "reference_precomputed": true,
+  "reference_sha256": "01fb9a0d5142d1ac60669d1ece5196764f77b3af519e0222ba9a118bfb3fae29",
+  "reference_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/reference_cache/537bed1bb87c4843bcbad261e5f4f522428622fe1fdc7ebe276b8a0bba6c9074/reference_logprobs.jsonl",
+  "reference_cache_key": "537bed1bb87c4843bcbad261e5f4f522428622fe1fdc7ebe276b8a0bba6c9074",
+  "reference_seconds": 0.17310791199997766,
+  "train_seconds": 25.299201000998437,
+  "peak_allocated_vram_bytes": 8212158976,
+  "peak_reserved_vram_bytes": 8967421952,
+  "losses": [
+    24.99495506286621,
+    24.639892578125,
+    23.842430114746094
+  ],
+  "preflight": {
+    "nvidia_smi": "NVIDIA GeForce RTX 4090 Laptop GPU, 16376 MiB, 16048 MiB, 616.92, 80",
+    "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "vram_bytes": 17170956288,
+    "bf16_supported": true,
+    "matmul_checksum": -3620.01025390625
+  },
+  "candidate_source": "scripted development pairs only",
+  "method_mapping": "DPO/IPO/robust formulas aligned to installed TRL DPOTrainer; IPO uses assistant-token average log probabilities; robust epsilon=0.1",
+  "protected_outcome_access": 0
+}

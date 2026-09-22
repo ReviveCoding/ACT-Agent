@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-21T01:59:38.868103+00:00",
+  "protocol": "act-v1-20260920",
+  "split": "development",
+  "count": 24,
+  "models": [
+    "B4"
+  ],
+  "max_new_tokens": 192,
+  "model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/dpo-seed11-steps3-pairs64-noise20",
+  "adapter_files_sha256": {
+    "adapter_model.safetensors": "db42e7f544907d6d3bdea3f0c528db608ee84f73fa81338e12895aef5368a6cb"
+  },
+  "run_id": "noise20-dpo",
+  "run_identity_sha256": "630e731fdcf3f503e4f31eace18b3e22a15acfffb897fb99bc5225f54b21c84e",
+  "preflight": {
+    "nvidia_smi": "NVIDIA GeForce RTX 4090 Laptop GPU, 16376 MiB, 16048 MiB, 616.92",
+    "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "vram_bytes": 17170956288,
+    "bf16": true,
+    "matmul_checksum": 3833.8095703125
+  },
+  "episodes_path": "/home/bjw-0/.cache/act-agent-v1/rollouts/noise20-dpo/episodes.jsonl",
+  "traces_path": "/home/bjw-0/.cache/act-agent-v1/rollouts/noise20-dpo/traces.jsonl",
+  "wall_seconds": 669.4609627280006,
+  "peak_allocated_vram_bytes": 3453899776,
+  "peak_reserved_vram_bytes": 4351590400,
+  "nvidia_smi_after": "4444 MiB, 34 %, 81",
+  "protected_outcome_access": 0
+}

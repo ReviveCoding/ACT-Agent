@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-09-21T02:38:48.431163+00:00",
+  "status": "EXPLORATORY_DEVELOPMENT",
+  "paired_tasks": 24,
+  "baseline_model": [
+    "B5"
+  ],
+  "candidate_model": [
+    "B5"
+  ],
+  "baseline_sha256": "4f039d0b1146146d9b1174bf09a3b20d8ce4f7d65334e24043293d622c97624a",
+  "candidate_sha256": "3044e8cac0d7c95a315517ebc9c68ae7cf48b3f08c0e0f7acb0b50de58b0930e",
+  "metrics": {
+    "completion": {
+      "n": 24,
+      "baseline_rate": 0.25,
+      "candidate_rate": 0.25,
+      "difference": 0,
+      "ci_low": 0,
+      "ci_high": 0,
+      "mcnemar_p": 1.0
+    },
+    "safe_completion": {
+      "n": 24,
+      "baseline_rate": 0.25,
+      "candidate_rate": 0.25,
+      "difference": 0,
+      "ci_low": 0,
+      "ci_high": 0,
+      "mcnemar_p": 1.0
+    },
+    "process_compliance": {
+      "n": 24,
+      "baseline_rate": 1,
+      "candidate_rate": 1,
+      "difference": 0,
+      "ci_low": 0,
+      "ci_high": 0,
+      "mcnemar_p": 1.0
+    },
+    "critical_process_flag": {
+      "n": 24,
+      "baseline_rate": 0,
+      "candidate_rate": 0,
+      "difference": 0,
+      "ci_low": 0,
+      "ci_high": 0,
+      "mcnemar_p": 1.0
+    }
+  },
+  "qualification": "E07 task mechanics/oracle REVIEW; no protected outcome access"
+}

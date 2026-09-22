@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-09-20T20:37:37.324578+00:00",
+  "model": "B3",
+  "paired_tasks": 24,
+  "successes": 8,
+  "safe_successes": 8,
+  "process_compliant": 24,
+  "critical_violations": 0,
+  "critical_wilson_95": [
+    1.3877787807814457e-17,
+    0.13797620467498017
+  ],
+  "generated_tokens": 2019,
+  "generation_seconds": 970.7013521909757,
+  "comparisons": {
+    "B3_minus_B0": {
+      "n": 24,
+      "baseline_rate": 0.5833333333333334,
+      "candidate_rate": 0.3333333333333333,
+      "difference": -0.25,
+      "ci_low": -0.5,
+      "ci_high": -0.041666666666666664,
+      "mcnemar_p": 0.03125
+    },
+    "B3_minus_B2": {
+      "n": 24,
+      "baseline_rate": 0.2916666666666667,
+      "candidate_rate": 0.3333333333333333,
+      "difference": 0.041666666666666664,
+      "ci_low": -0.20833333333333334,
+      "ci_high": 0.2916666666666667,
+      "mcnemar_p": 1.0
+    }
+  },
+  "adapter_episode_sha256": "9f00b8738b7e0a9153f06bdb96b3275e94c550e5737c9224b8378bff5b8ca43c",
+  "canonical_sha256": "2af8e6a5bf3675e714f8414e2abfeccbf162496b99ca1b0ea0f581da52ecf460",
+  "protected_outcome_access": 0,
+  "qualification": "development diagnostic only; E07 task mechanics/oracle REVIEW"
+}

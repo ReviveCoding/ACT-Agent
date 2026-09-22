@@ -1,0 +1,13 @@
+{
+  "status": "PAUSED_FOR_SINGLE_GPU_POLICY",
+  "stage": "E09",
+  "protocol": "act-v1-20260920",
+  "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "own_process": "act_agent.evaluation.model_rollout --count 24 --max-turns 8",
+  "unrelated_process": "contextweave.model_pilot",
+  "unrelated_vram_mib_approx": 9168,
+  "completed_rows_in_resumable_scratch": 1,
+  "completed_model_rows": 0,
+  "protected_outcome_access": 0,
+  "next_action": "resume corrected CUDA rollout when the sole GPU is reserved for ACT-Agent"
+}

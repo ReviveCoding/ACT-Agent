@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-09-21T02:38:52.936933+00:00",
+  "model": "M0",
+  "paired_tasks": 24,
+  "successes": 5,
+  "safe_successes": 5,
+  "process_compliant": 24,
+  "critical_violations": 0,
+  "critical_wilson_95": [
+    1.3877787807814457e-17,
+    0.13797620467498017
+  ],
+  "generated_tokens": 1642,
+  "generation_seconds": 647.4787209050046,
+  "comparisons": {
+    "M0_minus_B0": {
+      "n": 24,
+      "baseline_rate": 0.5833333333333334,
+      "candidate_rate": 0.20833333333333334,
+      "difference": -0.375,
+      "ci_low": -0.625,
+      "ci_high": -0.125,
+      "mcnemar_p": 0.00390625
+    },
+    "M0_minus_B2": {
+      "n": 24,
+      "baseline_rate": 0.2916666666666667,
+      "candidate_rate": 0.20833333333333334,
+      "difference": -0.08333333333333333,
+      "ci_low": -0.25,
+      "ci_high": 0,
+      "mcnemar_p": 0.5
+    }
+  },
+  "adapter_episode_sha256": "70f03d7053be0bb7039044e8f2649c4baa768b9d445a3d8083090a25b858c3a0",
+  "canonical_sha256": "e28e9013373d75360b81a0b76d08edbabe72aea80dc3acfc2bc04fb7dab7af08",
+  "protected_outcome_access": 0,
+  "qualification": "development diagnostic only; E07 task mechanics/oracle REVIEW"
+}

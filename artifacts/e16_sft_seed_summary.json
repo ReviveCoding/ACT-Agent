@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-09-20T21:25:19.437534+00:00",
+  "status": "PARTIAL_CHARACTERIZATION",
+  "protocol": "act-v1-20260920",
+  "matched_budget_steps": 30,
+  "training_seeds": [
+    {
+      "seed": 11,
+      "step": 30,
+      "loss_at_step30": 0.023792881052941084,
+      "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed11-step30",
+      "adapter_sha256": "58282f58f17c3b59b88fd2ed7e83744bef92e3f549d40d11eebaa7921ca95812",
+      "receipt": "artifacts/training/sft-seed11.json",
+      "receipt_sha256": "442a2bfa4e67b9ede5c783cffdf502c121db8392e3e1cb6d3daf3a00100a1d8c",
+      "status": "QUALIFIED_INTERMEDIATE_SNAPSHOT"
+    },
+    {
+      "seed": 23,
+      "step": 30,
+      "loss_at_step30": 0.03909377194941044,
+      "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed23-steps30",
+      "adapter_sha256": "cace370fdb03aa8301da5ad2d81c6aa22eaa2696bd4ba5ca81afbd3a20a8659e",
+      "receipt": "artifacts/training/sft-seed23-steps30.json",
+      "receipt_sha256": "c934e22645f765cde24464a8b6231e89b8263d59ec0d1c648119ff180e552f3c",
+      "status": "PASS"
+    },
+    {
+      "seed": 37,
+      "step": 30,
+      "loss_at_step30": 0.023840914480388165,
+      "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed37-steps30",
+      "adapter_sha256": "e11d9c297672d50dce5209bb7df70087649e175f359fad67804dd3a0a4b16a73",
+      "receipt": "artifacts/training/sft-seed37-steps30.json",
+      "receipt_sha256": "c9953eb88efc02ebda751eefe4995307a3fe14ede73fcc04e85fba5c2ef37952",
+      "status": "PASS"
+    }
+  ],
+  "step30_loss_mean": 0.02890918916091323,
+  "step30_loss_sd": 0.008820140119882068,
+  "interpretation": "training-loss spread only; no three-seed paired development outcome comparison; seed11 120-step adapter is not a matched-budget replicate",
+  "protected_outcome_access": 0
+}

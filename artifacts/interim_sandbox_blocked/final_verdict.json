@@ -1,0 +1,27 @@
+{
+  "act_po_result": null,
+  "decision": "HOLD",
+  "development_b0": {
+    "critical_violations": 0,
+    "episodes": 100,
+    "successes": 88
+  },
+  "external_benchmarks": null,
+  "primary_capability": null,
+  "process_compliance_comparison": null,
+  "protocol": "act-v1-20260920",
+  "reason": "CUDA unavailable; required model, protected, and external comparisons unexecuted",
+  "safety_noninferiority": null,
+  "security_comparison": null,
+  "stage_counts": {
+    "BLOCKED_EXTERNAL": 14,
+    "CLOSED": 7,
+    "FAIL": 0,
+    "PASS": 2,
+    "REVIEW": 7
+  },
+  "strongest_baseline": null,
+  "systems_comparison": null,
+  "timestamp": "2026-09-20T05:57:49.058209+00:00",
+  "twin_b_transfer": null
+}

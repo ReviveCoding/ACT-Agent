@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-09-20T22:58:10.129220+00:00",
+  "protocol": "act-v1-20260920",
+  "status": "PARTIAL_DEVELOPMENT_ABLATION",
+  "protected_outcome_access": 0,
+  "A7_pair_weighting": {
+    "comparison": "M0 weighted scripted pairs minus B7 unweighted same scripted pairs",
+    "completion": {
+      "n": 24,
+      "baseline_rate": 0.20833333333333334,
+      "candidate_rate": 0.25,
+      "difference": 0.041666666666666664,
+      "ci_low": 0,
+      "ci_high": 0.16666666666666666,
+      "mcnemar_p": 1.0
+    },
+    "critical_process_flag": {
+      "n": 24,
+      "baseline_rate": 0,
+      "candidate_rate": 0,
+      "difference": 0,
+      "ci_low": 0,
+      "ci_high": 0,
+      "mcnemar_p": 1.0
+    },
+    "baseline_hash": "5f4eabf5b2ad1f97ad1dff0ebe231e6dbecd5e819bcb8d00320e86db96ef0828",
+    "candidate_hash": "9b18f7e264d9989d14d02f1742b277288c7f9808498d9d3bfb38426c703980e3",
+    "qualification": "Exploratory 24-task diagnostic; no on-policy ACT pair construction"
+  },
+  "A8_method_objective": {
+    "DPO": 5,
+    "IPO": 6,
+    "Robust-DPO": 7,
+    "denominator": 24,
+    "qualification": "same scripted-pair source, different objective, no protected comparison"
+  },
+  "unrun": {
+    "A1_A2_A4_A6": "ACT pair-construction mechanism not qualified",
+    "A3": "lexicographic-vs-scalar pair construction not implemented on qualified candidates",
+    "A5": "on-policy hard negatives absent",
+    "A9": "protected R-TRACE factorial closed without E17 freeze",
+    "A10_A11": "task oracle under REVIEW, so policy/confirmation removal would not support capability mechanism claim",
+    "A12": "uncalibrated twin comparator not constructed",
+    "A13": "Twin-B protected and no valid finalist/freeze",
+    "A14": "SFT initialization ablation not run; no valid finalist"
+  }
+}

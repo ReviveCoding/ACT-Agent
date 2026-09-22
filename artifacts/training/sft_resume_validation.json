@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-20T18:04:37.941356+00:00",
+  "status": "PASS",
+  "resumed_from_step": 3,
+  "pilot_final_sha256": "fd7a895e953b8e93ac7b41da4d0158a9e6e72c5fd1a1a503f06614f32cca9977",
+  "resumed_final_sha256": "93b561bf0ea5ccd5e993159775b156a2dd360874324eceb38bd17df2648819c0",
+  "bitwise_equal": false,
+  "tensor_count": 33030144,
+  "max_absolute_difference": 0.00010466529056429863,
+  "relative_l2_difference": 8.416378380424787e-05,
+  "loss_final_pilot": 1.1161356568336487,
+  "loss_final_resumed": 1.1161356568336487,
+  "threshold_max_abs": 0.001,
+  "threshold_relative_l2": 0.001,
+  "interpretation": "CUDA resume reproduces numerically within fixed predeclared validation tolerances; bitwise identity is not claimed"
+}

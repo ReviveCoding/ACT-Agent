@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ACT-Agent evidence dashboard</title>
+<style>
+body{font:16px system-ui,sans-serif;max-width:1200px;margin:2rem auto;padding:0 1rem;background:#f5f7fa;color:#172536}
+h1,h2{line-height:1.2}main{display:grid;gap:1.2rem}section{background:white;border:1px solid #d5dce5;border-radius:10px;padding:1rem;overflow:auto}
+table{border-collapse:collapse;width:100%}th,td{padding:.5rem;text-align:left;border-bottom:1px solid #dde3eb;vertical-align:top}
+th{background:#ebf0f5}button{margin:.2rem;padding:.4rem .7rem;border:1px solid #8aa2bb;border-radius:5px;background:white;cursor:pointer}
+button[aria-pressed="true"]{background:#173b63;color:white}.notice{border-left:4px solid #ab6911;padding-left:.8rem}
+</style></head><body><main>
+<header><h1>ACT-Agent v1.0 evidence</h1><p>Protocol act-v1-20260920 · Scientific decision: <strong>HOLD</strong></p></header>
+<section><h2>Evidence boundary</h2><p class="notice">Mutable campaign effects and tasks are synthetic. Development model results are diagnostic while E07 is REVIEW. Empty protected or external results mean unexecuted, not zero.</p>
+<p>Protected internal outcome access: 0; external benchmark outcome access: 0.</p></section>
+<section><h2>B0–B2 development pilot</h2><p>24 paired synthetic development tasks</p><table><thead><tr><th>Model</th><th>Completed</th><th>Process compliant</th><th>Critical attempted violations</th></tr></thead><tbody><tr><td>B0</td><td>14/24</td><td>24/24</td><td>0/24</td></tr>
+<tr><td>B1</td><td>8/24</td><td>24/24</td><td>0/24</td></tr>
+<tr><td>B2</td><td>7/24</td><td>21/24</td><td>3/24</td></tr></tbody></table>
+<p><a href="../reports/baseline_development.md">Method and limitations</a> · <a href="../artifacts/e09_baseline_summary.json">Canonical summary</a></p></section>
+<section><h2>Stage ledger</h2><div id="filters"><button type="button" data-filter="ALL" aria-pressed="true">All</button><button type="button" data-filter="PASS">PASS</button><button type="button" data-filter="REVIEW">REVIEW</button><button type="button" data-filter="PENDING">PENDING</button><button type="button" data-filter="CLOSED">CLOSED</button><button type="button" data-filter="BLOCKED_EXTERNAL">BLOCKED_EXTERNAL</button></div>
+<table><thead><tr><th>Stage</th><th>State</th><th>Name</th><th>Reason</th></tr></thead><tbody id="stages"><tr data-state='PASS'><td>E00</td><td>PASS</td><td>Environment qualification</td><td>Escalated nvidia-smi and PyTorch CUDA 13.0 BF16 real matmul qualified</td></tr>
+<tr data-state='PASS'><td>E01</td><td>PASS</td><td>Desktop study and source verification</td><td>Authoritative sources pinned; Criteo attribution/uplift and Qwen hashes/licenses verified; benchmark outcomes untouched</td></tr>
+<tr data-state='PASS'><td>E02</td><td>PASS</td><td>Data acquisition</td><td>official Criteo-owned mirror checksum matches published SHA-256</td></tr>
+<tr data-state='PASS'><td>E03</td><td>PASS</td><td>Public data EDA</td><td>Public aggregates, quality statistics, exact hashes, raw-data exclusion, and split namespace audit passed</td></tr>
+<tr data-state='PASS'><td>E04</td><td>PASS</td><td>Standards mapping</td><td>Standards mapped to actual design scope with explicit nonconformance boundary</td></tr>
+<tr data-state='PASS'><td>E05</td><td>PASS</td><td>Twin-A qualification</td><td>Twin-A passed 11 pre-protected distribution, temporal, heterogeneity, fault, intervention, transaction, and determinism checks</td></tr>
+<tr data-state='PASS'><td>E06</td><td>PASS</td><td>Twin-B seal</td><td>Twin-B source, calibration, parameters, and seed namespace resealed before protected access; no transfer outcomes accessed</td></tr>
+<tr data-state='REVIEW'><td>E07</td><td>REVIEW</td><td>Task and user simulator</td><td>Expected deterministic user behavior passes; independent family completion oracle and L3-L9 task mechanics remain unqualified</td></tr>
+<tr data-state='PASS'><td>E08</td><td>PASS</td><td>Process contracts</td><td>Known-answer contract matrix covers prewrite evidence, confirmation, permissions, scope, forbidden actions, mutation cap, and rollback</td></tr>
+<tr data-state='REVIEW'><td>E09</td><td>REVIEW</td><td>B0-B2 baselines</td><td>24 paired B0/B1/B2 CUDA development tasks completed; small pilot and E07 task-oracle REVIEW preclude primary capability claim</td></tr>
+<tr data-state='PASS'><td>E10</td><td>PASS</td><td>SFT development</td><td>Seed-11 120-step NF4/BF16 QLoRA SFT completed on RTX 4090; 24 paired development tasks: 8 complete, 8 safe, 24 process compliant, zero critical flags; step-30 snapshot 6 complete with 8 critical flags. E07 task-oracle REVIEW prevents primary capability inference.</td></tr>
+<tr data-state='REVIEW'><td>E11</td><td>REVIEW</td><td>Trajectory and preference generation</td><td>6,000 split-safe SFT traces and 10,000 scripted labels exist; 1,805 consistency-filtered trainable pairs, but ReAct/SFT/on-policy sources absent</td></tr>
+<tr data-state='REVIEW'><td>E12</td><td>REVIEW</td><td>Preference audit</td><td>Pair identity, mask, weight, task and market audits pass; alternate-tape and model-source preference audits not run</td></tr>
+<tr data-state='REVIEW'><td>E13</td><td>REVIEW</td><td>DPO/IPO/Robust-DPO</td><td>CUDA 3-step scripted-pair pilots and 24 paired development rollouts completed: DPO 5/24 with 1 critical flag, IPO 6/24 with 0, robust-DPO 7/24 with 0; E07 and E11/E12 REVIEW preclude confirmatory inference.</td></tr>
+<tr data-state='REVIEW'><td>E14</td><td>REVIEW</td><td>ACT-pair unweighted DPO</td><td>Unweighted ACT-pair CUDA control completed 5/24 paired development tasks with 0 critical flags; it used the same scripted pair IDs and DPO objective as B4 (also 5/24), so ACT pair construction is not isolated.</td></tr>
+<tr data-state='REVIEW'><td>E15</td><td>REVIEW</td><td>ACT-PO development</td><td>Weighted ACT-style CUDA pilot on scripted pairs completed 6/24 tasks, versus unweighted B7 5/24 and SFT 8/24, with 0 critical flags in all three; full ACT-PO on-policy hard negatives and qualified task oracle absent.</td></tr>
+<tr data-state='REVIEW'><td>E16</td><td>REVIEW</td><td>Multi-seed replication</td><td>Three matched 30-step SFT seeds and three-seed 3-step DPO/weighted scripted-pair CUDA training receipts verified; seeds 23/37 lack paired task outcomes, and full ACT-PO mechanism/qualified finalist absent.</td></tr>
+<tr data-state='REVIEW'><td>E17</td><td>REVIEW</td><td>Power and protected freeze</td><td>Power analysis exploratory; final freeze withheld because task oracle, preference sources, and finalists are unqualified; protected outcome access remains zero.</td></tr>
+<tr data-state='CLOSED'><td>E18</td><td>CLOSED</td><td>Protected internal ID</td><td>Protected ID evaluation closed: E17 did not freeze a valid protocol.</td></tr>
+<tr data-state='CLOSED'><td>E19</td><td>CLOSED</td><td>Protected OOD</td><td>Protected composition/policy/tool OOD closed: no valid E17 freeze.</td></tr>
+<tr data-state='CLOSED'><td>E20</td><td>CLOSED</td><td>Protected Twin-B</td><td>Protected Twin-B transfer closed: Twin-B remains sealed and no valid finalist/freeze exists.</td></tr>
+<tr data-state='CLOSED'><td>E21</td><td>CLOSED</td><td>R-TRACE factorial</td><td>R-TRACE protected factorial closed: no qualified ACT-PO finalist or valid E17 freeze.</td></tr>
+<tr data-state='CLOSED'><td>E22</td><td>CLOSED</td><td>Internal security</td><td>Protected adversarial/security evaluation closed: no valid E17 freeze; development security evidence remains separate.</td></tr>
+<tr data-state='REVIEW'><td>E23</td><td>REVIEW</td><td>Preference noise</td><td>All 16 planned CUDA noise-training pilots and 12 x 24 paired synthetic development rollouts completed with exact flip, adapter, task, and log hashes; E07 task oracle and full ACT-PO source remain unqualified, so inference is exploratory only.</td></tr>
+<tr data-state='REVIEW'><td>E24</td><td>REVIEW</td><td>Ablations</td><td>A7 weighting and A8 objective diagnostics executed on 24 synthetic development tasks; primary A3/A5 and other mechanism ablations unrun because ACT pairs/on-policy sources and task oracle are unqualified.</td></tr>
+<tr data-state='BLOCKED_EXTERNAL'><td>E25</td><td>BLOCKED_EXTERNAL</td><td>BFCL V4</td><td>BFCL V4 upstream acquisition blocked by workspace-write DNS/network restriction; no benchmark examples or outcomes accessed</td></tr>
+<tr data-state='BLOCKED_EXTERNAL'><td>E26</td><td>BLOCKED_EXTERNAL</td><td>tau3</td><td>tau3 upstream acquisition blocked by workspace-write DNS/network restriction; no benchmark examples or outcomes accessed</td></tr>
+<tr data-state='BLOCKED_EXTERNAL'><td>E27</td><td>BLOCKED_EXTERNAL</td><td>AgentDojo</td><td>AgentDojo upstream acquisition blocked by workspace-write DNS/network restriction; no benchmark examples or outcomes accessed</td></tr>
+<tr data-state='REVIEW'><td>E28</td><td>REVIEW</td><td>Systems and serving</td><td>RTX 4090 CUDA training, rollout, and base/SFT NF4 serving lifecycle measured; outputs differ in generated length, and compile cold-cost/break-even plus frozen finalist serving comparison remain unmeasured.</td></tr>
+<tr data-state='PASS'><td>E29</td><td>PASS</td><td>Evidence and claim audit</td><td>Final audited release and claim verification passed</td></tr></tbody></table></section>
+<footer><a href="../reports/final_technical_report.md">Final technical report</a> · <a href="../artifacts/claim_ledger.json">Claim ledger</a></footer>
+</main><script>
+const buttons=[...document.querySelectorAll('[data-filter]')];
+for(const button of buttons)button.addEventListener('click',()=>{
+  const selected=button.dataset.filter;
+  for(const item of buttons)item.setAttribute('aria-pressed',String(item===button));
+  for(const row of document.querySelectorAll('#stages tr'))row.hidden=selected!=='ALL'&&row.dataset.state!==selected;
+});
+</script></body></html>

@@ -1,0 +1,14 @@
+{
+  "ended": "2026-09-20T22:55:55.572877+00:00",
+  "name": "Protected internal ID",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/protected_access_ledger.json": "b3fc9501366a6dc9d44a66e409ec081efea585b9220f03cc4c2b7b93bd9b90e1",
+    "artifacts/protected_freeze_decision.json": "c845b0c7e8aab33610e7d4f1090e0af9b2991b24e0d752cb67f05bd18f74f69d"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Protected ID evaluation closed: E17 did not freeze a valid protocol.",
+  "stage": "E18",
+  "started": "2026-09-20T22:55:55.572814+00:00",
+  "state": "CLOSED"
+}

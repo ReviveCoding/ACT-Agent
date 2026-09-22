@@ -1,0 +1,35 @@
+{
+  "rows": 16468027,
+  "campaigns": 675,
+  "users": 6142256,
+  "clicks": 5947563,
+  "conversions": 806196,
+  "min_timestamp": 0,
+  "max_timestamp": 2671199,
+  "transformed_cost": 4829.34054095258,
+  "negative_cost": 0,
+  "invalid_labels": 0,
+  "marts": {
+    "campaign_hour": {
+      "rows": 446217,
+      "sha256": "031f99e606a46d8db778b88ed86ec601a6a2ec8facce353122ba99cc14fe0338"
+    },
+    "campaign_day": {
+      "rows": 20665,
+      "sha256": "088c024e827615e55dd6f0bb122f30aacfcc48899cd7fa5fe4e35c08b4085cfa"
+    },
+    "campaign_profile": {
+      "rows": 675,
+      "sha256": "42469cb58c9739c9af4e21652357fcdc6a548faf9bf1790d9315ba491b3ccabf"
+    },
+    "user_path": {
+      "rows": 675,
+      "sha256": "135edaf00d0d8439ead2c8a28869e4d4a1cc3ea5842230b9e87c6af793210923"
+    },
+    "distribution_fit": {
+      "rows": 1,
+      "sha256": "9c7b1e579b456205678136bad29ade57091c4e3a67da04f4e46bd1d8102ee2cb"
+    }
+  },
+  "schema_hash": "8ff5cf9eaab1719bab72c05c6660e858d0446a8b7e27c6e61d459fef6ab30204"
+}

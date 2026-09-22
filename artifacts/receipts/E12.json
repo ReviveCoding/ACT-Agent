@@ -1,0 +1,14 @@
+{
+  "ended": "2026-09-20T16:55:32.138170+00:00",
+  "name": "Preference audit",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/preference_audit.json": "5e4ca17e74a5d738795abfcf4ee8904f75098564c70650513f5e7e4e2c56b0cd",
+    "reports/preference_dataset_card.md": "cbeacfc8498d1c1bb153836647e96c7faeb31075f2fb24256eb087e40e4d2ba9"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Pair identity, mask, weight, task and market audits pass; alternate-tape and model-source preference audits not run",
+  "stage": "E12",
+  "started": "2026-09-20T16:55:32.137955+00:00",
+  "state": "REVIEW"
+}

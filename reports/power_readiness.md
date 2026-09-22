@@ -1,0 +1,7 @@
+# Protected freeze readiness
+
+`artifacts/freeze_readiness.json` records that the E17 protected freeze is not ready. E07 task mechanics and independent completion oracle remain REVIEW; E11–E12 preference candidate provenance and audit remain REVIEW. Finalist adapters and multi-seed comparisons are still being developed. Protected internal and external outcome access counts are zero, and no freeze manifest has been created.
+
+The corrected 24-task B0/B1/B2 development pilot permits an exploratory paired-discordance calculation only. B0–B1 had 6 discordant outcomes in 24 pairs; B0–B2 had 7. A simple two-sided normal approximation for a hypothetical 5 percentage point difference and 80% power gives roughly 778 and 908 paired tasks, respectively. `artifacts/e17_power_exploratory.json` records the formula and inputs. Those numbers are **not** frozen sample sizes: they omit task-family clustering and training-seed uncertainty, and the comparison is not ACT-PO versus SFT. The 24-task safety counts cannot justify a 1 percentage point noninferiority margin.
+
+No protected task outcome may be accessed until a qualified task oracle, complete candidate set, paired pilot/power analysis, and exact model, adapter, prompt, tool, simulator, split, statistics, sample-size, and promotion-gate identities are frozen. If these prerequisites remain unmet, E17 and dependent protected stages must close without effect estimates or promotion.

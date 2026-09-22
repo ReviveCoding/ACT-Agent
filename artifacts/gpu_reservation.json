@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-20T19:57:00.487735+00:00",
+  "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "mode": "best_effort_process_cleanup_and_monitoring",
+  "competing_user_owned_pids_terminated": [
+    23781,
+    37532,
+    37538,
+    46056,
+    46066
+  ],
+  "last_observation": "one ACT-Agent CUDA process during SFT and adapter rollout",
+  "exclusive_mode_enabled": false,
+  "guaranteed_future_exclusivity": false,
+  "authorization": "user explicitly requested reservation"
+}

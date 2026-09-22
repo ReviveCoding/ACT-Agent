@@ -1,0 +1,13 @@
+{
+  "source_sha256": "f9cc0a3694b09173adba564653bc5c526c5d2ac87a0f6c1dd98dd6b309b3bd5f",
+  "output_sha256": "5a47e17e093218d671d8c04d0141f55036be2df969b83e359c809d10064f407e",
+  "model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+  "rows": 6000,
+  "min_length": 560,
+  "max_length": 982,
+  "assistant_token_total": 696240,
+  "max_length_cap": 1536,
+  "loss_mask": "assistant turns only",
+  "split": "train"
+}

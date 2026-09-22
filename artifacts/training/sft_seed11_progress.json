@@ -1,0 +1,15 @@
+{
+  "checkpoint_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed11/step-00110",
+  "complete_manifest_sha256": "4d0937bb9a6df4bf29aa75bd6615675e88e95cc6f1df7be247d323126fa11f2f",
+  "file_hash_checks": {
+    "adapter_model.safetensors": true,
+    "optimizer_resume.pt": true
+  },
+  "latest_validated_step": 110,
+  "next_action": "resume sft-seed11 120 steps from latest complete checkpoint if interrupted",
+  "protected_outcome_access": 0,
+  "seed": 11,
+  "status": "IN_PROGRESS",
+  "target_steps": 120,
+  "timestamp": "2026-09-20T19:36:03.206221+00:00"
+}

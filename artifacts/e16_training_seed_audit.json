@@ -1,0 +1,148 @@
+{
+  "timestamp": "2026-09-20T23:25:19.151905+00:00",
+  "protocol": "act-v1-20260920",
+  "status": "PARTIAL_MULTI_SEED_TRAINING",
+  "matched_sft_budget_steps": 30,
+  "pairwise_steps": 3,
+  "pair_limit_per_seed": 64,
+  "seeds": [
+    {
+      "seed": 11,
+      "sft_step30": {
+        "seed": 11,
+        "step": 30,
+        "loss_at_step30": 0.023792881052941084,
+        "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed11-step30",
+        "adapter_sha256": "58282f58f17c3b59b88fd2ed7e83744bef92e3f549d40d11eebaa7921ca95812",
+        "receipt": "artifacts/training/sft-seed11.json",
+        "receipt_sha256": "442a2bfa4e67b9ede5c783cffdf502c121db8392e3e1cb6d3daf3a00100a1d8c",
+        "status": "QUALIFIED_INTERMEDIATE_SNAPSHOT"
+      },
+      "methods": [
+        {
+          "mode": "dpo",
+          "run_id": "dpo-seed11-sft30-steps3-pairs64-noise00",
+          "receipt": "artifacts/training/dpo-seed11-sft30-steps3-pairs64-noise00.json",
+          "receipt_sha256": "71e60e5fff9f22b1d84b9cc74d74776288192eb6904bcfc75d4f0da78d14a880",
+          "adapter_sha256": "94dfe88b8b7bc0992dbaa2a61975efc6e88b46a7e92767a92c50e313227d5ff8",
+          "reference_sha256": "430da0c08383b51af3befd0731d677c5750c277e520c8f997397ea7221ed10d6",
+          "losses": [
+            0.7014665007591248,
+            0.34413301944732666,
+            0.06468487530946732
+          ],
+          "peak_reserved_vram_bytes": 8757706752
+        },
+        {
+          "mode": "act_po",
+          "run_id": "act_po-seed11-sft30-steps3-pairs64-noise00",
+          "receipt": "artifacts/training/act_po-seed11-sft30-steps3-pairs64-noise00.json",
+          "receipt_sha256": "a2abd3eaeb78a80c1b8a3635fe8e3e83d9898acbd55067599cef0a172673c730",
+          "adapter_sha256": "f0c229f6beeb847cbc0a76f2456cdce9f9822ea7160425e29d3bc1b1adeef8ce",
+          "reference_sha256": "430da0c08383b51af3befd0731d677c5750c277e520c8f997397ea7221ed10d6",
+          "losses": [
+            0.6065333485603333,
+            0.2877398133277893,
+            0.056718211621046066
+          ],
+          "peak_reserved_vram_bytes": 8967421952
+        }
+      ]
+    },
+    {
+      "seed": 23,
+      "sft_step30": {
+        "seed": 23,
+        "step": 30,
+        "loss_at_step30": 0.03909377194941044,
+        "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed23-steps30",
+        "adapter_sha256": "cace370fdb03aa8301da5ad2d81c6aa22eaa2696bd4ba5ca81afbd3a20a8659e",
+        "receipt": "artifacts/training/sft-seed23-steps30.json",
+        "receipt_sha256": "c934e22645f765cde24464a8b6231e89b8263d59ec0d1c648119ff180e552f3c",
+        "status": "PASS"
+      },
+      "methods": [
+        {
+          "mode": "dpo",
+          "run_id": "dpo-seed23-sft30-steps3-pairs64-noise00",
+          "receipt": "artifacts/training/dpo-seed23-sft30-steps3-pairs64-noise00.json",
+          "receipt_sha256": "4872b438e71ee6741648405772d70a4282bb7441e37d455bc23493d8e5e0b22e",
+          "adapter_sha256": "3b935d712e9c2b829cefa089a7cd018f767ba3911f00361f9061bc9ffeacc512",
+          "reference_sha256": "802ddfcc390943d38ba55404f32370f34bcd2ec800dd2cb3428edfffd179b5c1",
+          "losses": [
+            0.7000399231910706,
+            0.6365984082221985,
+            0.0015030555659905076
+          ],
+          "peak_reserved_vram_bytes": 8864661504
+        },
+        {
+          "mode": "act_po",
+          "run_id": "act_po-seed23-sft30-steps3-pairs64-noise00",
+          "receipt": "artifacts/training/act_po-seed23-sft30-steps3-pairs64-noise00.json",
+          "receipt_sha256": "e203d4b3411b513a1d154752acf709c2d5cd371e49aaae39ecd4fbdfe198ee6d",
+          "adapter_sha256": "8fd9e9ac347e6b5dbbf464aeba23eedd1e284030bed43b20f5d1ddc3b39d7471",
+          "reference_sha256": "802ddfcc390943d38ba55404f32370f34bcd2ec800dd2cb3428edfffd179b5c1",
+          "losses": [
+            0.44250962138175964,
+            0.5444800853729248,
+            0.000967311323620379
+          ],
+          "peak_reserved_vram_bytes": 8948547584
+        }
+      ]
+    },
+    {
+      "seed": 37,
+      "sft_step30": {
+        "seed": 37,
+        "step": 30,
+        "loss_at_step30": 0.023840914480388165,
+        "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed37-steps30",
+        "adapter_sha256": "e11d9c297672d50dce5209bb7df70087649e175f359fad67804dd3a0a4b16a73",
+        "receipt": "artifacts/training/sft-seed37-steps30.json",
+        "receipt_sha256": "c9953eb88efc02ebda751eefe4995307a3fe14ede73fcc04e85fba5c2ef37952",
+        "status": "PASS"
+      },
+      "methods": [
+        {
+          "mode": "dpo",
+          "run_id": "dpo-seed37-sft30-steps3-pairs64-noise00",
+          "receipt": "artifacts/training/dpo-seed37-sft30-steps3-pairs64-noise00.json",
+          "receipt_sha256": "53e279df9f752bf024fb74661315ab7b4605b1b5de2b4ef272c27530f7c4ca16",
+          "adapter_sha256": "cab48fade8499a3612bc9fc3ac7f8b8fbd8cc02c4c21f7e404852e8356e5b287",
+          "reference_sha256": "30084859d0022e60a9f9ce56135e66575586866d76c1f5dc6c1fad2c06bfce36",
+          "losses": [
+            0.6888372302055359,
+            0.33274582028388977,
+            0.29422318935394287
+          ],
+          "peak_reserved_vram_bytes": 9219080192
+        },
+        {
+          "mode": "act_po",
+          "run_id": "act_po-seed37-sft30-steps3-pairs64-noise00",
+          "receipt": "artifacts/training/act_po-seed37-sft30-steps3-pairs64-noise00.json",
+          "receipt_sha256": "b16f7b5055be5427092d13a7de20edc967b905b28c7e131cccb5a6b3e9255c3e",
+          "adapter_sha256": "817dbb4d8f03360be832f47d3b5b80d9eaca870157e583bc930e254728c42e3a",
+          "reference_sha256": "30084859d0022e60a9f9ce56135e66575586866d76c1f5dc6c1fad2c06bfce36",
+          "losses": [
+            0.8708563446998596,
+            0.29296135902404785,
+            0.25427529215812683
+          ],
+          "peak_reserved_vram_bytes": 9093251072
+        }
+      ]
+    }
+  ],
+  "sft_step30_loss_mean": 0.02890918916091323,
+  "sft_step30_loss_sd": 0.008820140119882068,
+  "limitations": [
+    "No paired evaluation-world outcomes for seeds 23 and 37",
+    "Pair selection changes with training seed, so observed spread mixes optimization and pair-sampling variation",
+    "Weighted scripted-pair runs lack on-policy hard negatives and are not full ACT-PO",
+    "E07 task oracle and E11/E12 preference gates remain REVIEW"
+  ],
+  "protected_outcome_access": 0
+}

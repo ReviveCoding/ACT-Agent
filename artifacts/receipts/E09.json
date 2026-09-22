@@ -1,0 +1,17 @@
+{
+  "ended": "2026-09-20T18:00:07.458816+00:00",
+  "name": "B0-B2 baselines",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/e09_baseline_manifest.json": "10c60f5d92dd022ebf20768d4a54e222e0d92828a61052952b42d873c13d3e9f",
+    "artifacts/e09_baseline_summary.json": "d01b06ea3f542f7f101be47573609af10d9c115abb9b20f5c74e56f30ffbd0dc",
+    "artifacts/e09_episodes.jsonl": "a56f0bb3edaef38d6ac2ffe99fbe31736fae217adb5f2468fadfb0aab3ba9184",
+    "artifacts/e09_traces.jsonl": "9e92250eb06a01869da4110593221f567e224ff6a92e4421e88d00a29c10ee03",
+    "reports/baseline_development.md": "eceb76398da6588bfd852a0cf57f022f867297210769e15da45c60614b4ed150"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "24 paired B0/B1/B2 CUDA development tasks completed; small pilot and E07 task-oracle REVIEW preclude primary capability claim",
+  "stage": "E09",
+  "started": "2026-09-20T18:00:07.458462+00:00",
+  "state": "REVIEW"
+}

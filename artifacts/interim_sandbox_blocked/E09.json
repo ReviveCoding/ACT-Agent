@@ -1,0 +1,13 @@
+{
+  "ended": "2026-09-20T05:57:47.916675+00:00",
+  "name": "B0-B2 baselines",
+  "next_action": "resume after prerequisite repair",
+  "outputs": {
+    "artifacts/warehouse/episodes.parquet": "7fd4115a738b000fe2c82e5abda144cb1b2a4c8a4b323d6826937627bd9b43aa"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "B0 development executed; B1-B2 require unavailable CUDA",
+  "stage": "E09",
+  "started": "2026-09-20T05:57:47.916651+00:00",
+  "state": "BLOCKED_EXTERNAL"
+}

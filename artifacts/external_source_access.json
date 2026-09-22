@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-09-20T16:59:21.670188+00:00",
+  "network_profile": "workspace-write network restricted",
+  "sources": {
+    "E25_BFCL_V4": {
+      "url": "https://github.com/ShishirPatil/gorilla.git",
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: unable to access 'https://github.com/ShishirPatil/gorilla.git/': Could not resolve host: github.com",
+      "protected_examples_accessed": false,
+      "protected_outcomes_accessed": false
+    },
+    "E26_tau3": {
+      "url": "https://github.com/sierra-research/tau2-bench.git",
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: unable to access 'https://github.com/sierra-research/tau2-bench.git/': Could not resolve host: github.com",
+      "protected_examples_accessed": false,
+      "protected_outcomes_accessed": false
+    },
+    "E27_AgentDojo": {
+      "url": "https://github.com/ethz-spylab/agentdojo.git",
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: unable to access 'https://github.com/ethz-spylab/agentdojo.git/': Could not resolve host: github.com",
+      "protected_examples_accessed": false,
+      "protected_outcomes_accessed": false
+    }
+  }
+}

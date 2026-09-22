@@ -1,0 +1,8 @@
+{
+  "bytes": 653015824,
+  "license": "CC BY-NC-SA 4.0",
+  "redistribution_policy": "raw rows excluded from repository",
+  "scientific_role": "observed distribution calibration",
+  "sha256": "94ac7a465564349bc7ba008602211d5990a3c53cc133abc0aadef61ea2391a98",
+  "source_url": "https://huggingface.co/datasets/criteo/criteo-attribution-dataset/resolve/main/criteo_attribution_dataset.tsv.gz"
+}

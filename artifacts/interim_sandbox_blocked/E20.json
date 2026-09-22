@@ -1,0 +1,11 @@
+{
+  "ended": "2026-09-20T05:57:48.197507+00:00",
+  "name": "Protected Twin-B",
+  "next_action": "none",
+  "outputs": {},
+  "protocol": "act-v1-20260920",
+  "reason": "protected evaluation unopened because no qualified frozen model",
+  "stage": "E20",
+  "started": "2026-09-20T05:57:48.197485+00:00",
+  "state": "CLOSED"
+}

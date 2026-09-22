@@ -1,0 +1,9 @@
+{
+  "source_sha256": "94ac7a465564349bc7ba008602211d5990a3c53cc133abc0aadef61ea2391a98",
+  "scientific_role": "observed impression-level calibration only",
+  "click_flag_rate": 0.3611582006757701,
+  "conversion_flag_given_click": 0.13555064486076063,
+  "hourly_traffic_profile": [0.1945,0.1343,0.1286,0.1783,0.3021,0.5589,0.8703,1.1224,1.2721,1.3034,1.3188,1.3321,1.3396,1.3380,1.3217,1.3460,1.4507,1.5297,1.5897,1.6123,1.4903,1.1703,0.7339,0.3619],
+  "campaign_ctr_quantiles_10_50_90": [0.24798207450961218,0.3429812824390682,0.45707048362782654],
+  "action_effects": "synthetic, not causally identified"
+}

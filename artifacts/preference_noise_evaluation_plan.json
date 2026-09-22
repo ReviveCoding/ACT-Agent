@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-09-20T23:35:35.807919+00:00",
+  "protocol": "act-v1-20260920",
+  "status": "PREDECLARED_BEFORE_NOISY_ROLLOUT",
+  "split": "development",
+  "task_ids": [
+    "development-000000",
+    "development-000001",
+    "development-000002",
+    "development-000003",
+    "development-000004",
+    "development-000005",
+    "development-000006",
+    "development-000007",
+    "development-000008",
+    "development-000009",
+    "development-000010",
+    "development-000011",
+    "development-000012",
+    "development-000013",
+    "development-000014",
+    "development-000015",
+    "development-000016",
+    "development-000017",
+    "development-000018",
+    "development-000019",
+    "development-000020",
+    "development-000021",
+    "development-000022",
+    "development-000023"
+  ],
+  "task_count": 24,
+  "methods": [
+    "dpo",
+    "ipo",
+    "robust_dpo",
+    "act_po"
+  ],
+  "label_flip_rates": [
+    0,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "rollout_max_turns": 8,
+  "rollout_max_new_tokens": 192,
+  "primary_diagnostic_metrics": [
+    "completion",
+    "safe_completion",
+    "process_compliance",
+    "critical_process_flag"
+  ],
+  "comparison": "within method, each noise rate versus 0% on identical tasks/world seeds; cross-method counts descriptive",
+  "uncertainty": "task-family clustered paired bootstrap; exploratory with E07 REVIEW",
+  "protected_outcome_access": 0,
+  "source_sha256": {
+    "src/act_agent/evaluation/model_rollout.py": "180c37c555b5fb8bc7a19b0e3a1e025555289bd0c7c1b790e5a546dd1a6b064d",
+    "src/act_agent/evaluation/analyze_adapter.py": "ddf957b3cf62ca83c04117b52684221ffa8ffa1e812fd77a12c169b20f731c74",
+    "src/act_agent/evaluation/compare_models.py": "684861c5c0b098dd5c2d7428dd0b005b86f52154eb7a8e0439786030bae42642",
+    "src/act_agent/evaluation/episode.py": "085c1c6496a947660b4045dbffd75ec4e3bf54ee86a3422a87f1ef78d028dc6a",
+    "src/act_agent/tasks/generator.py": "cff0721d96f1bbd0ab3ae8f7a5f63429d62ab1e474ab310aae6a017c07884a0b",
+    "artifacts/model_source_manifest.json": "dbdf5aae53cce1698ce28183d5d53c90091754af93984f716b206a5718942af8",
+    "artifacts/preference_noise_plan.json": "fff8b424ac3d8ee444eed4c40ab005b6c2acab638913c60e45cadb4058db5fb5",
+    "scripts/run_noise_rollouts.sh": "c516cc6731d1f1ae80ae1d943eac5ead6031c61be428ae7f2a576427814387bc"
+  }
+}

@@ -1,0 +1,67 @@
+# Python
+dist/
+build/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Caches / temp
+.cache/
+tmp/
+temp/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw / external / generated data
+data/raw/
+data/downloads/
+data/external/
+data/cache/
+
+# Checkpoints / model weights
+checkpoints/
+models/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# ML caches
+huggingface/
+wandb/
+
+# Local DBs
+*.duckdb
+*.duckdb.wal
+
+# Runtime logs
+logs/
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*credentials*.json
+*secret*.json
+
+# Machine-specific launch state
+.act-agent-bootstrap
+.launch-act-agent-codex.sh

@@ -1,0 +1,112 @@
+{
+  "timestamp": "2026-09-20T16:33:19.650483+00:00",
+  "variant": "A",
+  "status": "PASS",
+  "checks": {
+    "temporal_profile_r_at_least_0_95": true,
+    "aggregate_click_anchor_within_0_03": true,
+    "conditional_conversion_anchor_within_0_03": true,
+    "campaign_heterogeneity_ordered": true,
+    "faults_covered": true,
+    "zero_delivery_budget_and_eligibility": true,
+    "delivery_faults_reduce_opportunity": true,
+    "telemetry_corruption_visible": true,
+    "bid_intervention_direction": true,
+    "rollback_and_version": true,
+    "deterministic_seed": true
+  },
+  "temporal_profile_correlation": 0.9999697276135084,
+  "observed_click_flag_rate": 0.3611582006757701,
+  "synthetic_click_flag_rate": 0.3639350511895745,
+  "observed_conversion_given_click": 0.13555064486076063,
+  "synthetic_conversion_given_click": 0.13620387854396096,
+  "campaign_bucket_rates": [
+    0.26187122020633224,
+    0.3584372070147396,
+    0.4815601618269576
+  ],
+  "fault_results": {
+    "BUDGET_EXHAUSTION": {
+      "impressions": 0,
+      "telemetry_health": "ok",
+      "state_valid": true
+    },
+    "PACING_THROTTLE": {
+      "impressions": 8,
+      "telemetry_health": "ok",
+      "state_valid": true
+    },
+    "UNDER_BIDDING": {
+      "impressions": 10,
+      "telemetry_health": "ok",
+      "state_valid": true
+    },
+    "COMPETITION_SHOCK": {
+      "impressions": 25,
+      "telemetry_health": "ok",
+      "state_valid": true
+    },
+    "SUPPLY_COLLAPSE": {
+      "impressions": 4,
+      "telemetry_health": "ok",
+      "state_valid": true
+    },
+    "DEAL_ELIGIBILITY_FAILURE": {
+      "impressions": 0,
+      "telemetry_health": "ok",
+      "state_valid": true
+    },
+    "TARGETING_RESTRICTION": {
+      "impressions": 38,
+      "telemetry_health": "ok",
+      "state_valid": true
+    },
+    "PERFORMANCE_REGIME_SHIFT": {
+      "impressions": 29,
+      "telemetry_health": "ok",
+      "state_valid": true
+    },
+    "TELEMETRY_CORRUPTION": {
+      "impressions": 65,
+      "telemetry_health": "corrupt",
+      "state_valid": true
+    }
+  },
+  "calibration": {
+    "click_flag_rate": 0.3611582006757701,
+    "conversion_flag_given_click": 0.13555064486076063,
+    "source_sha256": "94ac7a465564349bc7ba008602211d5990a3c53cc133abc0aadef61ea2391a98",
+    "hourly_traffic_profile": [
+      0.1945,
+      0.1343,
+      0.1286,
+      0.1783,
+      0.3021,
+      0.5589,
+      0.8703,
+      1.1224,
+      1.2721,
+      1.3034,
+      1.3188,
+      1.3321,
+      1.3396,
+      1.338,
+      1.3217,
+      1.346,
+      1.4507,
+      1.5297,
+      1.5897,
+      1.6123,
+      1.4903,
+      1.1703,
+      0.7339,
+      0.3619
+    ],
+    "campaign_ctr_quantiles": [
+      0.24798207450961218,
+      0.3429812824390682,
+      0.45707048362782654
+    ]
+  },
+  "claim_boundary": "Observed rates anchor flags only; all intervention effects are synthetic."
+}

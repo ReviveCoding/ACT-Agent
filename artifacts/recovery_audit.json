@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-09-20T16:45:36.488962+00:00",
+  "status": "PASS",
+  "items": {
+    "artifacts/e00_environment/cuda_probe.json": {
+      "expected": "3891e25c8a0af9d24cda57600335d18a3e4dc99daf095e582097f69e8e91a359",
+      "actual": "3891e25c8a0af9d24cda57600335d18a3e4dc99daf095e582097f69e8e91a359"
+    },
+    "artifacts/e00_environment/qualification.json": {
+      "expected": "2aef526ff8e94945a00b36b6417809af003990e866a1ac259f319e8c19026171",
+      "actual": "2aef526ff8e94945a00b36b6417809af003990e866a1ac259f319e8c19026171"
+    },
+    "artifacts/data_source.json": {
+      "expected": "3d814c938f036b86836b75bf387bfe08f47d5f1c5ac692f5a5d0246928f2a8d7",
+      "actual": "3d814c938f036b86836b75bf387bfe08f47d5f1c5ac692f5a5d0246928f2a8d7"
+    },
+    "model/config.json": {
+      "expected": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba",
+      "actual": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba"
+    },
+    "model/model-00001-of-00003.safetensors": {
+      "expected": "75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6",
+      "actual": "75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6"
+    },
+    "model/model-00002-of-00003.safetensors": {
+      "expected": "0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1",
+      "actual": "0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1"
+    },
+    "model/model-00003-of-00003.safetensors": {
+      "expected": "7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d",
+      "actual": "7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d"
+    },
+    "model/model.safetensors.index.json": {
+      "expected": "d6c42883a895dfef5b0080ed2116a1bcd764f558406b98923d675978a1abf29c",
+      "actual": "d6c42883a895dfef5b0080ed2116a1bcd764f558406b98923d675978a1abf29c"
+    },
+    "model/tokenizer.json": {
+      "expected": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "actual": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    "model/tokenizer_config.json": {
+      "expected": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+      "actual": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3"
+    },
+    "criteo_attribution": {
+      "expected": "94ac7a465564349bc7ba008602211d5990a3c53cc133abc0aadef61ea2391a98",
+      "actual": "94ac7a465564349bc7ba008602211d5990a3c53cc133abc0aadef61ea2391a98"
+    },
+    "criteo_uplift": {
+      "expected": "2716e1bf0fd157a93b5bf86924d9088419dfbac2022c6cd90030220634f616dc",
+      "actual": "2716e1bf0fd157a93b5bf86924d9088419dfbac2022c6cd90030220634f616dc"
+    }
+  },
+  "sft_long_run_recovery": "interrupted before adapter checkpoint; E10 remains PENDING",
+  "protected_internal_outcome_access": 0,
+  "protected_external_outcome_access": 0,
+  "training_data_reuse": {
+    "sft_trace_sha256_match": true,
+    "sft_tokens_sha256_match": true,
+    "scripted_preference_scratch_sha256_match": true,
+    "scripted_preference_canonical_sha256_match": true
+  }
+}

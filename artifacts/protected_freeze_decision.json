@@ -1,0 +1,15 @@
+{
+  "effect_estimates": null,
+  "freeze_manifest_created": false,
+  "next_action": "Repair scientific gates under a new documented protocol before any protected outcome access",
+  "protected_access": {
+    "external_benchmark_outcome_access": 0,
+    "internal_outcome_access": 0,
+    "protocol": "act-v1-20260920"
+  },
+  "protected_results": null,
+  "protocol": "act-v1-20260920",
+  "reason": "E07 task completion oracle/difficulty mechanics REVIEW; E11/E12 model/on-policy preference sources and alternate-tape stability REVIEW; E14 pair-construction contrast invalid; E15 full on-policy ACT-PO absent. No qualified finalist or confirmatory power basis.",
+  "status": "NOT_FROZEN",
+  "timestamp": "2026-09-20T22:55:55.180585+00:00"
+}

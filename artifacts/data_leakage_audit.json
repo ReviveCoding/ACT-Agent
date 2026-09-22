@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-09-20T16:35:07.183294+00:00",
+  "status": "PASS",
+  "checks": {
+    "mart_hashes_match": true,
+    "seed_namespaces_disjoint": true,
+    "raw_attribution_excluded_from_repository": true,
+    "raw_uplift_excluded_from_repository": true
+  },
+  "mart_hashes": {
+    "campaign_hour": {
+      "expected": "031f99e606a46d8db778b88ed86ec601a6a2ec8facce353122ba99cc14fe0338",
+      "actual": "031f99e606a46d8db778b88ed86ec601a6a2ec8facce353122ba99cc14fe0338"
+    },
+    "campaign_day": {
+      "expected": "088c024e827615e55dd6f0bb122f30aacfcc48899cd7fa5fe4e35c08b4085cfa",
+      "actual": "088c024e827615e55dd6f0bb122f30aacfcc48899cd7fa5fe4e35c08b4085cfa"
+    },
+    "campaign_profile": {
+      "expected": "42469cb58c9739c9af4e21652357fcdc6a548faf9bf1790d9315ba491b3ccabf",
+      "actual": "42469cb58c9739c9af4e21652357fcdc6a548faf9bf1790d9315ba491b3ccabf"
+    },
+    "user_path": {
+      "expected": "135edaf00d0d8439ead2c8a28869e4d4a1cc3ea5842230b9e87c6af793210923",
+      "actual": "135edaf00d0d8439ead2c8a28869e4d4a1cc3ea5842230b9e87c6af793210923"
+    },
+    "distribution_fit": {
+      "expected": "9c7b1e579b456205678136bad29ade57091c4e3a67da04f4e46bd1d8102ee2cb",
+      "actual": "9c7b1e579b456205678136bad29ade57091c4e3a67da04f4e46bd1d8102ee2cb"
+    }
+  },
+  "split_sizes": {
+    "train": 3000,
+    "calibration": 300,
+    "development": 400,
+    "pilot": 300,
+    "id": 300,
+    "composition": 250,
+    "policy": 200,
+    "tool": 200,
+    "twin_b": 300,
+    "security": 200
+  },
+  "data_role": "public aggregate calibration; no public row-level model training",
+  "protected_outcome_access": 0
+}

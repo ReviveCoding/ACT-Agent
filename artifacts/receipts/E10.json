@@ -1,0 +1,25 @@
+{
+  "ended": "2026-09-20T20:38:16.974239+00:00",
+  "name": "SFT development",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/e10_b3-sft-seed11-step120_episodes.jsonl": "9f00b8738b7e0a9153f06bdb96b3275e94c550e5737c9224b8378bff5b8ca43c",
+    "artifacts/e10_b3-sft-seed11-step120_rollout_manifest.json": "f469a8c02489a06145d5c84739a2fbb20e2a24f24b495bf203958cc6c4f8b4bb",
+    "artifacts/e10_b3-sft-seed11-step120_traces.jsonl": "da409f5d3dc7e6afe70d5fc15bf5c5b82324f563e03f81a48206be784d1302d0",
+    "artifacts/e10_b3-sft-seed11-step30_episodes.jsonl": "857e02246e37efa7a719685b9df1798e3fbc3b9b664173d060e5fcf0d395b4b9",
+    "artifacts/e10_b3-sft-seed11-step30_rollout_manifest.json": "fb102929370632c186d811cb2562835f25122195a145a9d42062541e1a1130ba",
+    "artifacts/e10_b3-sft-seed11-step30_traces.jsonl": "1c1192742182e7dd5fab6ad994f82423be45e3476ca68a8ae183671a7a6f6dc1",
+    "artifacts/e10_b3_seed11_step120_summary.json": "51979d92836c0bddae1758924f646ec1f6c611750bcbb3c3a6d4efda7258076d",
+    "artifacts/e10_b3_seed11_step30_summary.json": "199155a830b439755d644cf183daf13daa7fa29b11a509df1e9462f445b83e54",
+    "artifacts/sft_leakage_audit.json": "d6ca9f9216e366710efdd8f274e3b4947e7b2332c1597606097475b3a753496e",
+    "artifacts/training/sft-seed11-step30.json": "c02bafc38c7f5fe4a7b5b997ddc78444f5f56ad4633ace2738c87d4be35f4e65",
+    "artifacts/training/sft-seed11.json": "442a2bfa4e67b9ede5c783cffdf502c121db8392e3e1cb6d3daf3a00100a1d8c",
+    "artifacts/training/sft_resume_validation.json": "16dac3862d52078d98386505ab81b284dc3eee75023b192ded256b1235e987fd",
+    "reports/model_cards/sft-seed11.md": "7ad845873f3092b9e8bd92a164712c13c26e773e95fd7bed576dfafe0141b575"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Seed-11 120-step NF4/BF16 QLoRA SFT completed on RTX 4090; 24 paired development tasks: 8 complete, 8 safe, 24 process compliant, zero critical flags; step-30 snapshot 6 complete with 8 critical flags. E07 task-oracle REVIEW prevents primary capability inference.",
+  "stage": "E10",
+  "started": "2026-09-20T20:38:16.974214+00:00",
+  "state": "PASS"
+}

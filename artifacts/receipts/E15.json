@@ -1,0 +1,20 @@
+{
+  "ended": "2026-09-20T22:52:54.982153+00:00",
+  "name": "ACT-PO development",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/e15_m0-act-po-seed11-scripted_episodes.jsonl": "9b18f7e264d9989d14d02f1742b277288c7f9808498d9d3bfb38426c703980e3",
+    "artifacts/e15_m0-act-po-seed11-scripted_rollout_manifest.json": "4a50709ebb91a669647138af63c6fb440b7c73182461787203a0c4d39bc78c5f",
+    "artifacts/e15_m0-act-po-seed11-scripted_traces.jsonl": "0baf65f81c8bd9f6a1645d0fa299ffb19277bba5b8d66e61cc97e714dcd9e423",
+    "artifacts/e15_m0_seed11_scripted_summary.json": "e973f26fa59cce7c622fa4f5e1202dee388ac74c7a336f5d16b425ff5ff670c2",
+    "artifacts/e15_m0_vs_b3_seed11_paired_comparison.json": "478f59563d8d097cd2d07afc59884f46586f757d55e097ffbfe50cc19104d34f",
+    "artifacts/e15_m0_vs_b7_seed11_paired_comparison.json": "337e9574e2406524ece82289e200b2f939712e4dd36d53f4c6232985d87b0b09",
+    "artifacts/training/act_po-seed11-steps3-pairs64-noise00.json": "182ac8e65535a670426c7e64cc65df08fc9817265d783509cf2061c20b5fb172",
+    "reports/model_cards/act_po-seed11-steps3-pairs64-noise00.md": "3dac63b080b6f7fc87b367ea001aee9aae1f3ab54a5247ed1e96f9036ecc3068"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Weighted ACT-style CUDA pilot on scripted pairs completed 6/24 tasks, versus unweighted B7 5/24 and SFT 8/24, with 0 critical flags in all three; full ACT-PO on-policy hard negatives and qualified task oracle absent.",
+  "stage": "E15",
+  "started": "2026-09-20T22:52:54.982118+00:00",
+  "state": "REVIEW"
+}

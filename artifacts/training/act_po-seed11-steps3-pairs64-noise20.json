@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-09-21T00:05:45.499729+00:00",
+  "status": "PASS",
+  "protocol": "act-v1-20260920",
+  "mode": "act_po",
+  "seed": 11,
+  "steps": 3,
+  "accumulation": 1,
+  "pair_limit": 64,
+  "beta": 0.1,
+  "noise_rate": 0.2,
+  "flipped_pair_ids": [
+    "train-000299-inefficient_success",
+    "train-000324-inefficient_success",
+    "train-000518-unsafe_success",
+    "train-000610-inefficient_success",
+    "train-001036-inefficient_success",
+    "train-001354-inefficient_success",
+    "train-001412-missing_confirmation",
+    "train-001542-inefficient_success",
+    "train-001889-inefficient_success",
+    "train-002025-wrong_argument",
+    "train-002097-unsafe_success",
+    "train-002550-inefficient_success",
+    "train-002569-inefficient_success"
+  ],
+  "base_model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "sft_adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed11",
+  "sft_adapter_sha256": {
+    "adapter_model.safetensors": "8d8fb9d7b95d3b4281834f9f349d6e54c13bf773e4d10cc5841ce660261183c7"
+  },
+  "preference_tokens_sha256": "9eda6b8f75c4db636c6d5d1fc349bcae9f1696574a3450a341a28c03b33b331e",
+  "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/act_po-seed11-steps3-pairs64-noise20",
+  "adapter_files_sha256": {
+    "adapter_model.safetensors": "dabbe1d5c0dd23201dcb566457ce38b694dcc52b3f92d50e311982d6e0525e20"
+  },
+  "adapter_config_sha256": "997995b9e6dbcdc51ca9ae4ef3ee6de22a0cbed542458faab3d1dc2e69a7d6ac",
+  "trainable_parameters": 33030144,
+  "reference_precomputed": true,
+  "reference_sha256": "a362aeda7f48dc303834e2274f8e1a3b29319d0fb58f38d3af9a9ba30346d444",
+  "reference_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/reference_cache/3d088bac780a71a95279090227460f7fa3b802f602162cd794a1502df8e15bb3/reference_logprobs.jsonl",
+  "reference_cache_key": "3d088bac780a71a95279090227460f7fa3b802f602162cd794a1502df8e15bb3",
+  "reference_seconds": 0.16960214400023688,
+  "train_seconds": 36.040697779000766,
+  "peak_allocated_vram_bytes": 8212158976,
+  "peak_reserved_vram_bytes": 8967421952,
+  "losses": [
+    0.5967485308647156,
+    0.45163190364837646,
+    0.19957335293293
+  ],
+  "preflight": {
+    "nvidia_smi": "NVIDIA GeForce RTX 4090 Laptop GPU, 16376 MiB, 16048 MiB, 616.92, 82",
+    "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "vram_bytes": 17170956288,
+    "bf16_supported": true,
+    "matmul_checksum": -3826.9716796875
+  },
+  "candidate_source": "scripted development pairs only",
+  "method_mapping": "DPO/IPO/robust formulas aligned to installed TRL DPOTrainer; IPO uses assistant-token average log probabilities; robust epsilon=0.1",
+  "protected_outcome_access": 0
+}

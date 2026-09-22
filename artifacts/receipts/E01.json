@@ -1,0 +1,15 @@
+{
+  "ended": "2026-09-20T16:35:55.638965+00:00",
+  "name": "Desktop study and source verification",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/source_registry.json": "e86aebadba7fa2fe6724f511c523fe002ee952ebcddb67eb16ffe5e3427cfd87",
+    "artifacts/uplift_profile.json": "6118f9070489a28f668da6f1fe7b6bcc847c20227348751c6c6e8b8e9611690a",
+    "studies/desktop_study.md": "e2650b426793f8b490b9e949b0b444ec79cff5aa4297b47357f2bc84a371c352"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Authoritative sources pinned; Criteo attribution/uplift and Qwen hashes/licenses verified; benchmark outcomes untouched",
+  "stage": "E01",
+  "started": "2026-09-20T16:35:55.638952+00:00",
+  "state": "PASS"
+}

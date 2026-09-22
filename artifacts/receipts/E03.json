@@ -1,0 +1,16 @@
+{
+  "ended": "2026-09-20T16:35:55.768566+00:00",
+  "name": "Public data EDA",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/data_leakage_audit.json": "f263bd89a58a76cc2f03b8fe16760e5c0b26d10cf054a5a3a69423431f4144b1",
+    "artifacts/eda_statistics.json": "c4e03624cb2ab7ca41547f2f2ba84d25d768c688ecfc7d7e7bb62a1a9bd8c259",
+    "data/processed/profile.json": "0abfd67e82780c50459a03a30e11e40530dc47fffe6390e21d792eb2822ccdb6",
+    "reports/data_card.md": "56f5d05c640636c9968327d9b063568c853b9e9d924a35a8113bfd21dfa0e74a"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Public aggregates, quality statistics, exact hashes, raw-data exclusion, and split namespace audit passed",
+  "stage": "E03",
+  "started": "2026-09-20T16:35:55.768551+00:00",
+  "state": "PASS"
+}

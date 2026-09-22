@@ -1,0 +1,14 @@
+{
+  "ended": "2026-09-20T06:32:27.404339+00:00",
+  "name": "Environment qualification",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/e00_environment/cuda_probe.json": "3891e25c8a0af9d24cda57600335d18a3e4dc99daf095e582097f69e8e91a359",
+    "artifacts/e00_environment/qualification.json": "2aef526ff8e94945a00b36b6417809af003990e866a1ac259f319e8c19026171"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "Escalated nvidia-smi and PyTorch CUDA 13.0 BF16 real matmul qualified",
+  "stage": "E00",
+  "started": "2026-09-20T06:32:27.404322+00:00",
+  "state": "PASS"
+}

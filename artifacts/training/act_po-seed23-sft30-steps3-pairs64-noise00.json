@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-09-20T23:13:34.322197+00:00",
+  "status": "PASS",
+  "protocol": "act-v1-20260920",
+  "mode": "act_po",
+  "seed": 23,
+  "steps": 3,
+  "accumulation": 1,
+  "pair_limit": 64,
+  "beta": 0.1,
+  "noise_rate": 0.0,
+  "flipped_pair_ids": [],
+  "base_model_hash": "ac79c0b15abda13fcc6a54ab44bbafbde19681d45737f982a145ca9fc5708a2f",
+  "sft_adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed23-steps30",
+  "sft_adapter_sha256": {
+    "adapter_model.safetensors": "cace370fdb03aa8301da5ad2d81c6aa22eaa2696bd4ba5ca81afbd3a20a8659e"
+  },
+  "preference_tokens_sha256": "9eda6b8f75c4db636c6d5d1fc349bcae9f1696574a3450a341a28c03b33b331e",
+  "adapter_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/act_po-seed23-sft30-steps3-pairs64-noise00",
+  "adapter_files_sha256": {
+    "adapter_model.safetensors": "8fd9e9ac347e6b5dbbf464aeba23eedd1e284030bed43b20f5d1ddc3b39d7471"
+  },
+  "adapter_config_sha256": "6e67c28812d30d3d83d23f121dca2447c0fe3acddeec3d7c71d9c1826c9edfdf",
+  "trainable_parameters": 33030144,
+  "reference_precomputed": true,
+  "reference_sha256": "802ddfcc390943d38ba55404f32370f34bcd2ec800dd2cb3428edfffd179b5c1",
+  "reference_path": "/home/bjw-0/.cache/act-agent-v1/checkpoints/reference_cache/b968511b39949453875668bd9b7410d228bdaaec14da2e2a8fda5a06c0e75098/reference_logprobs.jsonl",
+  "reference_cache_key": "b968511b39949453875668bd9b7410d228bdaaec14da2e2a8fda5a06c0e75098",
+  "reference_seconds": 0.1425563519987918,
+  "train_seconds": 27.420187525000074,
+  "peak_allocated_vram_bytes": 8194130432,
+  "peak_reserved_vram_bytes": 8948547584,
+  "losses": [
+    0.44250962138175964,
+    0.5444800853729248,
+    0.000967311323620379
+  ],
+  "preflight": {
+    "nvidia_smi": "NVIDIA GeForce RTX 4090 Laptop GPU, 16376 MiB, 16048 MiB, 616.92, 80",
+    "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "vram_bytes": 17170956288,
+    "bf16_supported": true,
+    "matmul_checksum": 2067.900146484375
+  },
+  "candidate_source": "scripted development pairs only",
+  "method_mapping": "DPO/IPO/robust formulas aligned to installed TRL DPOTrainer; IPO uses assistant-token average log probabilities; robust epsilon=0.1",
+  "protected_outcome_access": 0
+}

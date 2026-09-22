@@ -1,0 +1,11 @@
+{
+  "ended": "2026-09-20T05:57:48.270824+00:00",
+  "name": "Preference noise",
+  "next_action": "resume after prerequisite repair",
+  "outputs": {},
+  "protocol": "act-v1-20260920",
+  "reason": "required CUDA model training/inference unavailable",
+  "stage": "E23",
+  "started": "2026-09-20T05:57:48.270798+00:00",
+  "state": "BLOCKED_EXTERNAL"
+}

@@ -1,0 +1,11 @@
+# Public data exploratory analysis
+
+Source: Criteo Attribution Modeling for Bidding dataset, downloaded from the Criteo-owned Hugging Face repository. The compressed file has SHA-256 `94ac7a465564349bc7ba008602211d5990a3c53cc133abc0aadef61ea2391a98` and is licensed CC BY-NC-SA 4.0. No row-level source file is committed.
+
+The qualified source contains **16,468,027 impression records**, **675 campaign identifiers**, and **6,142,256 user identifiers** over timestamp 0–2,671,199 (about 31 days). It contains 5,947,563 impression-level click flags and 806,196 impression-level conversion flags. These are counts of flags, not unique clicks or unique conversions. The published data page reports around 45,000 conversions because conversion events can be repeated across impressions; our flag sum must not be presented as unique conversions. `cost` is transformed and must not be interpreted as currency or advertiser spend.
+
+Quality scans found zero missing values in timestamp, uid, campaign, or cost; zero negative costs; zero invalid binary click/conversion values; and zero duplicate `(timestamp, uid, campaign)` keys. A conversion flag never occurred with click=0 in this file. These checks do not prove absence of all semantic duplicates or leakage.
+
+Daily impression volume ranged from 436,408 to 638,165. The ten largest campaigns accounted for 18.58% of impressions. Campaign impression counts ranged from 20 to 437,385, with median 10,357. Campaign-level mean observed path length ranged from 1.22 to 5.73 impressions per user; the largest observed user path had 376 impressions. The median impression-to-conversion timestamp difference among eligible flagged rows was 319,603 seconds. This is a repeated-impression measure and should not be interpreted as a causal delay.
+
+Canonical aggregate marts: `data/processed/campaign_hour.parquet`, `campaign_day.parquet`, `campaign_profile.parquet`, `user_path.parquet`, and `distribution_fit.parquet`. The exact row counts and hashes are in `data/processed/profile.json`; additional SQL outputs are in `artifacts/eda_statistics.json`. Aggregate campaign results can reflect anonymization and subsampling. The unknown meanings of categorical features and the transformed cost limit interpretation. Public data can calibrate observed distributions only; mutation effects in the simulator are synthetic.

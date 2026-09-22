@@ -1,0 +1,16 @@
+{
+  "ended": "2026-09-20T21:27:28.282373+00:00",
+  "name": "Systems and serving",
+  "next_action": "none",
+  "outputs": {
+    "artifacts/systems_development.json": "73e6b56e1c3ec88a994a356bb679209c1af104fe974b76accf40c7c2b8289795",
+    "artifacts/systems_serving_qwen-base.json": "d96b3c773fafda8346b2bf0f0ad3d5be0cf07f64dda373d7de5db238862aaa51",
+    "artifacts/systems_serving_sft-seed11-step120.json": "f091764c5d21127abc294ae0675c5f3298b7e83e9b63ce70a47b9538de5076c7",
+    "reports/systems_report.md": "739929ce8f8979dad27eeb88e30c0d243b52146d943ae081a51d9b22249d5803"
+  },
+  "protocol": "act-v1-20260920",
+  "reason": "RTX 4090 CUDA training, rollout, and base/SFT NF4 serving lifecycle measured; outputs differ in generated length, and compile cold-cost/break-even plus frozen finalist serving comparison remain unmeasured.",
+  "stage": "E28",
+  "started": "2026-09-20T21:27:28.282328+00:00",
+  "state": "REVIEW"
+}

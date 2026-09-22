@@ -1,0 +1,561 @@
+{
+  "created": "2026-09-20T05:57:41.715341+00:00",
+  "protocol": "act-v1-20260920",
+  "stages": {
+    "E00": {
+      "ended": "2026-09-20T06:32:27.404339+00:00",
+      "name": "Environment qualification",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/e00_environment/cuda_probe.json": "3891e25c8a0af9d24cda57600335d18a3e4dc99daf095e582097f69e8e91a359",
+        "artifacts/e00_environment/qualification.json": "2aef526ff8e94945a00b36b6417809af003990e866a1ac259f319e8c19026171"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Escalated nvidia-smi and PyTorch CUDA 13.0 BF16 real matmul qualified",
+      "stage": "E00",
+      "started": "2026-09-20T06:32:27.404322+00:00",
+      "state": "PASS"
+    },
+    "E01": {
+      "ended": "2026-09-20T16:35:55.638965+00:00",
+      "name": "Desktop study and source verification",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/source_registry.json": "e86aebadba7fa2fe6724f511c523fe002ee952ebcddb67eb16ffe5e3427cfd87",
+        "artifacts/uplift_profile.json": "6118f9070489a28f668da6f1fe7b6bcc847c20227348751c6c6e8b8e9611690a",
+        "studies/desktop_study.md": "e2650b426793f8b490b9e949b0b444ec79cff5aa4297b47357f2bc84a371c352"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Authoritative sources pinned; Criteo attribution/uplift and Qwen hashes/licenses verified; benchmark outcomes untouched",
+      "stage": "E01",
+      "started": "2026-09-20T16:35:55.638952+00:00",
+      "state": "PASS"
+    },
+    "E02": {
+      "ended": "2026-09-20T05:57:47.585083+00:00",
+      "name": "Data acquisition",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/data_source.json": "3d814c938f036b86836b75bf387bfe08f47d5f1c5ac692f5a5d0246928f2a8d7"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "official Criteo-owned mirror checksum matches published SHA-256",
+      "stage": "E02",
+      "started": "2026-09-20T05:57:47.585058+00:00",
+      "state": "PASS"
+    },
+    "E03": {
+      "ended": "2026-09-20T16:35:55.768566+00:00",
+      "name": "Public data EDA",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/data_leakage_audit.json": "f263bd89a58a76cc2f03b8fe16760e5c0b26d10cf054a5a3a69423431f4144b1",
+        "artifacts/eda_statistics.json": "c4e03624cb2ab7ca41547f2f2ba84d25d768c688ecfc7d7e7bb62a1a9bd8c259",
+        "data/processed/profile.json": "0abfd67e82780c50459a03a30e11e40530dc47fffe6390e21d792eb2822ccdb6",
+        "reports/data_card.md": "56f5d05c640636c9968327d9b063568c853b9e9d924a35a8113bfd21dfa0e74a"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Public aggregates, quality statistics, exact hashes, raw-data exclusion, and split namespace audit passed",
+      "stage": "E03",
+      "started": "2026-09-20T16:35:55.768551+00:00",
+      "state": "PASS"
+    },
+    "E04": {
+      "ended": "2026-09-20T16:35:55.957355+00:00",
+      "name": "Standards mapping",
+      "next_action": "none",
+      "outputs": {
+        "studies/standards_mapping.md": "cd4f4df683bd12d6a78a53dd505ce309fe2c9a5ad68fd829b3ee9d889b3914b6"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Standards mapped to actual design scope with explicit nonconformance boundary",
+      "stage": "E04",
+      "started": "2026-09-20T16:35:55.957336+00:00",
+      "state": "PASS"
+    },
+    "E05": {
+      "ended": "2026-09-20T16:35:56.046709+00:00",
+      "name": "Twin-A qualification",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/twin_a_qualification.json": "be30366deaf352f777f949788abb1695496423a936592a534e841f123b1bcf1d",
+        "reports/twin_a_card.md": "40ba8fe64ba7b1346e9a0bcd92f5fda0185066aae2a6fa109be0ac223e469d6f"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Twin-A passed 11 pre-protected distribution, temporal, heterogeneity, fault, intervention, transaction, and determinism checks",
+      "stage": "E05",
+      "started": "2026-09-20T16:35:56.046693+00:00",
+      "state": "PASS"
+    },
+    "E06": {
+      "ended": "2026-09-20T16:35:56.107466+00:00",
+      "name": "Twin-B seal",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/twin_b_seal.json": "f03cdbd04f95e5800db2a681768870db634d64e6f5885a0d06e43efc2803d63a",
+        "reports/twin_b_card.md": "5a058f49b1b517a7bcbc0fa257ae89adc12f3aeedc57bea21327ce5cf8dc55f4"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Twin-B source, calibration, parameters, and seed namespace resealed before protected access; no transfer outcomes accessed",
+      "stage": "E06",
+      "started": "2026-09-20T16:35:56.107451+00:00",
+      "state": "PASS"
+    },
+    "E07": {
+      "ended": "2026-09-20T16:35:56.230654+00:00",
+      "name": "Task and user simulator",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/task_oracle_gap_matrix.json": "30d32f34a70a8a3955e4dc09b8c658731b8dd592a69ed9eb936ef534d2fa51fe",
+        "artifacts/task_qualification.json": "0a2796f1be7fce2acb38eda436a8f6581159bb1a94668b97995d3c31e881f413",
+        "reports/task_card.md": "ae98d632f631fcf25c380c1e0e35949b8e600fd257db20207b7f34e78c54bb91"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Expected deterministic user behavior passes; independent family completion oracle and L3-L9 task mechanics remain unqualified",
+      "stage": "E07",
+      "started": "2026-09-20T16:35:56.230635+00:00",
+      "state": "REVIEW"
+    },
+    "E08": {
+      "ended": "2026-09-20T16:35:56.299490+00:00",
+      "name": "Process contracts",
+      "next_action": "none",
+      "outputs": {
+        "src/act_agent/contracts/core.py": "e42c25661d80985d3df910f766ce819a77be19ed3a7cbdb699b283e14adcaad9",
+        "tests/test_contract_matrix.py": "1a63676ba4a29d4612ede9c4b68663d1fc0890d5b1a1a20a08e0ec5ea05d2b5d"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Known-answer contract matrix covers prewrite evidence, confirmation, permissions, scope, forbidden actions, mutation cap, and rollback",
+      "stage": "E08",
+      "started": "2026-09-20T16:35:56.299475+00:00",
+      "state": "PASS"
+    },
+    "E09": {
+      "ended": "2026-09-20T18:00:07.458816+00:00",
+      "name": "B0-B2 baselines",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/e09_baseline_manifest.json": "10c60f5d92dd022ebf20768d4a54e222e0d92828a61052952b42d873c13d3e9f",
+        "artifacts/e09_baseline_summary.json": "d01b06ea3f542f7f101be47573609af10d9c115abb9b20f5c74e56f30ffbd0dc",
+        "artifacts/e09_episodes.jsonl": "a56f0bb3edaef38d6ac2ffe99fbe31736fae217adb5f2468fadfb0aab3ba9184",
+        "artifacts/e09_traces.jsonl": "9e92250eb06a01869da4110593221f567e224ff6a92e4421e88d00a29c10ee03",
+        "reports/baseline_development.md": "eceb76398da6588bfd852a0cf57f022f867297210769e15da45c60614b4ed150"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "24 paired B0/B1/B2 CUDA development tasks completed; small pilot and E07 task-oracle REVIEW preclude primary capability claim",
+      "stage": "E09",
+      "started": "2026-09-20T18:00:07.458462+00:00",
+      "state": "REVIEW"
+    },
+    "E10": {
+      "ended": "2026-09-20T20:38:16.974239+00:00",
+      "name": "SFT development",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/e10_b3-sft-seed11-step120_episodes.jsonl": "9f00b8738b7e0a9153f06bdb96b3275e94c550e5737c9224b8378bff5b8ca43c",
+        "artifacts/e10_b3-sft-seed11-step120_rollout_manifest.json": "f469a8c02489a06145d5c84739a2fbb20e2a24f24b495bf203958cc6c4f8b4bb",
+        "artifacts/e10_b3-sft-seed11-step120_traces.jsonl": "da409f5d3dc7e6afe70d5fc15bf5c5b82324f563e03f81a48206be784d1302d0",
+        "artifacts/e10_b3-sft-seed11-step30_episodes.jsonl": "857e02246e37efa7a719685b9df1798e3fbc3b9b664173d060e5fcf0d395b4b9",
+        "artifacts/e10_b3-sft-seed11-step30_rollout_manifest.json": "fb102929370632c186d811cb2562835f25122195a145a9d42062541e1a1130ba",
+        "artifacts/e10_b3-sft-seed11-step30_traces.jsonl": "1c1192742182e7dd5fab6ad994f82423be45e3476ca68a8ae183671a7a6f6dc1",
+        "artifacts/e10_b3_seed11_step120_summary.json": "51979d92836c0bddae1758924f646ec1f6c611750bcbb3c3a6d4efda7258076d",
+        "artifacts/e10_b3_seed11_step30_summary.json": "199155a830b439755d644cf183daf13daa7fa29b11a509df1e9462f445b83e54",
+        "artifacts/sft_leakage_audit.json": "d6ca9f9216e366710efdd8f274e3b4947e7b2332c1597606097475b3a753496e",
+        "artifacts/training/sft-seed11-step30.json": "c02bafc38c7f5fe4a7b5b997ddc78444f5f56ad4633ace2738c87d4be35f4e65",
+        "artifacts/training/sft-seed11.json": "442a2bfa4e67b9ede5c783cffdf502c121db8392e3e1cb6d3daf3a00100a1d8c",
+        "artifacts/training/sft_resume_validation.json": "16dac3862d52078d98386505ab81b284dc3eee75023b192ded256b1235e987fd",
+        "reports/model_cards/sft-seed11.md": "7ad845873f3092b9e8bd92a164712c13c26e773e95fd7bed576dfafe0141b575"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Seed-11 120-step NF4/BF16 QLoRA SFT completed on RTX 4090; 24 paired development tasks: 8 complete, 8 safe, 24 process compliant, zero critical flags; step-30 snapshot 6 complete with 8 critical flags. E07 task-oracle REVIEW prevents primary capability inference.",
+      "stage": "E10",
+      "started": "2026-09-20T20:38:16.974214+00:00",
+      "state": "PASS"
+    },
+    "E11": {
+      "ended": "2026-09-20T16:55:31.207380+00:00",
+      "name": "Trajectory and preference generation",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/preference_token_manifest.json": "dfa6319e8d505f2cfa1be1dd36959bd9951446892a5f47cdb7a51521c59b4400",
+        "artifacts/scripted_preference_manifest.json": "5a60267001919874f250c8ff34a54fdeb04097c331bfd79ff5630bc714148a51",
+        "artifacts/sft_data_manifest.json": "82059c4c684ad6db693a4e83bf6258bc9fb3a93e66c945f48d70753373868e5a",
+        "artifacts/sft_token_manifest.json": "9517c3e724a6ade9aa8de9a89ec7f39f6657200daa8d5941c64bc18e10c5cf87"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "6,000 split-safe SFT traces and 10,000 scripted labels exist; 1,805 consistency-filtered trainable pairs, but ReAct/SFT/on-policy sources absent",
+      "stage": "E11",
+      "started": "2026-09-20T16:55:31.207160+00:00",
+      "state": "REVIEW"
+    },
+    "E12": {
+      "ended": "2026-09-20T16:55:32.138170+00:00",
+      "name": "Preference audit",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/preference_audit.json": "5e4ca17e74a5d738795abfcf4ee8904f75098564c70650513f5e7e4e2c56b0cd",
+        "reports/preference_dataset_card.md": "cbeacfc8498d1c1bb153836647e96c7faeb31075f2fb24256eb087e40e4d2ba9"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Pair identity, mask, weight, task and market audits pass; alternate-tape and model-source preference audits not run",
+      "stage": "E12",
+      "started": "2026-09-20T16:55:32.137955+00:00",
+      "state": "REVIEW"
+    },
+    "E13": {
+      "ended": "2026-09-20T22:39:51.395003+00:00",
+      "name": "DPO/IPO/Robust-DPO",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/e13_b4-dpo-seed11-scripted_episodes.jsonl": "100835487a0e55e860e53351cb939b3a05300fed1de4563d82df388cebeb1a55",
+        "artifacts/e13_b4-dpo-seed11-scripted_rollout_manifest.json": "2cd020e46e708773676cc5a171efe1e222ab8ed5c8ae3ee6347caf3021a03e74",
+        "artifacts/e13_b4-dpo-seed11-scripted_traces.jsonl": "0828d9b9c19459b3cb8386bf311c20797afc8b9c4d5b77bc08d4713120fca2d9",
+        "artifacts/e13_b4_seed11_scripted_summary.json": "01b228b54fcd04177adf18f8f907f1d01923af00d70081941b7542e2249352e1",
+        "artifacts/e13_b4_vs_b3_seed11_paired_comparison.json": "daf24d7e977c76756d19887f8012d6702009395931f047c06008b952e91a5df9",
+        "artifacts/e13_b5-ipo-seed11-scripted_episodes.jsonl": "4f039d0b1146146d9b1174bf09a3b20d8ce4f7d65334e24043293d622c97624a",
+        "artifacts/e13_b5-ipo-seed11-scripted_rollout_manifest.json": "ef2528fcd2d4162b81eced662b335503c4b3f83863ad6faa51c1126568066485",
+        "artifacts/e13_b5-ipo-seed11-scripted_traces.jsonl": "5677c367aae4def4b8266f1ad92535c2cb264f3184b37f77b1b8f32c66ad21e8",
+        "artifacts/e13_b5_seed11_scripted_summary.json": "ce54dd6a92e4d0924867c3e27ec5fc7f95bd2e3dfca54479f9693803755344ba",
+        "artifacts/e13_b5_vs_b3_seed11_paired_comparison.json": "eff5a0a32b4377b64cc913f8d9dd235a0c98099283af9664f2ff9cb3c51e0e0d",
+        "artifacts/e13_b6-robust-dpo-seed11-scripted_episodes.jsonl": "e7059503f635ae5456dd6d9947439a262dd85fb6f96d73d8b3dbb7a47f76d7e5",
+        "artifacts/e13_b6-robust-dpo-seed11-scripted_rollout_manifest.json": "f8bd0e3cb7518c5ad7d469471216eddf80f5048c1b1d5c11440117d2d7ff9532",
+        "artifacts/e13_b6-robust-dpo-seed11-scripted_traces.jsonl": "c398d36e9109d7793b854d36374ab00627a39234e4e0628a74e0d7558d7b789e",
+        "artifacts/e13_b6_seed11_scripted_summary.json": "6c8c0ac3fb19fdfc0b907e6af7bf3bdf18d1fd49b420c1d35954880b7b5afae4",
+        "artifacts/e13_b6_vs_b3_seed11_paired_comparison.json": "e2278e80ddfdf3d033143652e2d2005cc0b3e9271d2dfefbe1e8a8beec1912d7",
+        "artifacts/training/dpo-seed11-steps3-pairs64-noise00.json": "509665b64682647ae06559fe283f56b1d1b17c9faf612f0eba88d7e7999c768d",
+        "artifacts/training/ipo-seed11-steps3-pairs64-noise00.json": "7f3506da569c21d2fe60e75dfce72f89576847460c8915f52284aee0c76f81db",
+        "artifacts/training/reference_seed11_sft120_pairs64_noise00.jsonl": "61f346683f3cd1054b1974e258d7cc3065814833f226da41f1f810bc099458f6",
+        "artifacts/training/robust_dpo-seed11-steps3-pairs64-noise00.json": "1a19d2d4d29e61557a1b97c7b6ad524c05c46a721a99f25b153b19d91aea387e",
+        "reports/model_cards/dpo-seed11-steps3-pairs64-noise00.md": "164199ed5d6149af1448c59e644b97a5094382803d5913794de5d535df89ad8a",
+        "reports/model_cards/ipo-seed11-steps3-pairs64-noise00.md": "8b3607ee0db1102fc4f34d3051984b3cfb06faa48c38f93aaa8a03969a2029c7",
+        "reports/model_cards/robust_dpo-seed11-steps3-pairs64-noise00.md": "a1c34fbcaacd97cd6ae835be7d9a69900194bc26745a11b60a6a0de3255f2ae7"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "CUDA 3-step scripted-pair pilots and 24 paired development rollouts completed: DPO 5/24 with 1 critical flag, IPO 6/24 with 0, robust-DPO 7/24 with 0; E07 and E11/E12 REVIEW preclude confirmatory inference.",
+      "stage": "E13",
+      "started": "2026-09-20T22:39:51.394974+00:00",
+      "state": "REVIEW"
+    },
+    "E14": {
+      "ended": "2026-09-20T22:52:40.613436+00:00",
+      "name": "ACT-pair unweighted DPO",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/e14_b7-act-pair-seed11-scripted_episodes.jsonl": "5f4eabf5b2ad1f97ad1dff0ebe231e6dbecd5e819bcb8d00320e86db96ef0828",
+        "artifacts/e14_b7-act-pair-seed11-scripted_rollout_manifest.json": "a17435915911aa98aa0b82d569bc8884d74836229dd4eda51df54dab197e44c8",
+        "artifacts/e14_b7-act-pair-seed11-scripted_traces.jsonl": "299dfd7a724a0b70a44708fcd61bc1ba84c7836f72a80a85766436a9e186c341",
+        "artifacts/e14_b7_seed11_scripted_summary.json": "9e29723aabdeafde4307214ff5449e2b514feedf0ae7f1a7f13c3742e845faa9",
+        "artifacts/e14_b7_vs_b3_seed11_paired_comparison.json": "7ddd3893a6d785c449fa82c611fef648cd9879a2f90ebf17b9b3fb0e985cde51",
+        "artifacts/e14_b7_vs_b4_seed11_paired_comparison.json": "52a27477404568b3dc4051043e70dfee40ea8ec2aef42de3f3ee88fbcfb8f584",
+        "artifacts/training/act_pair-seed11-steps3-pairs64-noise00.json": "828939c9ac2bbffc699fa9906d3c6f98bf1570dff262d25e2c74828108e04ec3",
+        "reports/model_cards/act_pair-seed11-steps3-pairs64-noise00.md": "40d3e95a75344caca2f8c95c33aa2a795f628827a49edc9ab41dd8158a5bd50f"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Unweighted ACT-pair CUDA control completed 5/24 paired development tasks with 0 critical flags; it used the same scripted pair IDs and DPO objective as B4 (also 5/24), so ACT pair construction is not isolated.",
+      "stage": "E14",
+      "started": "2026-09-20T22:52:40.613368+00:00",
+      "state": "REVIEW"
+    },
+    "E15": {
+      "ended": "2026-09-20T22:52:54.982153+00:00",
+      "name": "ACT-PO development",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/e15_m0-act-po-seed11-scripted_episodes.jsonl": "9b18f7e264d9989d14d02f1742b277288c7f9808498d9d3bfb38426c703980e3",
+        "artifacts/e15_m0-act-po-seed11-scripted_rollout_manifest.json": "4a50709ebb91a669647138af63c6fb440b7c73182461787203a0c4d39bc78c5f",
+        "artifacts/e15_m0-act-po-seed11-scripted_traces.jsonl": "0baf65f81c8bd9f6a1645d0fa299ffb19277bba5b8d66e61cc97e714dcd9e423",
+        "artifacts/e15_m0_seed11_scripted_summary.json": "e973f26fa59cce7c622fa4f5e1202dee388ac74c7a336f5d16b425ff5ff670c2",
+        "artifacts/e15_m0_vs_b3_seed11_paired_comparison.json": "478f59563d8d097cd2d07afc59884f46586f757d55e097ffbfe50cc19104d34f",
+        "artifacts/e15_m0_vs_b7_seed11_paired_comparison.json": "337e9574e2406524ece82289e200b2f939712e4dd36d53f4c6232985d87b0b09",
+        "artifacts/training/act_po-seed11-steps3-pairs64-noise00.json": "182ac8e65535a670426c7e64cc65df08fc9817265d783509cf2061c20b5fb172",
+        "reports/model_cards/act_po-seed11-steps3-pairs64-noise00.md": "3dac63b080b6f7fc87b367ea001aee9aae1f3ab54a5247ed1e96f9036ecc3068"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Weighted ACT-style CUDA pilot on scripted pairs completed 6/24 tasks, versus unweighted B7 5/24 and SFT 8/24, with 0 critical flags in all three; full ACT-PO on-policy hard negatives and qualified task oracle absent.",
+      "stage": "E15",
+      "started": "2026-09-20T22:52:54.982118+00:00",
+      "state": "REVIEW"
+    },
+    "E16": {
+      "ended": "2026-09-20T23:25:33.375090+00:00",
+      "name": "Multi-seed replication",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/e16_sft_seed_summary.json": "ba37a1611927dff5704c3906b658ee8d1e4c02b90c4f53fd9a8021aa5155b456",
+        "artifacts/e16_training_seed_audit.json": "4bbf9aa711da59c9eb7fd9eb4e5c76e201ea8c06c52dd7e61e7259178603dc58",
+        "artifacts/training/act_po-seed11-sft30-steps3-pairs64-noise00.json": "a2abd3eaeb78a80c1b8a3635fe8e3e83d9898acbd55067599cef0a172673c730",
+        "artifacts/training/act_po-seed23-sft30-steps3-pairs64-noise00.json": "e203d4b3411b513a1d154752acf709c2d5cd371e49aaae39ecd4fbdfe198ee6d",
+        "artifacts/training/act_po-seed37-sft30-steps3-pairs64-noise00.json": "b16f7b5055be5427092d13a7de20edc967b905b28c7e131cccb5a6b3e9255c3e",
+        "artifacts/training/dpo-seed11-sft30-steps3-pairs64-noise00.json": "71e60e5fff9f22b1d84b9cc74d74776288192eb6904bcfc75d4f0da78d14a880",
+        "artifacts/training/dpo-seed23-sft30-steps3-pairs64-noise00.json": "4872b438e71ee6741648405772d70a4282bb7441e37d455bc23493d8e5e0b22e",
+        "artifacts/training/dpo-seed37-sft30-steps3-pairs64-noise00.json": "53e279df9f752bf024fb74661315ab7b4605b1b5de2b4ef272c27530f7c4ca16",
+        "artifacts/training/reference_seed11_sft30_pairs64_noise00.jsonl": "430da0c08383b51af3befd0731d677c5750c277e520c8f997397ea7221ed10d6",
+        "artifacts/training/reference_seed23_sft30_pairs64_noise00.jsonl": "802ddfcc390943d38ba55404f32370f34bcd2ec800dd2cb3428edfffd179b5c1",
+        "artifacts/training/reference_seed37_sft30_pairs64_noise00.jsonl": "30084859d0022e60a9f9ce56135e66575586866d76c1f5dc6c1fad2c06bfce36",
+        "artifacts/training/sft-seed23-steps30.json": "c934e22645f765cde24464a8b6231e89b8263d59ec0d1c648119ff180e552f3c",
+        "artifacts/training/sft-seed37-steps30.json": "c9953eb88efc02ebda751eefe4995307a3fe14ede73fcc04e85fba5c2ef37952",
+        "reports/multi_seed_development.md": "65278dbc3a0bd38e8668849a6491572be59e351c2b3da8f16253340c8651bbd0"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Three matched 30-step SFT seeds and three-seed 3-step DPO/weighted scripted-pair CUDA training receipts verified; seeds 23/37 lack paired task outcomes, and full ACT-PO mechanism/qualified finalist absent.",
+      "stage": "E16",
+      "started": "2026-09-20T23:25:33.375075+00:00",
+      "state": "REVIEW"
+    },
+    "E17": {
+      "ended": "2026-09-20T22:55:55.220360+00:00",
+      "name": "Power and protected freeze",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/e17_power_exploratory.json": "0843e533e1a08c22300efd7f8ca719e42a14a36f7c874f8c668287df9b7c03c2",
+        "artifacts/freeze_readiness.json": "ef4754017d10f3d2c3927ec986662f614f24807162abe70deb73da569576d030",
+        "artifacts/protected_freeze_decision.json": "c845b0c7e8aab33610e7d4f1090e0af9b2991b24e0d752cb67f05bd18f74f69d",
+        "reports/power_readiness.md": "6517f4a9df373c09aaa2cabf80c272760f9fe545bd50bbefdc7b1cc228c6447a"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Power analysis exploratory; final freeze withheld because task oracle, preference sources, and finalists are unqualified; protected outcome access remains zero.",
+      "stage": "E17",
+      "started": "2026-09-20T22:55:55.219984+00:00",
+      "state": "REVIEW"
+    },
+    "E18": {
+      "ended": "2026-09-20T22:55:55.572877+00:00",
+      "name": "Protected internal ID",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/protected_access_ledger.json": "b3fc9501366a6dc9d44a66e409ec081efea585b9220f03cc4c2b7b93bd9b90e1",
+        "artifacts/protected_freeze_decision.json": "c845b0c7e8aab33610e7d4f1090e0af9b2991b24e0d752cb67f05bd18f74f69d"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Protected ID evaluation closed: E17 did not freeze a valid protocol.",
+      "stage": "E18",
+      "started": "2026-09-20T22:55:55.572814+00:00",
+      "state": "CLOSED"
+    },
+    "E19": {
+      "ended": "2026-09-20T22:55:55.719983+00:00",
+      "name": "Protected OOD",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/protected_access_ledger.json": "b3fc9501366a6dc9d44a66e409ec081efea585b9220f03cc4c2b7b93bd9b90e1",
+        "artifacts/protected_freeze_decision.json": "c845b0c7e8aab33610e7d4f1090e0af9b2991b24e0d752cb67f05bd18f74f69d"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Protected composition/policy/tool OOD closed: no valid E17 freeze.",
+      "stage": "E19",
+      "started": "2026-09-20T22:55:55.719931+00:00",
+      "state": "CLOSED"
+    },
+    "E20": {
+      "ended": "2026-09-20T22:55:55.835930+00:00",
+      "name": "Protected Twin-B",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/protected_access_ledger.json": "b3fc9501366a6dc9d44a66e409ec081efea585b9220f03cc4c2b7b93bd9b90e1",
+        "artifacts/protected_freeze_decision.json": "c845b0c7e8aab33610e7d4f1090e0af9b2991b24e0d752cb67f05bd18f74f69d"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Protected Twin-B transfer closed: Twin-B remains sealed and no valid finalist/freeze exists.",
+      "stage": "E20",
+      "started": "2026-09-20T22:55:55.835879+00:00",
+      "state": "CLOSED"
+    },
+    "E21": {
+      "ended": "2026-09-20T22:55:55.949700+00:00",
+      "name": "R-TRACE factorial",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/protected_access_ledger.json": "b3fc9501366a6dc9d44a66e409ec081efea585b9220f03cc4c2b7b93bd9b90e1",
+        "artifacts/protected_freeze_decision.json": "c845b0c7e8aab33610e7d4f1090e0af9b2991b24e0d752cb67f05bd18f74f69d"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "R-TRACE protected factorial closed: no qualified ACT-PO finalist or valid E17 freeze.",
+      "stage": "E21",
+      "started": "2026-09-20T22:55:55.949648+00:00",
+      "state": "CLOSED"
+    },
+    "E22": {
+      "ended": "2026-09-20T22:55:56.380719+00:00",
+      "name": "Internal security",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/protected_access_ledger.json": "b3fc9501366a6dc9d44a66e409ec081efea585b9220f03cc4c2b7b93bd9b90e1",
+        "artifacts/protected_freeze_decision.json": "c845b0c7e8aab33610e7d4f1090e0af9b2991b24e0d752cb67f05bd18f74f69d"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Protected adversarial/security evaluation closed: no valid E17 freeze; development security evidence remains separate.",
+      "stage": "E22",
+      "started": "2026-09-20T22:55:56.380565+00:00",
+      "state": "CLOSED"
+    },
+    "E23": {
+      "ended": "2026-09-21T02:40:20.778882+00:00",
+      "name": "Preference noise",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/e13_noise05-dpo_episodes.jsonl": "4e0f34e26abf16987a4dc6bb10431e6c81bb5f3917d9dd4342094b47e6d9f42e",
+        "artifacts/e13_noise05-dpo_rollout_manifest.json": "85d613324cff296bc26e785325a1257c572660fe608ea2e6a1ef9deac27c0242",
+        "artifacts/e13_noise05-dpo_traces.jsonl": "bc7893080b07983c903db3345d3da5b26f7aaa963b454b9f3c6a8d1f19413cd8",
+        "artifacts/e13_noise05-ipo_episodes.jsonl": "d81ac2668e0e270c96df47694e91fbe3cfca36660bb8cdac3e8e0649d99236a4",
+        "artifacts/e13_noise05-ipo_rollout_manifest.json": "a22802331e727d93ed72c43e7a659a4d92f0a712e1fe917eae96275d91919fbc",
+        "artifacts/e13_noise05-ipo_traces.jsonl": "95d051eef3b5084f6be18361f43872b97dcb499a897daa3aa354c4ebc3325dd1",
+        "artifacts/e13_noise05-robust_dpo_episodes.jsonl": "0f843b64005b62527bdf6fcbda240773cf464b2fbe2219986b26fb89af5a6e4c",
+        "artifacts/e13_noise05-robust_dpo_rollout_manifest.json": "9417995c0aa4b161082bbc1292411e98a6867cce7e70e1209f12dca5dc371b92",
+        "artifacts/e13_noise05-robust_dpo_traces.jsonl": "827fd019227faccb5a1debf44aa186dee7a64cce8689aefafbed3fd38e21c192",
+        "artifacts/e13_noise10-dpo_episodes.jsonl": "5737232319e053887c516ef9b9543529bfeaf3350c599f710f4616f0ef4d29e4",
+        "artifacts/e13_noise10-dpo_rollout_manifest.json": "bf60530cf3dce3ad51aea827882c08f5748f6648daa3d3a15cce0be710e2bdc3",
+        "artifacts/e13_noise10-dpo_traces.jsonl": "407e1e5cb97ad9eaa687897294ebb82366c8c1608c437828cb9f25efe5e635f5",
+        "artifacts/e13_noise10-ipo_episodes.jsonl": "3044e8cac0d7c95a315517ebc9c68ae7cf48b3f08c0e0f7acb0b50de58b0930e",
+        "artifacts/e13_noise10-ipo_rollout_manifest.json": "9edd97591f54d195f65220956626644214e410accdd24f118fc834db2f83dd7b",
+        "artifacts/e13_noise10-ipo_traces.jsonl": "35708edec8f537e0c62b47efcf9fca331375303fb4f5f3ae9c4a248377f4cce1",
+        "artifacts/e13_noise10-robust_dpo_episodes.jsonl": "c6b023b96cb907f50bb54242ec094cb896e6bd6743cd126ae0cbe33ca1a253aa",
+        "artifacts/e13_noise10-robust_dpo_rollout_manifest.json": "053897edd0a6054bc11cf66bc1b5428a53d17df9b92eeb49918c52b4b46d3448",
+        "artifacts/e13_noise10-robust_dpo_traces.jsonl": "2b26db421b487a5419d2896e4d3660702aea2d62f9578c045a5de51412f90cbc",
+        "artifacts/e13_noise20-dpo_episodes.jsonl": "79c1613e83307182b09ab2d7b0786a9ffd88538018701540065c04c4c89391ab",
+        "artifacts/e13_noise20-dpo_rollout_manifest.json": "5f629e0ca43b2684577f065dbee166c5d5197ac9af61b1475f5c2e349cf06bd3",
+        "artifacts/e13_noise20-dpo_traces.jsonl": "ecbf9a8a15536233401047485b9e542dc9b64422701ec8a0dfa67f377e0c10a3",
+        "artifacts/e13_noise20-ipo_episodes.jsonl": "3f63603d7385242b1bd2961e2f8bb55dcfd1491fd428c2d6a2dcb55998750e0b",
+        "artifacts/e13_noise20-ipo_rollout_manifest.json": "f88535bafe949954b0a8a4291d63ebe81d168325ced5c2acd3418fc44b29641e",
+        "artifacts/e13_noise20-ipo_traces.jsonl": "a60cbff33794270048f15c47919ff619784d0d1b18fefc07d4bd04ba361adb6f",
+        "artifacts/e13_noise20-robust_dpo_episodes.jsonl": "155dc7a5828d1188fd3300d6fd8eaceeb5ed87a8e7b8a0fabddc25500f492fce",
+        "artifacts/e13_noise20-robust_dpo_rollout_manifest.json": "08bfdb41e2311e5be364478ad84e488fcf672df32c45d3f18a419ee3169787a0",
+        "artifacts/e13_noise20-robust_dpo_traces.jsonl": "483df3e9c3efe30d2001cb09a51b04cd139fde84ae6165aa154bc459401a565d",
+        "artifacts/e15_noise05-act_po_episodes.jsonl": "4147fa32e71db3f95e7163ea741cdddc83026906ec4d1b085bb60651dd4e0b0a",
+        "artifacts/e15_noise05-act_po_rollout_manifest.json": "87c4ba7febac7fce034d428009ebcdb7aac4c63df708c5dab4fdd408812bb774",
+        "artifacts/e15_noise05-act_po_traces.jsonl": "0c57a2641145a892ece1034aa7431aad1c1ddde05cd6ec05be72f285903b3a6a",
+        "artifacts/e15_noise10-act_po_episodes.jsonl": "41de142858d1f4d5c25b33dc91ac254fb32bfb6812757106dcf68137622b134e",
+        "artifacts/e15_noise10-act_po_rollout_manifest.json": "fb02700f648d9f8a4f9dd6c2adac0b033d8ce52b2713ffd48734868fea0a03ed",
+        "artifacts/e15_noise10-act_po_traces.jsonl": "21371193f0ba5d393a75c406054853cc61c593e37ded773f8aa77a183bd8e9ab",
+        "artifacts/e15_noise20-act_po_episodes.jsonl": "70f03d7053be0bb7039044e8f2649c4baa768b9d445a3d8083090a25b858c3a0",
+        "artifacts/e15_noise20-act_po_rollout_manifest.json": "4e6d2f4c0f56bc54a9cfbf858d2e037047ab80d63e80e1f7b1d4afecca5f6c1a",
+        "artifacts/e15_noise20-act_po_traces.jsonl": "7ea5298f38f7556a8abc70aa609657719f94e785b9b6040a51ca0b8e3a210946",
+        "artifacts/e23_noise05-act_po_summary.json": "702f8d870a3ae6210c5d7288970f3c1d1b2d388347e4d80fb2f36963ab2985e2",
+        "artifacts/e23_noise05-act_po_vs0_comparison.json": "ae7b4ebbbfb102f9daa94580524b7c822b92b8330e254b6c8d22a0178b8ced9c",
+        "artifacts/e23_noise05-dpo_summary.json": "61b48b98e24b954a8d596cc013da00bb19e0ed2461193b921d65a156cb967252",
+        "artifacts/e23_noise05-dpo_vs0_comparison.json": "a292e5cad3d5d58dcb41804fb64e00224ee00b0896689857179f97cfe4331714",
+        "artifacts/e23_noise05-ipo_summary.json": "3831a8e469de3f5f54fa1988f2bc677fa83612747ec648d1853e7bad88ea5864",
+        "artifacts/e23_noise05-ipo_vs0_comparison.json": "f3b86fe1ecb35391586bd7497a2e052c049c169517aea999e55a9190679848f6",
+        "artifacts/e23_noise05-robust_dpo_summary.json": "802f3333a1369994e62bc943fd97ec03c49f5e69658b36fa4c297469f7806942",
+        "artifacts/e23_noise05-robust_dpo_vs0_comparison.json": "b07ac719467b46a17be7450961eebe24bae91f267b4d88ed093261c4fd544d38",
+        "artifacts/e23_noise10-act_po_summary.json": "605d02ade3eae09d939eef6dd2ff0691bf2419f9ac0324f4ae5aff03c863a3a2",
+        "artifacts/e23_noise10-act_po_vs0_comparison.json": "a28647660a572687c689f0b64dc4bd7fc0cbb285f238d0ff135169855dd38fdf",
+        "artifacts/e23_noise10-dpo_summary.json": "e350200d0ed953359725ffc076a26dfafe706222c4384cf5a17bf2666ed39633",
+        "artifacts/e23_noise10-dpo_vs0_comparison.json": "f22fa21f4a3346d585ef1d3e031463ada3ac919d4846a6e1b98a747db98c2450",
+        "artifacts/e23_noise10-ipo_summary.json": "4ed5ffb8c4d47b740f45f5a41e9a2d27bbb2f8e81b1d8ce389b2c0e856ed6702",
+        "artifacts/e23_noise10-ipo_vs0_comparison.json": "a1a07bc3bc697fd14c7b0c4872a95c8f6296207a88e4937ff312f929c8d769de",
+        "artifacts/e23_noise10-robust_dpo_summary.json": "0ce78368d9a2349ff3c73545bdc68f767de589ed5f6c9f09df6ef233cdd3a7d9",
+        "artifacts/e23_noise10-robust_dpo_vs0_comparison.json": "1888e06ec2d4184f9bd89f4232492b6755c1bd39b08ba292dfa53d71e35d4fe3",
+        "artifacts/e23_noise20-act_po_summary.json": "dcf56162f993699e56627f0cdb937fb3afb00200bc32ece62c976cf1bc5e04eb",
+        "artifacts/e23_noise20-act_po_vs0_comparison.json": "3daa7f9455a104652c94491ebaf733bab06cfc035d32e74077ebba3d94cd5d3c",
+        "artifacts/e23_noise20-dpo_summary.json": "55cd8ccab254f13d3f118e27591f4ee92ee7083ace9b5aec01f65c89072054b7",
+        "artifacts/e23_noise20-dpo_vs0_comparison.json": "f1d77699d4fa745f5f96aaec6219c0db8b92fa9d11f8fc17f8885d33ccdf9e41",
+        "artifacts/e23_noise20-ipo_summary.json": "333377a557620a4aed5a55f3136562173a8f205c72e9c9f2c9c5f724e191775d",
+        "artifacts/e23_noise20-ipo_vs0_comparison.json": "4b2824062ae8bf7e729be9c9be21a166e3675b9adaf461118bb5aff33eed0fd9",
+        "artifacts/e23_noise20-robust_dpo_summary.json": "d487386dbbb2f4ac0f65e7bd6eeebff4c34544016e96f17662b80b51ce522a2a",
+        "artifacts/e23_noise20-robust_dpo_vs0_comparison.json": "4539dc3c8d80789fd95f8ca2f2b8a4d121976210ae236a5a2e591a7996cce728",
+        "artifacts/preference_noise_development_summary.json": "e5d8b9372211d9fa11f38d5a208d115309bdb185ca70972f3fc911c160321146",
+        "artifacts/preference_noise_evaluation_plan.json": "4be0460ecdbde8acf14e5cdc5f40250544f1ff4d713e68a649e09652217c27a5",
+        "artifacts/preference_noise_plan.json": "fff8b424ac3d8ee444eed4c40ab005b6c2acab638913c60e45cadb4058db5fb5",
+        "artifacts/preference_noise_training_audit.json": "2b89a1a5860c5a17b78398995ab8c028959b7ef08a8880f75ca7e4b75079c0ae",
+        "artifacts/warehouse/episodes.parquet": "925b97792049341208ed24afc62b9d06623b6b121451857807ad9dd7bcb8b180",
+        "reports/preference_noise_report.md": "75a9cc8d891db4c5073aaa30b3ffac34e2dd3d310dcc3114b23817ade0814e13",
+        "scripts/run_noise_rollouts.sh": "c516cc6731d1f1ae80ae1d943eac5ead6031c61be428ae7f2a576427814387bc"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "All 16 planned CUDA noise-training pilots and 12 x 24 paired synthetic development rollouts completed with exact flip, adapter, task, and log hashes; E07 task oracle and full ACT-PO source remain unqualified, so inference is exploratory only.",
+      "stage": "E23",
+      "started": "2026-09-21T02:40:20.778849+00:00",
+      "state": "REVIEW"
+    },
+    "E24": {
+      "ended": "2026-09-20T22:58:25.885277+00:00",
+      "name": "Ablations",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/ablation_plan.json": "71efef0685d5b102c05a70270c92c4b4293397f147efbafb60dba5bf910ef1ea",
+        "artifacts/e24_ablation_diagnostics.json": "bc15c83aee7bcd58dfd2d73e1d250d97e1c20d155df4ebfe4b29426db5c76129",
+        "reports/ablation_report.md": "28d2a04cb210e81e1b4858c45fd96d5ba2805e748fd9ab61525c955ea4ec0e39"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "A7 weighting and A8 objective diagnostics executed on 24 synthetic development tasks; primary A3/A5 and other mechanism ablations unrun because ACT pairs/on-policy sources and task oracle are unqualified.",
+      "stage": "E24",
+      "started": "2026-09-20T22:58:25.885112+00:00",
+      "state": "REVIEW"
+    },
+    "E25": {
+      "ended": "2026-09-20T16:59:40.920980+00:00",
+      "name": "BFCL V4",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {
+        "artifacts/external_source_access.json": "a5081dc6ab93518a5e069e611aa74e676b75cbc64699e37d03b34337a65656dd"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "BFCL V4 upstream acquisition blocked by workspace-write DNS/network restriction; no benchmark examples or outcomes accessed",
+      "stage": "E25",
+      "started": "2026-09-20T16:59:40.920935+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E26": {
+      "ended": "2026-09-20T16:59:41.025283+00:00",
+      "name": "tau3",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {
+        "artifacts/external_source_access.json": "a5081dc6ab93518a5e069e611aa74e676b75cbc64699e37d03b34337a65656dd"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "tau3 upstream acquisition blocked by workspace-write DNS/network restriction; no benchmark examples or outcomes accessed",
+      "stage": "E26",
+      "started": "2026-09-20T16:59:41.025238+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E27": {
+      "ended": "2026-09-20T16:59:41.120815+00:00",
+      "name": "AgentDojo",
+      "next_action": "resume after prerequisite repair",
+      "outputs": {
+        "artifacts/external_source_access.json": "a5081dc6ab93518a5e069e611aa74e676b75cbc64699e37d03b34337a65656dd"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "AgentDojo upstream acquisition blocked by workspace-write DNS/network restriction; no benchmark examples or outcomes accessed",
+      "stage": "E27",
+      "started": "2026-09-20T16:59:41.120770+00:00",
+      "state": "BLOCKED_EXTERNAL"
+    },
+    "E28": {
+      "ended": "2026-09-20T21:27:28.282373+00:00",
+      "name": "Systems and serving",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/systems_development.json": "73e6b56e1c3ec88a994a356bb679209c1af104fe974b76accf40c7c2b8289795",
+        "artifacts/systems_serving_qwen-base.json": "d96b3c773fafda8346b2bf0f0ad3d5be0cf07f64dda373d7de5db238862aaa51",
+        "artifacts/systems_serving_sft-seed11-step120.json": "f091764c5d21127abc294ae0675c5f3298b7e83e9b63ce70a47b9538de5076c7",
+        "reports/systems_report.md": "739929ce8f8979dad27eeb88e30c0d243b52146d943ae081a51d9b22249d5803"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "RTX 4090 CUDA training, rollout, and base/SFT NF4 serving lifecycle measured; outputs differ in generated length, and compile cold-cost/break-even plus frozen finalist serving comparison remain unmeasured.",
+      "stage": "E28",
+      "started": "2026-09-20T21:27:28.282328+00:00",
+      "state": "REVIEW"
+    },
+    "E29": {
+      "ended": "2026-09-21T02:43:37.620452+00:00",
+      "name": "Evidence and claim audit",
+      "next_action": "none",
+      "outputs": {
+        "artifacts/claim_ledger.json": "445c86cb2c4978f34203ee17a783a01ba3d30d3a8118bf01a2b9b1b0784075de",
+        "artifacts/final_verdict.json": "15552d4e261600121d8d6bad4c809a92ef310ee951450c95b2bc935e8123b88c",
+        "reports/claim_ledger.md": "1193b0a2c50f3b728f88f4a8f7e0793cc4294c39d3021dc3443872b9cf3ea692",
+        "reports/executive_summary.md": "112cbe094a442b0ce143bf68b40033477d8dc1465784ff5b5272de80e1ebccdd",
+        "reports/external_validation.md": "d7f62b999dbad209dc415e75d9956633af37d611da52c8ff36991de4dcc6f338",
+        "reports/final_technical_report.md": "8c72fba1eef23ffffd69dd3c03654809d5e2be85d070f44cfb1b8b9b56a687cf",
+        "reports/main_experiment.md": "1c425f5e9bd77c8c79d2278e9c7ee50062ab859427749bc4843a4264f01601f5",
+        "reports/resume_bullets.md": "d377a752086c6e005dd4e57d92c513cd503632725898d989efa417dc1a0a125d"
+      },
+      "protocol": "act-v1-20260920",
+      "reason": "Final audited release and claim verification passed",
+      "stage": "E29",
+      "started": "2026-09-21T02:43:37.620415+00:00",
+      "state": "PASS"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "E10",
+  "run_id": "sft-pilot-seed11",
+  "status": "EXECUTION_FAILURE",
+  "phase": "4-bit base-model loading before first training step",
+  "error": "torch.OutOfMemoryError during 3.74 GiB allocator warmup",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "gpu_used_mib_after_failure": 11537,
+  "gpu_free_mib_after_failure": 4512,
+  "competing_processes": [
+    "/home/bjw-0/.cache/contextweave-mcp/venv/bin/python -m contextweave.model_pilot",
+    "/home/bjw-0/mosaic-rec-work/ref-recbole/bin/python scripts/recbole_smoke.py"
+  ],
+  "training_steps_completed": 0,
+  "accepted_as_training_evidence": false,
+  "next_action": "retry CUDA SFT when shared GPU contention clears"
+}

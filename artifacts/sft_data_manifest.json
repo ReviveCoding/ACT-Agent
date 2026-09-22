@@ -1,0 +1,10 @@
+{
+  "path": "/home/bjw-0/.cache/act-agent-v1/data/sft_train.jsonl",
+  "worlds": 3000,
+  "trajectories": 6000,
+  "sha256": "f9cc0a3694b09173adba564653bc5c526c5d2ac87a0f6c1dd98dd6b309b3bd5f",
+  "roles": [
+    "train"
+  ],
+  "oracle_hidden_from_input": true
+}

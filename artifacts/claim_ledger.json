@@ -1,0 +1,102 @@
+[
+  {
+    "claim": "Criteo attribution file checksum verified and profiled",
+    "evidence": [
+      "artifacts/data_source.json",
+      "data/processed/profile.json"
+    ],
+    "status": "SUPPORTED"
+  },
+  {
+    "claim": "Criteo uplift v2.1 file integrity and exact row count verified",
+    "evidence": [
+      "artifacts/uplift_profile.json"
+    ],
+    "status": "SUPPORTED"
+  },
+  {
+    "claim": "RTX 4090 CUDA BF16 and real matmul qualified through escalated access",
+    "evidence": [
+      "artifacts/e00_environment/cuda_probe.json"
+    ],
+    "status": "SUPPORTED"
+  },
+  {
+    "claim": "Twin-A synthetic calibration and internal known-answer checks passed",
+    "evidence": [
+      "artifacts/twin_a_qualification.json"
+    ],
+    "status": "SUPPORTED_WITH_QUALIFIER"
+  },
+  {
+    "claim": "B0 completed synthetic development tasks",
+    "evidence": [
+      "artifacts/e09_b0_summary.json",
+      "artifacts/warehouse/b0_development.parquet"
+    ],
+    "status": "SUPPORTED_WITH_QUALIFIER"
+  },
+  {
+    "claim": "B0, B1, and B2 completed a 24-task paired synthetic CUDA development pilot",
+    "evidence": [
+      "artifacts/e09_baseline_manifest.json",
+      "artifacts/e09_baseline_summary.json",
+      "artifacts/warehouse/e09_episodes.parquet"
+    ],
+    "status": "SUPPORTED_WITH_QUALIFIER"
+  },
+  {
+    "claim": "SFT and weighted ACT-style scripted-pair pilots completed paired synthetic development rollouts",
+    "evidence": [
+      "artifacts/e10_b3_seed11_step120_summary.json",
+      "artifacts/e15_m0_seed11_scripted_summary.json",
+      "reports/preference_methods_development.md"
+    ],
+    "status": "SUPPORTED_WITH_QUALIFIER"
+  },
+  {
+    "claim": "Sixteen scripted-pair CUDA noise pilots and twelve paired synthetic development rollouts completed",
+    "evidence": [
+      "artifacts/preference_noise_training_audit.json",
+      "artifacts/preference_noise_evaluation_plan.json",
+      "artifacts/preference_noise_development_summary.json",
+      "reports/preference_noise_report.md"
+    ],
+    "status": "SUPPORTED_WITH_QUALIFIER"
+  },
+  {
+    "claim": "ACT-PO improves protected long-horizon capability without safety regression",
+    "evidence": [],
+    "status": "UNSUPPORTED"
+  },
+  {
+    "claim": "Synthetic interventions cause real advertiser lift",
+    "evidence": [],
+    "status": "PROHIBITED"
+  },
+  {
+    "claim": "Amazon proprietary data, Ads API integration, or production account control",
+    "evidence": [],
+    "status": "PROHIBITED"
+  },
+  {
+    "claim": "Production advertiser outcomes or production agent-safety certification",
+    "evidence": [],
+    "status": "PROHIBITED"
+  },
+  {
+    "claim": "Real-user benefit or real campaign-action causal effects",
+    "evidence": [],
+    "status": "PROHIBITED"
+  },
+  {
+    "claim": "Formal reproduction of national advertising policy",
+    "evidence": [],
+    "status": "PROHIBITED"
+  },
+  {
+    "claim": "Physical multi-GPU scaling",
+    "evidence": [],
+    "status": "PROHIBITED"
+  }
+]

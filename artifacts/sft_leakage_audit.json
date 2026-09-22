@@ -1,0 +1,16 @@
+{
+  "agent_visible_hidden_markers": {
+    "agent_visible_hidden_fault": 0,
+    "agent_visible_oracle_regret": 0,
+    "agent_visible_twin_b_parameter": 0,
+    "agent_visible_world_seed": 0
+  },
+  "non_train_split": 0,
+  "protected_outcome_access": 0,
+  "scope": "literal hidden-oracle marker scan in system/user/tool messages; does not prove absence of all semantic leakage",
+  "source_sha256": "f9cc0a3694b09173adba564653bc5c526c5d2ac87a0f6c1dd98dd6b309b3bd5f",
+  "status": "PASS",
+  "timestamp": "2026-09-20T19:10:25.252095+00:00",
+  "traces": 6000,
+  "unique_train_tasks": 3000
+}

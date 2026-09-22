@@ -1,0 +1,90 @@
+{
+  "timestamp": "2026-09-20T17:59:08.049698+00:00",
+  "split": "development",
+  "paired_tasks": 24,
+  "source_sha256": "a56f0bb3edaef38d6ac2ffe99fbe31736fae217adb5f2468fadfb0aab3ba9184",
+  "canonical_sha256": "5f2da6fe03efaa728dd985f4bba16e30eda68ffc8564efc2d59b0d38adf54a39",
+  "models": {
+    "B0": {
+      "n": 24,
+      "success": 14,
+      "safe_success": 14,
+      "process_compliant": 24,
+      "critical_violations": 0,
+      "critical_wilson_95": [
+        1.3877787807814457e-17,
+        0.13797620467498017
+      ],
+      "appropriate_abstention": 8,
+      "finalized": 24,
+      "generated_tokens": 0,
+      "generation_seconds": 0.0
+    },
+    "B1": {
+      "n": 24,
+      "success": 8,
+      "safe_success": 8,
+      "process_compliant": 24,
+      "critical_violations": 0,
+      "critical_wilson_95": [
+        1.3877787807814457e-17,
+        0.13797620467498017
+      ],
+      "appropriate_abstention": 2,
+      "finalized": 24,
+      "generated_tokens": 1866,
+      "generation_seconds": 439.3691207280017
+    },
+    "B2": {
+      "n": 24,
+      "success": 7,
+      "safe_success": 7,
+      "process_compliant": 21,
+      "critical_violations": 3,
+      "critical_wilson_95": [
+        0.04344334080123444,
+        0.31003881270500067
+      ],
+      "appropriate_abstention": 0,
+      "finalized": 24,
+      "generated_tokens": 4188,
+      "generation_seconds": 1158.9747566910014
+    }
+  },
+  "comparisons": {
+    "B1_minus_B0": {
+      "n": 24,
+      "baseline_rate": 0.5833333333333334,
+      "candidate_rate": 0.3333333333333333,
+      "difference": -0.25,
+      "ci_low": -0.5,
+      "ci_high": -0.041666666666666664,
+      "mcnemar_p": 0.03125
+    },
+    "B2_minus_B0": {
+      "n": 24,
+      "baseline_rate": 0.5833333333333334,
+      "candidate_rate": 0.2916666666666667,
+      "difference": -0.2916666666666667,
+      "ci_low": -0.5416666666666666,
+      "ci_high": -0.08333333333333333,
+      "mcnemar_p": 0.015625
+    }
+  },
+  "task_family_balance": {
+    "READ": 2,
+    "DIAGNOSE": 2,
+    "REPAIR": 2,
+    "OPTIMIZE": 2,
+    "CREATE": 2,
+    "EXPAND": 2,
+    "PORTFOLIO": 2,
+    "AMBIGUOUS": 2,
+    "APPROVAL": 2,
+    "COMPOUND": 2,
+    "RECOVERY": 2,
+    "ADVERSARIAL": 2
+  },
+  "protected_outcome_access": 0,
+  "caveat": "E07 task-difficulty qualification is REVIEW; no high-difficulty or protected claim."
+}

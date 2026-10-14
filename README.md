@@ -1,65 +1,45 @@
-# ACT-Agent v1.0
+# ACT-Agent
 
-Adaptive Constrained Trajectory Optimization for Tool-Using Agents is a local
-research program for stateful advertising-operations agents. Public Criteo
-files anchor observed distributions; all mutable campaign-action effects are
-synthetic. No advertiser account or production API is connected.
+**Research status: HOLD**
 
-## Repository and scratch
+ACT-Agent studies tool-using agents in a stateful advertising-operations simulator. The goal is to evaluate task completion, process compliance, and safety separately, rather than treating a successful final action as sufficient evidence of reliability.
 
-The canonical repository is `/mnt/c/Users/bjw-0/Downloads/ACT-Agent`. Large
-downloads, model weights, temporary Parquet, and checkpoints live in
-`/home/bjw-0/.cache/act-agent-v1`. Validated compact receipts, aggregate marts,
-reports, and hashes live in the repository. Set `ACT_AGENT_SCRATCH` to the
-scratch directory for compatible commands.
+The environment uses public Criteo data to anchor observed advertising distributions. Campaign interventions, downstream outcomes, and mutable business state are synthetic. No production advertising accounts or APIs are connected.
 
-## Resume and verification
+## Study design
 
-`STATUS.md` and `artifacts/run_state.json` are the stage ledger. `act-agent
-run-all --protocol act-v1-20260920 --device cuda --resume` verifies completed
-immutable receipts and reports the earliest pending stage. Stage-specific
-commands execute work; the ledger command does not manufacture outcomes or
-repeat immutable stages.
+The implementation includes a transactional digital twin, deterministic process checks, baseline agent rollouts, a QLoRA supervised fine-tuning path, and exploratory preference-training comparisons. Research stages and evidence receipts are recorded in [STATUS.md](STATUS.md), with the study protocol in [protocols/act_v1_draft.md](protocols/act_v1_draft.md).
 
-The current CUDA environment is
-`/home/bjw-0/.cache/act-agent-v1/venv`. GPU-dependent commands must be launched
-with authorized host device access because the ordinary workspace sandbox
-hides `/dev/dxg`. Each training and rollout runner checks `nvidia-smi`, PyTorch
-CUDA/BF16, VRAM, and a real CUDA matmul, and fails rather than using CPU.
-Only one heavy GPU job may run at a time.
+The current evidence base contains 16,468,027 public Criteo impression records across 675 campaigns. This is not evidence of live advertising-system performance.
 
-Examples:
+## Results and current limitations
+
+- The development B0 baseline completed 198 of 400 tasks with no critical process violations in that set.
+- On 24 paired development tasks, B0 completed 14, while the two baseline challengers completed 8 and 7.
+- A seed-11, 120-step QLoRA SFT candidate completed 8 of 24 development tasks with no critical process flags.
+- Small scripted-pair preference-training pilots were exploratory. Their results do not establish improvement from the proposed ACT-specific mechanism.
+
+**No protected final capability or safety claim is qualified.** The independent task-completion oracle and several preference-data requirements remain unresolved, so the scientific decision is HOLD. See the [technical report](reports/final_technical_report.md) for comparison conditions and experiment-level results.
+
+## Installation and verification
+
+Python 3.12 or later is required. The source package and development checks can be installed with:
 
 ```bash
-/home/bjw-0/.cache/act-agent-v1/venv/bin/python -m act_agent.twin.qualify
-/home/bjw-0/.cache/act-agent-v1/venv/bin/python -m act_agent.evaluation.model_rollout --count 24 --max-turns 8
-/home/bjw-0/.cache/act-agent-v1/venv/bin/python -m act_agent.evaluation.analyze_baselines
-/home/bjw-0/.cache/act-agent-v1/venv/bin/python -m act_agent.evidence.warehouse_update
-/home/bjw-0/.cache/act-agent-v1/venv/bin/python -m act_agent.training.sft --seed 11 --steps 120 --accumulation 8 --rank 16 --run-id sft-seed11
-/home/bjw-0/.cache/act-agent-v1/venv/bin/python -m act_agent.evaluation.model_rollout --adapter-path /home/bjw-0/.cache/act-agent-v1/checkpoints/sft-seed11 --model-label B3 --count 24
-/home/bjw-0/.cache/act-agent-v1/venv/bin/python -m act_agent.evaluation.analyze_adapter --model-label B3 --episodes /home/bjw-0/.cache/act-agent-v1/rollouts/b3-sft-seed11/episodes.jsonl --run-id e10_b3_seed11
-/home/bjw-0/.cache/act-agent-v1/venv/bin/python -m act_agent.training.pairwise --mode dpo --seed 11 --steps 3 --pair-limit 64 --sft-run-id sft-seed11
+python -m venv .venv
+python -m pip install -e ".[dev]"
+python -m pytest -q
 ```
 
-Run GPU commands outside the device-hiding workspace sandbox via the authorized
-escalated execution path. Do not run the CUDA programs on CPU. SFT stores
-validated step checkpoints in scratch and resumes from the latest complete
-checkpoint. Rollout writes each completed development episode to scratch and
-skips it on resume. Protected split execution requires an E17 freeze; do not
-use protected examples or outcomes for selection or tuning.
-
-## Quality gates
+The full model experiments require separately obtained source data, qualified local CUDA/BF16 access, and the optional GPU dependencies. Large checkpoints and datasets are not part of the GitHub source tree.
 
 ```bash
-/home/bjw-0/.cache/act-agent-v1/venv/bin/ruff format --check .
-/home/bjw-0/.cache/act-agent-v1/venv/bin/ruff check .
-/home/bjw-0/.cache/act-agent-v1/venv/bin/mypy src
-/home/bjw-0/.cache/act-agent-v1/venv/bin/pytest -q --cov=act_agent
-uv build --offline --out-dir /home/bjw-0/.cache/act-agent-v1/dist
-/home/bjw-0/.cache/act-agent-v1/venv/bin/act-agent verify
+act-agent run-all --protocol act-v1-20260920 --device cuda --resume
+act-agent verify
 ```
 
-`act-agent verify` is the final release gate and will fail while mandatory
-stages are pending. The scientific verdict is generated only after all
-mandatory stages have terminal receipts. See `MASTER_PROMPT.md`, `AGENTS.md`,
-and `protocols/act_v1_draft.md` for the protocol and claim boundaries.
+The first command checks the recorded stage state and reports pending work. The final verification gate is expected to fail while mandatory stages remain incomplete. It should not be interpreted as evidence of a finished evaluation.
+
+## Evidence
+
+See [STATUS.md](STATUS.md), the [technical report](reports/final_technical_report.md), and the [claim ledger](reports/claim_ledger.md). Experiment receipts and manifests preserve the boundary between public data, synthetic interventions, development results, and protected evaluation.
